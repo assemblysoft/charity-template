@@ -73,9 +73,10 @@ $dark:          $gray-900 !default;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
-  "success":    $success,
+  "valid":      $success,
   "info":       $info,
-  "warning":    $warning,
+  "warn":       $warning,
+  "error":      $danger,
   "orange":     $orange,
   "light":      $light,
   "dark":       $dark
