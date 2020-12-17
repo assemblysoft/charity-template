@@ -163,13 +163,27 @@ $utilities: map-merge(
     ),
     "viewport-height": (
       property: height,
-      class: vh,
-      values: (100: 100vh)
+      class: h,
+      values: (
+        25vh: 25vh,
+        50vh: 50vh,
+        75vh: 75vh,
+        100vh: 100vh
+      )
+    ),
+    "min-height": (
+      property: min-height,
+      class: h-min,
+      values: (
+        10rem: 10rem,
+        25rem: 25rem
+      )
+    ),
     ),
     "min-viewport-height": (
       property: min-height,
-      class: min-vh,
-      values: (100: 100vh)
+      class: h-min,
+      values: (100vh: 100vh)
     ),
     // Flex utilities
     "flex": (
