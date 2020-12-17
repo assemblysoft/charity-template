@@ -11,9 +11,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  font-size: 14px;
-}
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -27,7 +24,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #f8f9fa;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -426,5 +423,4 @@ progress {
 [hidden] {
   display: none !important;
 }
-
 /*# sourceMappingURL=bootstrap-reboot.rtl.css.map */

@@ -2095,16 +2095,16 @@
   justify-content: space-evenly !important;
 }
 
-.align-start {
+.align-top {
   align-items: flex-start !important;
 }
 
-.align-end {
-  align-items: flex-end !important;
+.align-middle {
+  align-items: center !important;
 }
 
-.align-center {
-  align-items: center !important;
+.align-bottom {
+  align-items: flex-end !important;
 }
 
 .align-baseline {
@@ -2698,16 +2698,16 @@
     justify-content: space-evenly !important;
   }
 
-  .align-sm-start {
+  .align-sm-top {
     align-items: flex-start !important;
   }
 
-  .align-sm-end {
-    align-items: flex-end !important;
+  .align-sm-middle {
+    align-items: center !important;
   }
 
-  .align-sm-center {
-    align-items: center !important;
+  .align-sm-bottom {
+    align-items: flex-end !important;
   }
 
   .align-sm-baseline {
@@ -3301,16 +3301,16 @@
     justify-content: space-evenly !important;
   }
 
-  .align-md-start {
+  .align-md-top {
     align-items: flex-start !important;
   }
 
-  .align-md-end {
-    align-items: flex-end !important;
+  .align-md-middle {
+    align-items: center !important;
   }
 
-  .align-md-center {
-    align-items: center !important;
+  .align-md-bottom {
+    align-items: flex-end !important;
   }
 
   .align-md-baseline {
@@ -3904,16 +3904,16 @@
     justify-content: space-evenly !important;
   }
 
-  .align-lg-start {
+  .align-lg-top {
     align-items: flex-start !important;
   }
 
-  .align-lg-end {
-    align-items: flex-end !important;
+  .align-lg-middle {
+    align-items: center !important;
   }
 
-  .align-lg-center {
-    align-items: center !important;
+  .align-lg-bottom {
+    align-items: flex-end !important;
   }
 
   .align-lg-baseline {
@@ -4507,16 +4507,16 @@
     justify-content: space-evenly !important;
   }
 
-  .align-xl-start {
+  .align-xl-top {
     align-items: flex-start !important;
   }
 
-  .align-xl-end {
-    align-items: flex-end !important;
+  .align-xl-middle {
+    align-items: center !important;
   }
 
-  .align-xl-center {
-    align-items: center !important;
+  .align-xl-bottom {
+    align-items: flex-end !important;
   }
 
   .align-xl-baseline {
@@ -5110,16 +5110,16 @@
     justify-content: space-evenly !important;
   }
 
-  .align-xxl-start {
+  .align-xxl-top {
     align-items: flex-start !important;
   }
 
-  .align-xxl-end {
-    align-items: flex-end !important;
+  .align-xxl-middle {
+    align-items: center !important;
   }
 
-  .align-xxl-center {
-    align-items: center !important;
+  .align-xxl-bottom {
+    align-items: flex-end !important;
   }
 
   .align-xxl-baseline {
