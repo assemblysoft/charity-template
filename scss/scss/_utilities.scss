@@ -179,6 +179,16 @@ $utilities: map-merge(
         25rem: 25rem
       )
     ),
+    "object-fit": (
+      property: object-fit,
+      class: object-fit,
+      values: (
+        cover: cover,
+        contain: contain,
+        fill: fill,
+        none: none,
+        scale-down: scale-down
+      )
     ),
     "min-viewport-height": (
       property: min-height,
