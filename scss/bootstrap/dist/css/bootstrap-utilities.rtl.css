@@ -250,7 +250,7 @@
 }
 
 .border-warning {
-  border-color: #ffc107 !important;
+  border-color: #fd7e14 !important;
 }
 
 .border-danger {
@@ -1036,7 +1036,7 @@
 }
 
 .text-warning {
-  color: #ffc107 !important;
+  color: #fd7e14 !important;
 }
 
 .text-danger {
@@ -1108,7 +1108,7 @@
 }
 
 .bg-warning {
-  background-color: #ffc107 !important;
+  background-color: #fd7e14 !important;
 }
 
 .bg-danger {
@@ -4605,5 +4605,4 @@
     display: none !important;
   }
 }
-
 /*# sourceMappingURL=bootstrap-utilities.rtl.css.map */
