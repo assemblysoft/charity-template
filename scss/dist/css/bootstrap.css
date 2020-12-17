@@ -7423,11 +7423,56 @@ textarea.form-control-lg {
   max-height: 100% !important;
 }
 
-.vh-100 {
+.h-25vh {
+  height: 25vh !important;
+}
+
+.h-50vh {
+  height: 50vh !important;
+}
+
+.h-75vh {
+  height: 75vh !important;
+}
+
+.h-100vh {
   height: 100vh !important;
 }
 
-.min-vh-100 {
+.h-min-10rem {
+  min-height: 10rem !important;
+}
+
+.h-min-25rem {
+  min-height: 25rem !important;
+}
+
+.object-fit-cover {
+  -o-object-fit: cover !important;
+  object-fit: cover !important;
+}
+
+.object-fit-contain {
+  -o-object-fit: contain !important;
+  object-fit: contain !important;
+}
+
+.object-fit-fill {
+  -o-object-fit: fill !important;
+  object-fit: fill !important;
+}
+
+.object-fit-none {
+  -o-object-fit: none !important;
+  object-fit: none !important;
+}
+
+.object-fit-scale-down {
+  -o-object-fit: scale-down !important;
+  object-fit: scale-down !important;
+}
+
+.h-min-100vh {
   min-height: 100vh !important;
 }
 
