@@ -67,6 +67,29 @@
   }
 }
 
+[class*="btn-min-"] {
+  @include border-radius(0);
+  position: relative;
+  border: 0;
+  border-bottom: $border-width-wide solid $body-color;
+
+  &::after {
+    position: absolute;
+    right: 50%;
+    bottom: -$border-width-wide;
+    left: 50%;
+    content: "";
+    @include transition(left .2s ease-in-out, right .2s ease-in-out);
+    border-bottom: 3px solid $body-color;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-min-#{$color} {
+    @include button-min-variant($value);
+  }
+}
+
 
 //
 // Link buttons
