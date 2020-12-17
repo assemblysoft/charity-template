@@ -111,7 +111,7 @@ $utilities: map-merge(
     "border-color": (
       property: border-color,
       class: border,
-      values: map-merge($theme-colors, ("white": $white))
+      values: map-merge($theme-colors, ("white": $white, transparent: transparent))
     ),
     "border-width": (
       property: border-width,
