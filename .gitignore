@@ -3,6 +3,14 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# Ignore Bootstrap Temp Files
+scss/bootstrap/site/*
+scss/bootstrap/js/tests/*
+scss/bootstrap/package-lock.json
+scss/bootstrap/yarn.lock
+scss/bootstrap/nuget/*
+scss/bootstrap/.github*
+
 # User-specific folder
 data/*
 
