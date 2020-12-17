@@ -6,7 +6,7 @@ $utilities: map-merge(
   (
     "align": (
       property: vertical-align,
-      class: align,
+      class: txt,
       values: baseline top middle bottom text-bottom text-top
     ),
     "float": (
@@ -231,9 +231,9 @@ $utilities: map-merge(
       class: align,
       property: align-items,
       values: (
-        start: flex-start,
-        end: flex-end,
-        center: center,
+        top: flex-start,
+        middle: center,
+        bottom: flex-end,
         baseline: baseline,
         stretch: stretch,
       )
