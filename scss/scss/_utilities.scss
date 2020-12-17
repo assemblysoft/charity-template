@@ -26,7 +26,7 @@ $utilities: map-merge(
       responsive: true,
       print: true,
       property: display,
-      class: d,
+      class: "",
       values: inline inline-block block grid table table-row table-cell flex inline-flex none
     ),
     "shadow": (
@@ -41,6 +41,7 @@ $utilities: map-merge(
     ),
     "position": (
       property: position,
+      class: "",
       values: static relative absolute fixed sticky
     ),
     "top": (
@@ -63,7 +64,7 @@ $utilities: map-merge(
     ),
     "translate-middle": (
       property: transform,
-      class: translate-middle,
+      class: translate,
       values: (
         null: translate(-50%, -50%),
         x: translateX(-50%),
@@ -214,6 +215,7 @@ $utilities: map-merge(
     ),
     "justify-content": (
       responsive: true,
+      class: justify,
       property: justify-content,
       values: (
         start: flex-start,
@@ -226,6 +228,7 @@ $utilities: map-merge(
     ),
     "align-items": (
       responsive: true,
+      class: align,
       property: align-items,
       values: (
         start: flex-start,
@@ -416,7 +419,7 @@ $utilities: map-merge(
     ),
     "font-weight": (
       property: font-weight,
-      class: fw,
+      class: font,
       values: (
         light: $font-weight-light,
         lighter: $font-weight-lighter,
@@ -427,13 +430,13 @@ $utilities: map-merge(
     ),
     "text-transform": (
       property: text-transform,
-      class: text,
+      class: txt,
       values: lowercase uppercase capitalize
     ),
     "text-align": (
       responsive: true,
       property: text-align,
-      class: text,
+      class: txt,
       values: (
         start: left,
         end: right,
@@ -442,7 +445,7 @@ $utilities: map-merge(
     ),
     "color": (
       property: color,
-      class: text,
+      class: clr,
       values: map-merge(
         $theme-colors,
         (
@@ -484,7 +487,7 @@ $utilities: map-merge(
     ),
     "white-space": (
       property: white-space,
-      class: text,
+      class: txt,
       values: (
         wrap: normal,
         nowrap: nowrap,
@@ -496,7 +499,7 @@ $utilities: map-merge(
     ),
     "word-wrap": (
       property: word-wrap word-break,
-      class: text,
+      class: txt,
       values: (break: break-word),
       rtl: false
     ),
@@ -511,7 +514,7 @@ $utilities: map-merge(
     ),
     "pointer-events": (
       property: pointer-events,
-      class: pe,
+      class: event,
       values: none auto,
     ),
     "rounded": (

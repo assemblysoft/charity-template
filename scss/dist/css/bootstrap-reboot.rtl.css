@@ -11,6 +11,9 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 14px;
+}
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -423,4 +426,5 @@ progress {
 [hidden] {
   display: none !important;
 }
+
 /*# sourceMappingURL=bootstrap-reboot.rtl.css.map */
