@@ -574,6 +574,20 @@ $utilities: map-merge(
       class: rounded-start,
       values: (null: $border-radius)
     ),
+    "z-index": (
+      property: z-index,
+      class: z,
+      values: (
+        top: 9999,
+        100: 100,
+        10: 10,
+        0: 0,
+        auto: auto,
+        -10: -10,
+        -100: -100,
+        bottom: -9999
+      )
+    ),
     "visibility": (
       property: visibility,
       class: null,
