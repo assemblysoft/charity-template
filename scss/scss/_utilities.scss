@@ -454,7 +454,11 @@ $utilities: map-merge(
     "text-transform": (
       property: text-transform,
       class: txt,
-      values: lowercase uppercase capitalize
+      values: (
+        lower: lowercase,
+        upper: uppercase,
+        cap: capitalize,
+      )
     ),
     "text-align": (
       responsive: true,
