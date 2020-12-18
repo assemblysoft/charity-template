@@ -1044,15 +1044,15 @@
   font-weight: bolder !important;
 }
 
-.txt-lowercase {
+.txt-lower {
   text-transform: lowercase !important;
 }
 
-.txt-uppercase {
+.txt-upper {
   text-transform: uppercase !important;
 }
 
-.txt-capitalize {
+.txt-cap {
   text-transform: capitalize !important;
 }
 

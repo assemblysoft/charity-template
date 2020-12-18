@@ -1,10 +1,6 @@
 /*!
  * Custom Site style
  */
-body {
-  font-family: "Anton", sans-serif;
-}
-
 header .logo-container {
   width: 280px;
 }
@@ -14,5 +10,4 @@ header .logo-container {
   background-position: center;
   background-size: cover;
 }
-
 /*# sourceMappingURL=custom.rtl.css.map */
