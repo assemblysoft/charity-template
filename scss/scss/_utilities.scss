@@ -266,9 +266,9 @@ $utilities: map-merge(
       responsive: true,
       property: align-content,
       values: (
-        start: flex-start,
-        end: flex-end,
-        center: center,
+        top: flex-start,
+        middle: center,
+        bottom: flex-end,
         between: space-between,
         around: space-around,
         stretch: stretch,
@@ -279,9 +279,9 @@ $utilities: map-merge(
       property: align-self,
       values: (
         auto: auto,
-        start: flex-start,
-        end: flex-end,
-        center: center,
+        top: flex-start,
+        middle: center,
+        bottom: flex-end,
         baseline: baseline,
         stretch: stretch,
       )
