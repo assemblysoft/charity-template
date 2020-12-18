@@ -373,12 +373,8 @@
   height: 100vh !important;
 }
 
-.h-min-10rem {
-  min-height: 10rem !important;
-}
-
-.h-min-25rem {
-  min-height: 25rem !important;
+.h-min-35rem {
+  min-height: 35rem !important;
 }
 
 .object-fit-cover {
@@ -526,16 +522,16 @@
   align-items: stretch !important;
 }
 
-.align-content-start {
+.align-content-top {
   align-content: flex-start !important;
 }
 
-.align-content-end {
-  align-content: flex-end !important;
+.align-content-middle {
+  align-content: center !important;
 }
 
-.align-content-center {
-  align-content: center !important;
+.align-content-bottom {
+  align-content: flex-end !important;
 }
 
 .align-content-between {
@@ -554,16 +550,16 @@
   align-self: auto !important;
 }
 
-.align-self-start {
+.align-self-top {
   align-self: flex-start !important;
 }
 
-.align-self-end {
-  align-self: flex-end !important;
+.align-self-middle {
+  align-self: center !important;
 }
 
-.align-self-center {
-  align-self: center !important;
+.align-self-bottom {
+  align-self: flex-end !important;
 }
 
 .align-self-baseline {
@@ -1305,6 +1301,38 @@
   border-top-left-radius: 0.25rem !important;
 }
 
+.z-top {
+  z-index: 9999 !important;
+}
+
+.z-100 {
+  z-index: 100 !important;
+}
+
+.z-10 {
+  z-index: 10 !important;
+}
+
+.z-0 {
+  z-index: 0 !important;
+}
+
+.z-auto {
+  z-index: auto !important;
+}
+
+.z--10 {
+  z-index: -10 !important;
+}
+
+.z--100 {
+  z-index: -100 !important;
+}
+
+.z-bottom {
+  z-index: -9999 !important;
+}
+
 .visible {
   visibility: visible !important;
 }
@@ -1482,16 +1510,16 @@
     align-items: stretch !important;
   }
 
-  .align-content-sm-start {
+  .align-content-sm-top {
     align-content: flex-start !important;
   }
 
-  .align-content-sm-end {
-    align-content: flex-end !important;
+  .align-content-sm-middle {
+    align-content: center !important;
   }
 
-  .align-content-sm-center {
-    align-content: center !important;
+  .align-content-sm-bottom {
+    align-content: flex-end !important;
   }
 
   .align-content-sm-between {
@@ -1510,16 +1538,16 @@
     align-self: auto !important;
   }
 
-  .align-self-sm-start {
+  .align-self-sm-top {
     align-self: flex-start !important;
   }
 
-  .align-self-sm-end {
-    align-self: flex-end !important;
+  .align-self-sm-middle {
+    align-self: center !important;
   }
 
-  .align-self-sm-center {
-    align-self: center !important;
+  .align-self-sm-bottom {
+    align-self: flex-end !important;
   }
 
   .align-self-sm-baseline {
@@ -2133,16 +2161,16 @@
     align-items: stretch !important;
   }
 
-  .align-content-md-start {
+  .align-content-md-top {
     align-content: flex-start !important;
   }
 
-  .align-content-md-end {
-    align-content: flex-end !important;
+  .align-content-md-middle {
+    align-content: center !important;
   }
 
-  .align-content-md-center {
-    align-content: center !important;
+  .align-content-md-bottom {
+    align-content: flex-end !important;
   }
 
   .align-content-md-between {
@@ -2161,16 +2189,16 @@
     align-self: auto !important;
   }
 
-  .align-self-md-start {
+  .align-self-md-top {
     align-self: flex-start !important;
   }
 
-  .align-self-md-end {
-    align-self: flex-end !important;
+  .align-self-md-middle {
+    align-self: center !important;
   }
 
-  .align-self-md-center {
-    align-self: center !important;
+  .align-self-md-bottom {
+    align-self: flex-end !important;
   }
 
   .align-self-md-baseline {
@@ -2784,16 +2812,16 @@
     align-items: stretch !important;
   }
 
-  .align-content-lg-start {
+  .align-content-lg-top {
     align-content: flex-start !important;
   }
 
-  .align-content-lg-end {
-    align-content: flex-end !important;
+  .align-content-lg-middle {
+    align-content: center !important;
   }
 
-  .align-content-lg-center {
-    align-content: center !important;
+  .align-content-lg-bottom {
+    align-content: flex-end !important;
   }
 
   .align-content-lg-between {
@@ -2812,16 +2840,16 @@
     align-self: auto !important;
   }
 
-  .align-self-lg-start {
+  .align-self-lg-top {
     align-self: flex-start !important;
   }
 
-  .align-self-lg-end {
-    align-self: flex-end !important;
+  .align-self-lg-middle {
+    align-self: center !important;
   }
 
-  .align-self-lg-center {
-    align-self: center !important;
+  .align-self-lg-bottom {
+    align-self: flex-end !important;
   }
 
   .align-self-lg-baseline {
@@ -3435,16 +3463,16 @@
     align-items: stretch !important;
   }
 
-  .align-content-xl-start {
+  .align-content-xl-top {
     align-content: flex-start !important;
   }
 
-  .align-content-xl-end {
-    align-content: flex-end !important;
+  .align-content-xl-middle {
+    align-content: center !important;
   }
 
-  .align-content-xl-center {
-    align-content: center !important;
+  .align-content-xl-bottom {
+    align-content: flex-end !important;
   }
 
   .align-content-xl-between {
@@ -3463,16 +3491,16 @@
     align-self: auto !important;
   }
 
-  .align-self-xl-start {
+  .align-self-xl-top {
     align-self: flex-start !important;
   }
 
-  .align-self-xl-end {
-    align-self: flex-end !important;
+  .align-self-xl-middle {
+    align-self: center !important;
   }
 
-  .align-self-xl-center {
-    align-self: center !important;
+  .align-self-xl-bottom {
+    align-self: flex-end !important;
   }
 
   .align-self-xl-baseline {
@@ -4086,16 +4114,16 @@
     align-items: stretch !important;
   }
 
-  .align-content-xxl-start {
+  .align-content-xxl-top {
     align-content: flex-start !important;
   }
 
-  .align-content-xxl-end {
-    align-content: flex-end !important;
+  .align-content-xxl-middle {
+    align-content: center !important;
   }
 
-  .align-content-xxl-center {
-    align-content: center !important;
+  .align-content-xxl-bottom {
+    align-content: flex-end !important;
   }
 
   .align-content-xxl-between {
@@ -4114,16 +4142,16 @@
     align-self: auto !important;
   }
 
-  .align-self-xxl-start {
+  .align-self-xxl-top {
     align-self: flex-start !important;
   }
 
-  .align-self-xxl-end {
-    align-self: flex-end !important;
+  .align-self-xxl-middle {
+    align-self: center !important;
   }
 
-  .align-self-xxl-center {
-    align-self: center !important;
+  .align-self-xxl-bottom {
+    align-self: flex-end !important;
   }
 
   .align-self-xxl-baseline {
