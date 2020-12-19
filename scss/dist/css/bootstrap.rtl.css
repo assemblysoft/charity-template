@@ -7425,6 +7425,10 @@ textarea.form-control-lg {
   height: 100vh !important;
 }
 
+.h-min-25rem {
+  min-height: 25rem !important;
+}
+
 .h-min-35rem {
   min-height: 35rem !important;
 }
