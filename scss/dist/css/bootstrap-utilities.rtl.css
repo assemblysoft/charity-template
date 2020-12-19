@@ -1045,15 +1045,15 @@
 }
 
 .txt-lower {
-  text-transform: lower !important;
+  text-transform: lowercase !important;
 }
 
 .txt-upper {
-  text-transform: upper !important;
+  text-transform: uppercase !important;
 }
 
 .txt-cap {
-  text-transform: cap !important;
+  text-transform: capitalize !important;
 }
 
 .txt-start {
