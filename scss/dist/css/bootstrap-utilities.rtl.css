@@ -406,6 +406,10 @@
   object-fit: scale-down !important;
 }
 
+.h-min-89vh {
+  min-height: 89vh !important;
+}
+
 .h-min-100vh {
   min-height: 100vh !important;
 }
@@ -4698,4 +4702,5 @@
     display: none !important;
   }
 }
+
 /*# sourceMappingURL=bootstrap-utilities.rtl.css.map */
