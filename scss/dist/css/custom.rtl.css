@@ -1,8 +1,26 @@
-/*!
- * Custom Site style
- */
+.bg-facebook {
+  background: #37589d !important;
+}
+
+.bg-twitter {
+  background: #02b8e8 !important;
+}
+
+.bg-youtube {
+  background: #ce322f !important;
+}
+
+.bg-instagram {
+  background: #aa4087 !important;
+}
+
 header .logo-container {
   width: 280px;
+}
+
+footer {
+  color: #fff;
+  background: #212529;
 }
 
 .img-bg {

@@ -1,16 +1,95 @@
-/*!
- * Custom Site style
- */
+// stylelint-disable scss/dollar-variable-default
 
+//
 // Bootstrap Configuration
+//
+
 @import "functions";
 @import "variables";
 @import "mixins";
+@import "vendor/rfs";
 @import "utilities";
+
+$utilities: (
+  "background": (
+    property: background,
+    class: bg,
+    values: (
+      facebook: #37589d,
+      twitter: #02b8e8,
+      youtube: #ce322f,
+      instagram: #aa4087,
+    ),
+  ),
+);
+
+@import "utilities/api";
+
+//
+// Fluid Objects
+//
+
+.divider {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  opacity: .5;
+}
+.divider::before,
+.divider::after {
+  align-self: center;
+  width: inherit;
+  height: 100%;
+  content: "";
+  border: .5px solid currentColor;
+}
+.divider:not(:empty)::before,
+.divider:not(:empty)::after {
+  margin: .1875em .375em;
+}
+
+.divider.is-y {
+  width: auto;
+}
+
+.divider.txt-left:not(.is-y)::before {
+  width: 5%;
+}
+
+.divider.txt-left.is-y::before {
+  height: 5%;
+}
+
+.divider.txt-right:not(.is-y)::after {
+  width: 5%;
+}
+
+.divider.txt-right.is-y::after {
+  height: 5%;
+}
+
+//
+// Header
+//
 
 header .logo-container {
   width: 280px;
 }
+
+//
+// Footer
+//
+
+footer {
+  font-size: $small-font-size;
+  color: $white;
+  background: $dark;
+}
+
+//
+// Utilities
+//
 
 .img-bg {
   background-repeat: no-repeat;
