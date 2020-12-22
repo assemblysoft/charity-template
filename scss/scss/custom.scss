@@ -1,4 +1,4 @@
-// stylelint-disable scss/dollar-variable-default
+// stylelint-disable scss/dollar-variable-default, number-leading-zero, declaration-no-important, selector-no-qualifying-type
 
 //
 // Bootstrap Configuration
@@ -29,24 +29,39 @@ $utilities: (
 // Fluid Objects
 //
 
+.icon {
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  width: 1em;
+  height: 1em;
+}
+
+.icon svg {
+  vertical-align: baseline;
+}
+
 .divider {
   display: flex;
   width: 100%;
   text-align: center;
   white-space: nowrap;
-  opacity: .5;
+  opacity: 0.5;
 }
+
 .divider::before,
 .divider::after {
   align-self: center;
   width: inherit;
   height: 100%;
   content: "";
-  border: .5px solid currentColor;
+  border: 0.5px solid currentColor;
 }
+
 .divider:not(:empty)::before,
 .divider:not(:empty)::after {
-  margin: .1875em .375em;
+  margin: 0.1875em 0.375em;
 }
 
 .divider.is-y {

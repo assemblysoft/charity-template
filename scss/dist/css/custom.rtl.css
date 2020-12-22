@@ -14,6 +14,19 @@
   background: #aa4087 !important;
 }
 
+.icon {
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  width: 1em;
+  height: 1em;
+}
+
+.icon svg {
+  vertical-align: baseline;
+}
+
 .divider {
   display: flex;
   width: 100%;
@@ -40,19 +53,19 @@
   width: auto;
 }
 
-.divider.txt-left:not(.is-y)::before {
+.divider.txt-right:not(.is-y)::before {
   width: 5%;
 }
 
-.divider.txt-left.is-y::before {
+.divider.txt-right.is-y::before {
   height: 5%;
 }
 
-.divider.txt-right:not(.is-y)::after {
+.divider.txt-left:not(.is-y)::after {
   width: 5%;
 }
 
-.divider.txt-right.is-y::after {
+.divider.txt-left.is-y::after {
   height: 5%;
 }
 
