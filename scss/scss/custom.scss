@@ -73,8 +73,16 @@ $utilities: (
 // Header
 //
 
-header .logo-container {
-  width: 280px;
+header {
+  @include transition(top .5s ease-in-out);
+
+  &.headroom--unpinned {
+    top: -86px !important;
+  }
+
+  .logo-container {
+    width: 280px;
+  }
 }
 
 //

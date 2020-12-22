@@ -56,6 +56,17 @@
   height: 5%;
 }
 
+header {
+  transition: top 0.5s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  header {
+    transition: none;
+  }
+}
+header.headroom--unpinned {
+  top: -86px !important;
+}
 header .logo-container {
   width: 280px;
 }
