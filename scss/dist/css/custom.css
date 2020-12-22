@@ -75,6 +75,7 @@
 
 header {
   transition: top 0.5s ease-in-out;
+  top: 0;
 }
 @media (prefers-reduced-motion: reduce) {
   header {
@@ -82,7 +83,7 @@ header {
   }
 }
 header.headroom--unpinned {
-  top: -86px !important;
+  top: -86px;
 }
 header .logo-container {
   width: 280px;

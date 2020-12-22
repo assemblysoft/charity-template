@@ -90,10 +90,11 @@ $utilities: (
 //
 
 header {
-  @include transition(top .5s ease-in-out);
+  @include transition(top 0.5s ease-in-out);
+  top: 0;
 
   &.headroom--unpinned {
-    top: -86px !important;
+    top: -86px;
   }
 
   .logo-container {
