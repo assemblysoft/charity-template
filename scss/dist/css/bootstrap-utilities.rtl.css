@@ -238,7 +238,7 @@
 }
 
 .border-secondary {
-  border-color: #6c757d !important;
+  border-color: #ffc107 !important;
 }
 
 .border-valid {
@@ -1081,7 +1081,7 @@
 }
 
 .clr-secondary {
-  color: #6c757d !important;
+  color: #ffc107 !important;
 }
 
 .clr-valid {
@@ -1157,7 +1157,7 @@
 }
 
 .bg-secondary {
-  background-color: #6c757d !important;
+  background-color: #ffc107 !important;
 }
 
 .bg-valid {
