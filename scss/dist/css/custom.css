@@ -89,6 +89,21 @@ header .logo-container {
   width: 280px;
 }
 
+#scolltop {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.35s ease-in-out, visibility 0.35s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  #scolltop {
+    transition: none;
+  }
+}
+.headroom--bottom #scolltop {
+  visibility: visible;
+  opacity: 1;
+}
+
 footer {
   font-size: 0.875em;
   color: #fff;

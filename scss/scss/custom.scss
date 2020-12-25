@@ -103,6 +103,21 @@ header {
 }
 
 //
+// scolltop
+//
+
+#scolltop {
+  visibility: hidden;
+  opacity: 0;
+  @include transition(opacity 0.35s ease-in-out, visibility 0.35s ease-in-out);
+
+  .headroom--bottom & {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+//
 // Footer
 //
 

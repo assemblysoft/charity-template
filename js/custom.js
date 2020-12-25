@@ -5,6 +5,13 @@
 const header = document.querySelector("header");
 
 //
+// scroll to top button
+//
+
+const scolltop = document.querySelector("#scolltop");
+if (scolltop) scolltop.onclick = () => window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+
+//
 // impliment headroom to add scroll events
 //
 
