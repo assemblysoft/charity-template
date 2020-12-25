@@ -1,4 +1,4 @@
-// stylelint-disable scss/dollar-variable-default, number-leading-zero, declaration-no-important, selector-no-qualifying-type
+// stylelint-disable scss/dollar-variable-default, number-leading-zero, selector-max-id
 
 //
 // Bootstrap Configuration
@@ -93,7 +93,7 @@ header {
   @include transition(top 0.5s ease-in-out);
   top: 0;
 
-  &.headroom--unpinned {
+  .headroom--unpinned & {
     top: -86px;
   }
 

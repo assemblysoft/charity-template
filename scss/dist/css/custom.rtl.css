@@ -1,3 +1,7 @@
+.bg-linkedin {
+  background: #0e72a3 !important;
+}
+
 .bg-facebook {
   background: #37589d !important;
 }
@@ -69,6 +73,18 @@
   height: 5%;
 }
 
+header {
+  transition: top 0.5s ease-in-out;
+  top: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  header {
+    transition: none;
+  }
+}
+.headroom--unpinned header {
+  top: -86px;
+}
 header .logo-container {
   width: 280px;
 }

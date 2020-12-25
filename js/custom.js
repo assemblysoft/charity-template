@@ -1,5 +1,14 @@
-var myElement = document.querySelector("header");
-var headroom = new Headroom(myElement, {
+//
+// header animation effect
+//
+
+const header = document.querySelector("header");
+
+//
+// impliment headroom to add scroll events
+//
+
+new Headroom(document.body, {
   offset: 80,
   tolerance: 5,
   classes: {
@@ -12,6 +21,17 @@ var headroom = new Headroom(myElement, {
     notBottom: "headroom--not-bottom",
     frozen: "headroom--frozen",
     pinned: "headroom--pinned"
-  }
-});
-headroom.init();
+  },
+  // callback when pinned, `this` is headroom objectF
+  onPin: () => {},
+  // callback when unpinned, `this` is headroom object
+  onUnpin: () => {},
+  // callback when above offset, `this` is headroom object
+  onTop: () => {},
+  // callback when below offset, `this` is headroom object
+  onNotTop: () => {},
+  // callback when at bottom of page, `this` is headroom object
+  onBottom: () => {},
+  // callback when moving away from bottom of page, `this` is headroom object
+  onNotBottom: () => {}
+}).init();

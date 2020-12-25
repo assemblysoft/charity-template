@@ -82,7 +82,7 @@ header {
     transition: none;
   }
 }
-header.headroom--unpinned {
+.headroom--unpinned header {
   top: -86px;
 }
 header .logo-container {
