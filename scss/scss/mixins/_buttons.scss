@@ -126,13 +126,13 @@
   $active-border: $color,
   $active-color: color-contrast($active-background)
 ) {
-  &::after{
+  &::before {
     border-bottom-color: $color;
   }
 
   &:hover {
     color: $color;
-    &::after{
+    &::before {
       right: 0%;
       left: 0%;
     }

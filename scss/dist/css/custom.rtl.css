@@ -57,19 +57,19 @@
   width: auto;
 }
 
-.divider.txt-right:not(.is-y)::before {
+.divider.txt-left:not(.is-y)::before {
   width: 5%;
 }
 
-.divider.txt-right.is-y::before {
+.divider.txt-left.is-y::before {
   height: 5%;
 }
 
-.divider.txt-left:not(.is-y)::after {
+.divider.txt-right:not(.is-y)::after {
   width: 5%;
 }
 
-.divider.txt-left.is-y::after {
+.divider.txt-right.is-y::after {
   height: 5%;
 }
 
@@ -87,6 +87,21 @@ header {
 }
 header .logo-container {
   width: 280px;
+}
+
+#scolltop {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.35s ease-in-out, visibility 0.35s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  #scolltop {
+    transition: none;
+  }
+}
+.headroom--bottom #scolltop {
+  visibility: visible;
+  opacity: 1;
 }
 
 footer {

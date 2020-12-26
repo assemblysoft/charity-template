@@ -73,7 +73,7 @@
   border: 0;
   border-bottom: $border-width-wide solid $body-color;
 
-  &::after {
+  &::before {
     position: absolute;
     right: 50%;
     bottom: -$border-width-wide;

@@ -34,10 +34,38 @@
         <a class="btn btn-sm btn-min-light clr-white mx-1 border-transparent" href="#">What's Happening</a>
       </div>
       <div class="px-4 flex justify-center txt-upper">
-        <a class="btn btn-sm btn-min-secondary mx-1 inline-flex align-middle border-transparent clr-body" href="#"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Plan your visit</a>
-        <a class="btn btn-sm btn-min-secondary mx-1 inline-flex align-middle border-transparent clr-body" href="#"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Animals</a>
-        <a class="btn btn-sm btn-min-secondary mx-1 inline-flex align-middle border-transparent clr-body" href="#"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Explore</a>
-        <a class="btn btn-sm btn-min-secondary mx-1 inline-flex align-middle border-transparent clr-body" href="#"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> What's Happening</a>
+        <div class="dropdown">
+          <button type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-transparent"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Plan your visit</button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-transparent"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Animals</button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-transparent"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Explore</button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-transparent"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> What's Happening</button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -99,6 +127,7 @@
     </footer>
     <button id="scolltop" class="btn btn-light icon fixed bottom-0 end-0 me-5 mb-5 bg-white p-4 shadow rounded-circle"><i class="h4 mb-0 ri-arrow-up-fill"></i></button>
   </body>
+  <script src="./scss/dist/js/bootstrap.bundle.js"></script>
   <script src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
   <script src="./js/custom.js"></script>
 </html>
