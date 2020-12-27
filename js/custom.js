@@ -42,3 +42,40 @@ new Headroom(document.body, {
   // callback when moving away from bottom of page, `this` is headroom object
   onNotBottom: () => {}
 }).init();
+
+//
+// Tabs implimentation
+//
+
+if (typeof $ !== "undefined") {
+  document.querySelectorAll(".tab_content").forEach((e) => $(e).hide()); // Hide all content
+  document.querySelectorAll(".tab_button a.active").forEach((e) => e.classList.remove("active")); // Hide all content
+  const queryString = window.location.hash;
+
+  document.querySelectorAll(".tabs").forEach((e) => {
+    const activeTab = e.querySelector(queryString ? `a[href='${queryString}']` : "a:first-child");
+    const activeTabhref = activeTab.getAttribute("href").replace("#", "");
+    activeTab.classList.add("active");
+    e.setAttribute("active", activeTabhref);
+    e.querySelectorAll(`[data-tab='${activeTabhref}']`).forEach((e) => {
+      $(e).show();
+    });
+  });
+
+  // On Click Event
+  document.querySelectorAll(".tabs a").forEach((e) => {
+    e.onclick = (event) => {
+      document.querySelectorAll(".tab_content").forEach((e) => $(e).hide()); // Hide all content
+      document.querySelectorAll(".tab_button a.active").forEach((e) => e.classList.remove("active")); // Hide all content
+      let activeTab = event.target;
+      let tabs = activeTab.closest(".tabs");
+      var activeTabhref = activeTab.getAttribute("href").replace("#", ""); // Find the rel attribute value to identify the active tab + content
+
+      activeTab.classList.add("active");
+      tabs.setAttribute("active", activeTabhref);
+      document.querySelectorAll(`[data-tab='${activeTabhref}']`).forEach(
+        (e) => $(e).fadeIn() // Fade in the active content
+      );
+    };
+  });
+}
