@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./scss/dist/css/custom.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="row pt-2 align-middle bg-white g-0 sticky z-top w-100">
+      <div class="row px-4 py-2 align-middle">
+        <a href="./" class="col-5 logo-container">
+          <img class="img" src="./img/logo.jpg" alt="" />
+        </a>
+        <div class="col txt-end">
+          <a class="btn btn-min-secondary me-1 align-stetch border-transparent" href="#">Buy Acre Of Rainforest</a>
+          <a class="btn btn-min-secondary me-1 align-stetch border-transparent" href="#">Donate</a>
+          <a class="btn btn-min-secondary me-1 align-stetch border-transparent" href="#">Adopt</a>
+          <a class="btn btn-outline-secondary me-1 align-stetch border-transparent inline-flex" href="#"><i class="h4 mb-0 me-1 ri-account-circle-line"></i> Login</a>
+          <a class="btn btn-outline-secondary me-1 align-stetch border-transparent inline-flex" href="#"><i class="h4 mb-0 ri-shopping-cart-2-line"></i></a>
+        </div>
+      </div>
+      <div class="py-2 px-4 flex justify-center txt-upper bg-primary">
+        <a class="btn btn-sm btn-min-light clr-white mx-1 border-transparent" href="#">Animals</a>
+        <a class="btn btn-sm btn-min-light clr-white mx-1 border-transparent" href="#">Plan your visit</a>
+        <a class="btn btn-sm btn-min-light clr-white mx-1 border-transparent" href="#">Explore</a>
+        <a class="btn btn-sm btn-min-light clr-white mx-1 border-transparent" href="#">Education</a>
+        <a class="btn btn-sm btn-min-light clr-white mx-1 border-transparent" href="#">Conservation</a>
+        <a class="btn btn-sm btn-min-light clr-white mx-1 border-transparent" href="#">Support Us</a>
+        <a class="btn btn-sm btn-min-light clr-white mx-1 border-transparent" href="#">What's Happening</a>
+      </div>
+      <div class="px-4 flex justify-center txt-upper">
+        <div class="dropdown">
+          <button type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-transparent"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Plan your visit</button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-transparent"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Animals</button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-transparent"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Explore</button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-transparent"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> What's Happening</button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="h-min-15rem flex align-middle bg-error img-bg p-5 clr-white" style="background-image: url('./img/rainforest.jpg')">
+        <h2 class="txt-upper font-anton">Sign up for red nose day 2021</h2>
+      </section>
+
+      <section class="bg-white rounded-3 mx-auto p-5 shadow col-15 row mt-n5 mb-5">
+        <div class="col-12 txt-justify mb-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ullam provident labore porro quibusdam esse dicta voluptatibus.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quas hic ea ullam!repud</p>
+        </div>
+        <form class="col-24">
+          <h3 class="font-anton">Your contact details</h3>
+          <div class="row mb-4">
+            <label class="block col-12 py-2">
+              <span class="mb-1 inline-block">First Name</span>
+              <input type="text" class="form-control" />
+              <span class="inline-block mt-1 clr-error small flex align-middle"><i class="icon ri-information-line"></i> First name is required</span>
+            </label>
+            <label class="block col-12 py-2">
+              <span class="mb-1 inline-block">Last Name</span>
+              <input type="text" class="form-control" />
+              <span class="inline-block mt-1 clr-error small flex align-middle"><i class="icon ri-information-line"></i> Last name is required</span>
+            </label>
+            <label class="block col-12 py-2">
+              <span class="mb-1 inline-block">Email</span>
+              <input type="text" class="form-control" />
+              <span class="inline-block mt-1 clr-error small flex align-middle"><i class="icon ri-information-line"></i> Email is required</span>
+            </label>
+          </div>
+          <div class="txt-center">
+            <button class="btn btn-error rounded-pill px-5">Continue</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="p-5 txt-center">
+      <div class="mb-4 flex align-middle justify-center">
+        <a href="https://www.facebook.com/thecatsurvivaltrust/" class="mx-1"><i class="p-2 rounded-circle clr-white bg-facebook ri-lg ri-facebook-circle-fill"></i></a>
+        <a href="https://twitter.com/catsurvival?lang=en" class="mx-1"><i class="p-2 rounded-circle clr-white bg-twitter ri-lg ri-twitter-fill"></i></a>
+        <a href="https://www.youtube.com/watch?v=wRLd31M6yu8" class="mx-1"><i class="p-2 rounded-circle clr-white bg-youtube ri-lg ri-youtube-fill"></i></a>
+        <a href="https://www.instagram.com/catsurvivaltrust/" class="mx-1"><i class="p-2 rounded-circle clr-white bg-instagram ri-lg ri-instagram-fill"></i></a>
+        <a href="https://www.linkedin.com/company/cat-survival-trust" class="mx-1"><i class="p-2 rounded-circle clr-white bg-linkedin ri-lg ri-linkedin-fill"></i></a>
+      </div>
+      <div class="mb-3 flex align-middle justify-center txt-cap">
+        <a href="#" class="mx-2">Contact Us</a>
+        <div class="divider is-y flex-column align-self-stretch"></div>
+        <a href="#" class="mx-2">Partners</a>
+        <div class="divider is-y flex-column align-self-stretch"></div>
+        <a href="#" class="mx-2">Careers</a>
+        <div class="divider is-y flex-column align-self-stretch"></div>
+        <a href="#" class="mx-2">Legal</a>
+        <div class="divider is-y flex-column align-self-stretch"></div>
+        <a href="#" class="mx-2">Press Area</a>
+        <div class="divider is-y flex-column align-self-stretch"></div>
+        <a href="#" class="mx-2">Reporting Concers</a>
+        <div class="divider is-y flex-column align-self-stretch"></div>
+        <a href="#" class="mx-2">How we contact you </a>
+        <div class="divider is-y flex-column align-self-stretch"></div>
+        <a href="#" class="mx-2">Privacy</a>
+        <div class="divider is-y flex-column align-self-stretch"></div>
+        <a href="#" class="mx-2">Cookies</a>
+        <div class="divider is-y flex-column align-self-stretch"></div>
+        <a href="#" class="mx-2">FAQ's</a>
+      </div>
+      <div class="col-12 mx-auto mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus rerum unde sed, natus, modi magnam facilis saepe ab odio quos autem beatae pariatur</div>
+      <div class="col-4 mx-auto"><img src="./img/logo.jpg" alt="" class="img" /></div>
+    </footer>
+    <button id="scolltop" class="btn btn-light icon fixed bottom-0 end-0 me-5 mb-5 bg-white p-4 shadow rounded-circle"><i class="h4 mb-0 ri-arrow-up-fill"></i></button>
+  </body>
+  <script src="./scss/dist/js/bootstrap.bundle.js"></script>
+  <script src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
+  <script src="./js/custom.js"></script>
+</html>
