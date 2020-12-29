@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .bg-linkedin {
   background: #0e72a3 !important;
 }
@@ -59,22 +60,27 @@
 }
 
 .object-fit-cover {
+  -o-object-fit: cover !important;
   object-fit: cover !important;
 }
 
 .object-fit-contain {
+  -o-object-fit: contain !important;
   object-fit: contain !important;
 }
 
 .object-fit-fill {
+  -o-object-fit: fill !important;
   object-fit: fill !important;
 }
 
 .object-fit-none {
+  -o-object-fit: none !important;
   object-fit: none !important;
 }
 
 .object-fit-scale-down {
+  -o-object-fit: scale-down !important;
   object-fit: scale-down !important;
 }
 
