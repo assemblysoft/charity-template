@@ -109,6 +109,9 @@
 .icon svg {
   vertical-align: baseline;
 }
+.icon:not(:only-child)::after {
+  content: " ";
+}
 
 .divider {
   display: flex;

@@ -91,6 +91,10 @@ $utilities: (
   svg {
     vertical-align: baseline;
   }
+
+  &:not(:only-child)::after {
+    content: "\00a0";
+  }
 }
 
 .divider {
