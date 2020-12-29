@@ -118,9 +118,6 @@
 .icon:not(:only-child)::after {
   content: " ";
 }
-.icon:empty::after {
-  content: " ";
-}
 
 .divider {
   display: flex;
