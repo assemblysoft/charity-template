@@ -46,6 +46,63 @@
   font-family: var(--bs-font-monospace) !important;
 }
 
+.h-min-15rem {
+  min-height: 15rem !important;
+}
+
+.h-min-25rem {
+  min-height: 25rem !important;
+}
+
+.h-min-35rem {
+  min-height: 35rem !important;
+}
+
+.object-fit-cover {
+  -o-object-fit: cover !important;
+  object-fit: cover !important;
+}
+
+.object-fit-contain {
+  -o-object-fit: contain !important;
+  object-fit: contain !important;
+}
+
+.object-fit-fill {
+  -o-object-fit: fill !important;
+  object-fit: fill !important;
+}
+
+.object-fit-none {
+  -o-object-fit: none !important;
+  object-fit: none !important;
+}
+
+.object-fit-scale-down {
+  -o-object-fit: scale-down !important;
+  object-fit: scale-down !important;
+}
+
+.h-min-25vh {
+  min-height: 25vh !important;
+}
+
+.h-min-50vh {
+  min-height: 50vh !important;
+}
+
+.h-min-75vh {
+  min-height: 75vh !important;
+}
+
+.h-min-89vh {
+  min-height: 89vh !important;
+}
+
+.h-min-100vh {
+  min-height: 100vh !important;
+}
+
 .icon {
   display: inline-flex;
   align-items: center;

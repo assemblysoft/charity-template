@@ -171,33 +171,6 @@ $utilities: map-merge(
         100vh: 100vh
       )
     ),
-    "min-height": (
-      property: min-height,
-      class: h-min,
-      values: (
-        25rem: 25rem,
-        35rem: 35rem,
-      )
-    ),
-    "object-fit": (
-      property: object-fit,
-      class: object-fit,
-      values: (
-        cover: cover,
-        contain: contain,
-        fill: fill,
-        none: none,
-        scale-down: scale-down
-      )
-    ),
-    "min-viewport-height": (
-      property: min-height,
-      class: h-min,
-      values: (
-        89vh: 89vh,
-        100vh: 100vh,
-      )
-    ),
     // Flex utilities
     "flex": (
       responsive: true,
