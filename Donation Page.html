@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="row pt-2 align-middle bg-white g-0 sticky z-top w-100">
@@ -79,20 +80,76 @@
         <div class="col p-5 bg-secondary clr-white">
           <h2>Comic Relief supports projects around the world.</h2>
 
-          <div class="btn-group w-100 tab_button" role="group">
-            <a type="button" class="btn btn-primary" href="#single">single</a>
-            <a type="button" class="btn btn-primary" href="#monthly">monthly</a>
-            <a type="button" class="btn btn-primary" href="#fundraising">fundraising</a>
+          <div class="btn-group w-100 tab_button mb-5" role="group">
+            <a type="button" class="btn btn-primary font-bold" href="#single">Single Donation</a>
+            <a type="button" class="btn btn-primary font-bold" href="#monthly">Monthly Donation</a>
+            <a type="button" class="btn btn-primary font-bold" href="#fundraising">Pay in Fundraising</a>
           </div>
 
           <div class="tab_content" data-tab="single">
-            <h2>Single</h2>
+            <div class="h4 txt-center">Your donation could pay for:</div>
+
+            <button class="btn btn-primary btn-lg p-3 w-100 row g-0 flex align-middle mb-3 lh-sm">
+              <span class="col-6 h1 mb-0">£35</span>
+              <span class="col-18 txt-start is-md">a teacher to educate 4-6 year olds in Kenya and support their health and well-being.</span>
+            </button>
+            <button class="btn btn-primary btn-lg p-3 w-100 row g-0 flex align-middle mb-3 lh-sm">
+              <span class="col-6 h1 mb-0">£60</span>
+              <span class="col-18 txt-start is-md">three choir sessions, bringing local schoolchildren and older adults in sheltered accommodation together, to uplift mood and improve well-being of residents.</span>
+            </button>
+            <button class="btn btn-primary btn-lg p-3 w-100 row g-0 flex align-middle mb-3 lh-sm">
+              <span class="col-6 h1 mb-0">£100</span>
+              <span class="col-18 txt-start is-md">basic furniture and equipment for a young homeless person in the UK to set up a new home.</span>
+            </button>
           </div>
           <div class="tab_content" data-tab="monthly">
-            <h2>Monthly</h2>
+            <div class="h4 txt-center">Your regular donation could pay for:</div>
+
+            <button class="btn btn-primary btn-lg p-3 w-100 row g-0 flex align-middle mb-3 lh-sm">
+              <span class="col-6 h1 mb-0">£5</span>
+              <span class="col-18 txt-start is-md">a regular supply of toiletries for someone living in a refugee camp in Serbia.</span>
+            </button>
+            <button class="btn btn-primary btn-lg p-3 w-100 row g-0 flex align-middle mb-3 lh-sm">
+              <span class="col-6 h1 mb-0">£10</span>
+              <span class="col-18 txt-start is-md">a potentially lifesaving call, for a young man at risk of suicide in the UK.</span>
+            </button>
+            <button class="btn btn-primary btn-lg p-3 w-100 row g-0 flex align-middle mb-3 lh-sm">
+              <span class="col-6 h1 mb-0">£20</span>
+              <span class="col-18 txt-start is-md">nutritious meals and a counselling session for two children living on the streets of Malawi.</span>
+            </button>
           </div>
           <div class="tab_content" data-tab="fundraising">
-            <h2>Fundraising</h2>
+            <div class="h4 font-normal txt-center">Your fundraising money:</div>
+
+            <div id="carouselExampleControls" class="carousel slide py-4" data-bs-ride="carousel">
+              <div class="carousel-inner txt-center w-75 mx-auto font-normal">
+                <div class="carousel-item active">could make sure that vital community services stay open to help people</div>
+                <div class="carousel-item">could help support people in communities all over the UK</div>
+                <div class="carousel-item">could help support the most vulnerable among us</div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend col-6">
+              <button class="btn btn-primary w-100 dropdown-toggle shadow-lg" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">$USD</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">$USD</a>
+              </div>
+            </div>
+            <input type="text" class="form-control" aria-label="Text input with dropdown button" />
+          </div>
+
+          <div class="flex align-middle justify-center">
+            <button class="btn btn-error rounded-pill px-4">Yes, pay in $5 now</button>
           </div>
         </div>
       </section>
