@@ -18,6 +18,18 @@
   background: #aa4087 !important;
 }
 
+.is-sm {
+  font-size: 0.875rem !important;
+}
+
+.is-md {
+  font-size: 1rem !important;
+}
+
+.is-lg {
+  font-size: 1.25rem !important;
+}
+
 .font-anton {
   font-family: Anton, var(--bs-font-sans-serif) !important;
 }

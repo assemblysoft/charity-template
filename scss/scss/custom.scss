@@ -22,6 +22,15 @@ $utilities: (
       instagram: #aa4087,
     ),
   ),
+  "font-size": (
+    property: font-size,
+    class: "is",
+    values: (
+      sm: $font-size-sm,
+      md: $font-size-base,
+      lg: $font-size-lg,
+    ),
+  ),
   "font-family": (
     property: font-family,
     class: "font",
