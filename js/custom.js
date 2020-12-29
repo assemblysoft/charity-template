@@ -63,7 +63,7 @@ if (typeof $ !== "undefined") {
   });
 
   // On Click Event
-  document.querySelectorAll(".tabs a").forEach((e) => {
+  document.querySelectorAll(".tabs .tab_button a").forEach((e) => {
     e.onclick = (event) => {
       document.querySelectorAll(".tab_content").forEach((e) => $(e).hide()); // Hide all content
       document.querySelectorAll(".tab_button a.active").forEach((e) => e.classList.remove("active")); // Hide all content
