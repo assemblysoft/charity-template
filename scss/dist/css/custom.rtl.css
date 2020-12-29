@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .bg-linkedin {
   background: #0e72a3 !important;
 }
@@ -111,9 +112,14 @@
   width: 1em;
   height: 1em;
 }
-
 .icon svg {
   vertical-align: baseline;
+}
+.icon:not(:only-child)::after {
+  content: " ";
+}
+.icon:empty::after {
+  content: " ";
 }
 
 .divider {

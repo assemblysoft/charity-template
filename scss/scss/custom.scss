@@ -87,10 +87,10 @@ $utilities: (
   justify-content: center;
   width: 1em;
   height: 1em;
-}
 
-.icon svg {
-  vertical-align: baseline;
+  svg {
+    vertical-align: baseline;
+  }
 }
 
 .divider {
