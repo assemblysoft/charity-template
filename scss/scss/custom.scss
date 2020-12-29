@@ -99,40 +99,40 @@ $utilities: (
   text-align: center;
   white-space: nowrap;
   opacity: 0.5;
-}
 
-.divider::before,
-.divider::after {
-  align-self: center;
-  width: inherit;
-  height: 100%;
-  content: "";
-  border: 0.5px solid currentColor;
-}
+  &::before,
+  &::after {
+    align-self: center;
+    width: inherit;
+    height: 100%;
+    content: "";
+    border: 0.5px solid currentColor;
+  }
 
-.divider:not(:empty)::before,
-.divider:not(:empty)::after {
-  margin: 0.1875em 0.375em;
-}
+  &:not(:empty)::before,
+  &:not(:empty)::after {
+    margin: 0.1875em 0.375em;
+  }
 
-.divider.is-y {
-  width: auto;
-}
+  &.is-y {
+    width: auto;
+  }
 
-.divider.txt-left:not(.is-y)::before {
-  width: 5%;
-}
+  &.txt-left:not(.is-y)::before {
+    width: 5%;
+  }
 
-.divider.txt-left.is-y::before {
-  height: 5%;
-}
+  &.txt-left.is-y::before {
+    height: 5%;
+  }
 
-.divider.txt-right:not(.is-y)::after {
-  width: 5%;
-}
+  &.txt-right:not(.is-y)::after {
+    width: 5%;
+  }
 
-.divider.txt-right.is-y::after {
-  height: 5%;
+  &.txt-right.is-y::after {
+    height: 5%;
+  }
 }
 
 //
