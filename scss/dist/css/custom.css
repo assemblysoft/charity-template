@@ -18,6 +18,22 @@
   background: #aa4087 !important;
 }
 
+.font-anton {
+  font-family: Anton, var(--bs-font-sans-serif) !important;
+}
+
+.font-montserrat {
+  font-family: Montserrat, var(--bs-font-sans-serif) !important;
+}
+
+.font-normal {
+  font-family: var(--bs-font-sans-serif) !important;
+}
+
+.font-code {
+  font-family: var(--bs-font-monospace) !important;
+}
+
 .icon {
   display: inline-flex;
   align-items: center;

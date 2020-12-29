@@ -22,6 +22,16 @@ $utilities: (
       instagram: #aa4087,
     ),
   ),
+  "font-family": (
+    property: font-family,
+    class: "font",
+    values: (
+      anton: #{"Anton", var(--#{$variable-prefix}font-sans-serif)},
+      montserrat: #{"Montserrat", var(--#{$variable-prefix}font-sans-serif)},
+      normal: var(--#{$variable-prefix}font-sans-serif),
+      code: var(--#{$variable-prefix}font-monospace),
+    ),
+  ),
 );
 
 @import "utilities/api";
