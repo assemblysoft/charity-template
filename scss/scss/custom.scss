@@ -52,6 +52,17 @@ $utilities: (
       35rem: 35rem,
     ),
   ),
+  "opacity": (
+    property: opacity,
+    class: o,
+    values: (
+      0: 0,
+      25: 0.25,
+      50: 0.5,
+      75: 0.75,
+      100: 1,
+    ),
+  ),
   "object-fit": (
     property: object-fit,
     class: object-fit,
