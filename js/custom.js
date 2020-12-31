@@ -47,7 +47,7 @@ new Headroom(document.body, {
 // Tabs implimentation
 //
 
-if (typeof $ !== "undefined") {
+if (typeof $ !== "undefined" && document.querySelectorAll(".tab_content").length && document.querySelectorAll(".tabs").length) {
   document.querySelectorAll(".tab_content").forEach((e) => $(e).hide()); // Hide all content
   document.querySelectorAll(".tab_button a.active").forEach((e) => e.classList.remove("active")); // Hide all content
   const queryString = window.location.hash;
