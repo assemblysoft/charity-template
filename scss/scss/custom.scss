@@ -1,4 +1,4 @@
-// stylelint-disable scss/dollar-variable-default, number-leading-zero, selector-max-id
+// stylelint-disable scss/dollar-variable-default, number-leading-zero, selector-max-id, declaration-no-important
 
 //
 // Bootstrap Configuration
@@ -227,4 +227,12 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.before-clear::before {
+  content: none !important;
+}
+
+.after-clear::after {
+  content: none !important;
 }

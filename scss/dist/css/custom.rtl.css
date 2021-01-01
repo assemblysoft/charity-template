@@ -258,4 +258,12 @@ footer {
   background-position: center;
   background-size: cover;
 }
+
+.before-clear::before {
+  content: none !important;
+}
+
+.after-clear::after {
+  content: none !important;
+}
 /*# sourceMappingURL=custom.rtl.css.map */
