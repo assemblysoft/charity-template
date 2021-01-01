@@ -79,3 +79,10 @@ if (typeof $ !== "undefined" && document.querySelectorAll(".tab_content").length
     };
   });
 }
+
+const mansory = document.querySelectorAll(".masonry");
+if (mansory.length) {
+  mansory.forEach((e) => {
+    new Macy({ container: e, waitForImages: true, margin: 16, columns: 3, breakAt: { 1200: 5, 940: 3, 520: 2, 400: 1 } });
+  });
+}
