@@ -47,7 +47,7 @@ hr:not([size]) {
 
 h6, h5, h4, h3, h2, h1 {
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -419,4 +419,5 @@ progress {
 [hidden] {
   display: none !important;
 }
+
 /*# sourceMappingURL=bootstrap-reboot.rtl.css.map */
