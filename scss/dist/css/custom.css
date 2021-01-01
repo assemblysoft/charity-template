@@ -19,6 +19,26 @@
   background: #aa4087 !important;
 }
 
+.bg-black {
+  background: #000 !important;
+}
+
+.bg-black-90 {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+
+.bg-black-75 {
+  background: rgba(0, 0, 0, 0.75) !important;
+}
+
+.bg-black-50 {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+.bg-black-25 {
+  background: rgba(0, 0, 0, 0.25) !important;
+}
+
 .is-sm {
   font-size: 0.875rem !important;
 }
