@@ -60,6 +60,17 @@ $utilities: (
       35rem: 35rem,
     ),
   ),
+  "text-shadow": (
+    property: text-shadow,
+    class: txt-shadow,
+    values: (
+      sm: 1.5px 1.75px 1px rgba($black, 0.075),
+      null: 2px 2.25px 1.5px rgba($black, 0.15),
+      lg: 4px 4.25px 3px rgba($black, 0.175),
+      round: 0 0 3px rgba($black, 0.15),
+      none: none,
+    ),
+  ),
   "opacity": (
     property: opacity,
     class: o,
