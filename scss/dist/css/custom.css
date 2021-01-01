@@ -67,6 +67,14 @@
   font-family: var(--bs-font-monospace) !important;
 }
 
+.h-min-5rem {
+  min-height: 5rem !important;
+}
+
+.h-min-10rem {
+  min-height: 10rem !important;
+}
+
 .h-min-15rem {
   min-height: 15rem !important;
 }
