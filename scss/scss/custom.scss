@@ -28,6 +28,7 @@ $utilities: (
     ),
   ),
   "font-size": (
+    // remove this utility with fs-
     property: font-size,
     class: "is",
     values: (
@@ -97,7 +98,7 @@ $utilities: (
 @import "utilities/api";
 
 //
-// Fluid Objects
+// Objects
 //
 
 .icon {
@@ -156,6 +157,22 @@ $utilities: (
 
   &.txt-right.is-y::after {
     height: 5%;
+  }
+}
+
+.show-onhover {
+  .show {
+    visibility: hidden;
+    opacity: 0;
+    @include transition(
+      opacity 0.25s ease-in-out,
+      visibility 0.25s ease-in-out
+    );
+  }
+
+  &:hover .show {
+    visibility: visible;
+    opacity: 1;
   }
 }
 
