@@ -37,6 +37,13 @@ $utilities: (
       lg: $font-size-lg,
     ),
   ),
+  "border-size": (
+    property: border-width,
+    class: "border",
+    values: (
+      wide: $border-width-wide,
+    ),
+  ),
   "font-family": (
     property: font-family,
     class: "font",

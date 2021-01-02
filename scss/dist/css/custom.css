@@ -51,6 +51,10 @@
   font-size: 1.25rem !important;
 }
 
+.border-wide {
+  border-width: 3px !important;
+}
+
 .font-anton {
   font-family: Anton, var(--bs-font-sans-serif) !important;
 }
