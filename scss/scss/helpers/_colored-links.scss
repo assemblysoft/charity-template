@@ -1,11 +1,13 @@
+// stylelint-disable declaration-no-important
+
 @each $color, $value in $theme-colors {
-  .link-#{$color} {
-    color: $value;
+  a.clr-#{$color} {
+    @include transition(color .15s ease-in-out);
 
     @if $link-shade-percentage != 0 {
       &:hover,
       &:focus {
-        color: if(color-contrast($value) == $color-contrast-light, shade-color($value, $link-shade-percentage), tint-color($value, $link-shade-percentage));
+        color: if(color-contrast($value) == $color-contrast-light, shade-color($value, $link-shade-percentage), tint-color($value, $link-shade-percentage)) !important;
       }
     }
   }

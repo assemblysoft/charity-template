@@ -6854,65 +6854,119 @@ textarea.form-control-lg {
 
 .link-primary {
   color: #0d6efd;
+  transition: color 0.35s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .link-primary {
+    transition: none;
+  }
 }
 .link-primary:hover, .link-primary:focus {
-  color: #0a58ca;
+  color: black;
 }
 
 .link-secondary {
   color: #ffc107;
+  transition: color 0.35s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .link-secondary {
+    transition: none;
+  }
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: #ffcd39;
+  color: white;
 }
 
 .link-valid {
   color: #198754;
+  transition: color 0.35s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .link-valid {
+    transition: none;
+  }
 }
 .link-valid:hover, .link-valid:focus {
-  color: #146c43;
+  color: black;
 }
 
 .link-info {
   color: #0dcaf0;
+  transition: color 0.35s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .link-info {
+    transition: none;
+  }
 }
 .link-info:hover, .link-info:focus {
-  color: #3dd5f3;
+  color: white;
 }
 
 .link-warn {
   color: #ffc107;
+  transition: color 0.35s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .link-warn {
+    transition: none;
+  }
 }
 .link-warn:hover, .link-warn:focus {
-  color: #ffcd39;
+  color: white;
 }
 
 .link-error {
   color: #dc3545;
+  transition: color 0.35s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .link-error {
+    transition: none;
+  }
 }
 .link-error:hover, .link-error:focus {
-  color: #b02a37;
+  color: black;
 }
 
 .link-orange {
   color: #fd7e14;
+  transition: color 0.35s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .link-orange {
+    transition: none;
+  }
 }
 .link-orange:hover, .link-orange:focus {
-  color: #fd9843;
+  color: white;
 }
 
 .link-light {
   color: #e9ecef;
+  transition: color 0.35s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .link-light {
+    transition: none;
+  }
 }
 .link-light:hover, .link-light:focus {
-  color: #edf0f2;
+  color: white;
 }
 
 .link-dark {
   color: #212529;
+  transition: color 0.35s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .link-dark {
+    transition: none;
+  }
 }
 .link-dark:hover, .link-dark:focus {
-  color: #1a1e21;
+  color: black;
 }
 
 .ratio {
