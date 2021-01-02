@@ -79,8 +79,16 @@
   min-height: 15rem !important;
 }
 
+.h-min-20rem {
+  min-height: 20rem !important;
+}
+
 .h-min-25rem {
   min-height: 25rem !important;
+}
+
+.h-min-30rem {
+  min-height: 30rem !important;
 }
 
 .h-min-35rem {

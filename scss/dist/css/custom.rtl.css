@@ -79,8 +79,16 @@
   min-height: 15rem !important;
 }
 
+.h-min-20rem {
+  min-height: 20rem !important;
+}
+
 .h-min-25rem {
   min-height: 25rem !important;
+}
+
+.h-min-30rem {
+  min-height: 30rem !important;
 }
 
 .h-min-35rem {
@@ -207,16 +215,16 @@
 .divider.is-y {
   width: auto;
 }
-.divider.txt-left:not(.is-y)::before {
+.divider.txt-right:not(.is-y)::before {
   width: 5%;
 }
-.divider.txt-left.is-y::before {
+.divider.txt-right.is-y::before {
   height: 5%;
 }
-.divider.txt-right:not(.is-y)::after {
+.divider.txt-left:not(.is-y)::after {
   width: 5%;
 }
-.divider.txt-right.is-y::after {
+.divider.txt-left.is-y::after {
   height: 5%;
 }
 
