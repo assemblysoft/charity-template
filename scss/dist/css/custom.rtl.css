@@ -51,6 +51,14 @@
   font-size: 1.25rem !important;
 }
 
+.border-wide {
+  border-width: 3px !important;
+}
+
+.font-circular {
+  font-family: Circular, var(--bs-font-sans-serif) !important;
+}
+
 .font-anton {
   font-family: Anton, var(--bs-font-sans-serif) !important;
 }
@@ -215,16 +223,16 @@
 .divider.is-y {
   width: auto;
 }
-.divider.txt-right:not(.is-y)::before {
+.divider.txt-left:not(.is-y)::before {
   width: 5%;
 }
-.divider.txt-right.is-y::before {
+.divider.txt-left.is-y::before {
   height: 5%;
 }
-.divider.txt-left:not(.is-y)::after {
+.divider.txt-right:not(.is-y)::after {
   width: 5%;
 }
-.divider.txt-left.is-y::after {
+.divider.txt-right.is-y::after {
   height: 5%;
 }
 
@@ -244,8 +252,8 @@
 }
 
 header {
-  transition: top 0.5s ease-in-out;
   top: 0;
+  transition: top 0.5s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   header {
@@ -257,6 +265,10 @@ header {
 }
 header .logo-container {
   width: 280px;
+}
+
+nav > a:not(:last-child)::after {
+  content: " /";
 }
 
 #scolltop {

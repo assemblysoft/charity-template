@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Circular";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Circular Black"), url("./Circular-Black.otf");
+}
+
+@font-face {
+  font-family: "Circular";
+  font-style: italic;
+  font-weight: 900;
+  src: local("Circular BlackItalic"), url("./Circular-BlackItalic.otf");
+}
+
+@font-face {
+  font-family: "Circular";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Circular Bold"), url("./Circular-Bold.otf");
+}
+
+@font-face {
+  font-family: "Circular";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Circular BoldItalic"), url("./Circular-BoldItalic.otf");
+}
+
+@font-face {
+  font-family: "Circular";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Circular Medium"), url("./Circular-Medium.otf");
+}
+
+@font-face {
+  font-family: "Circular";
+  font-style: italic;
+  font-weight: 500;
+  src: local("Circular MediumItalic"), url("./Circular-MediumItalic.otf");
+}
+
+@font-face {
+  font-family: "Circular";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Circular Book"), url("./Circular-Book.otf");
+}
+
+@font-face {
+  font-family: "Circular";
+  font-style: italic;
+  font-weight: 100;
+  src: local("Circular BookItalic"), url("./Circular-BookItalic.otf");
+}
+
+.Circular {
+  font-family: "Circular" !important;
+}

@@ -48,6 +48,8 @@ $utilities: (
     property: font-family,
     class: "font",
     values: (
+      circular: #{"Circular",
+      var(--#{$variable-prefix}font-sans-serif)},
       anton: #{"Anton",
       var(--#{$variable-prefix}font-sans-serif)},
       montserrat: #{"Montserrat",

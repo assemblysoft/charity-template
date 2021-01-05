@@ -55,6 +55,10 @@
   border-width: 3px !important;
 }
 
+.font-circular {
+  font-family: Circular, var(--bs-font-sans-serif) !important;
+}
+
 .font-anton {
   font-family: Anton, var(--bs-font-sans-serif) !important;
 }
