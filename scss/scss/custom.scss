@@ -201,8 +201,8 @@ $utilities: (
 //
 
 header {
-  @include transition(top 0.5s ease-in-out);
   top: 0;
+  @include transition(top 0.5s ease-in-out);
 
   .headroom--unpinned & {
     top: -86px;
@@ -211,6 +211,11 @@ header {
   .logo-container {
     width: 280px;
   }
+}
+
+nav > a:not(:last-child)::after {
+  padding-left: $spacer / 2;
+  content: "/";
 }
 
 //
