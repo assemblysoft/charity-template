@@ -91,14 +91,6 @@
   font-family: Circular, var(--bs-font-sans-serif) !important;
 }
 
-.font-anton {
-  font-family: Anton, var(--bs-font-sans-serif) !important;
-}
-
-.font-montserrat {
-  font-family: Montserrat, var(--bs-font-sans-serif) !important;
-}
-
 .font-normal {
   font-family: var(--bs-font-sans-serif) !important;
 }
