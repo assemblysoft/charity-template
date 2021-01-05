@@ -108,6 +108,15 @@ $utilities: (
       none: none,
     ),
   ),
+  "flip": (
+    property: transform,
+    class: "flip",
+    values: (
+      x: scaleX(-1),
+      y: scaleY(-1),
+      xy: scale(-1),
+    ),
+  ),
   "opacity": (
     property: opacity,
     class: o,

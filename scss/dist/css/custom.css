@@ -147,6 +147,18 @@
   text-shadow: none !important;
 }
 
+.flip-x {
+  transform: scaleX(-1) !important;
+}
+
+.flip-y {
+  transform: scaleY(-1) !important;
+}
+
+.flip-xy {
+  transform: scale(-1) !important;
+}
+
 .o-0 {
   opacity: 0 !important;
 }
