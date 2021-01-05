@@ -268,7 +268,8 @@ header .logo-container {
 }
 
 nav > a:not(:last-child)::after {
-  content: " /";
+  padding-right: 0.5rem;
+  content: "/";
 }
 
 #scolltop {

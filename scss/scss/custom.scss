@@ -37,6 +37,36 @@ $utilities: (
       lg: $font-size-lg,
     ),
   ),
+  "top": (
+    property: top,
+    values: (
+      25: 25%,
+      75: 75%,
+    ),
+  ),
+  "bottom": (
+    property: bottom,
+    values: (
+      25: 25%,
+      75: 75%,
+    ),
+  ),
+  "start": (
+    property: left,
+    class: start,
+    values: (
+      25: 25%,
+      75: 75%,
+    ),
+  ),
+  "end": (
+    property: right,
+    class: end,
+    values: (
+      25: 25%,
+      75: 75%,
+    ),
+  ),
   "border-size": (
     property: border-width,
     class: "border",
