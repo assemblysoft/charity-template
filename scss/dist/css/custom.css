@@ -360,4 +360,8 @@ footer {
   content: none !important;
 }
 
+p:last-child {
+  margin-bottom: 0;
+}
+
 /*# sourceMappingURL=custom.css.map */

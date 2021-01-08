@@ -302,3 +302,7 @@ footer {
 .after-clear::after {
   content: none !important;
 }
+
+p:last-child{
+  margin-bottom: 0;
+}
