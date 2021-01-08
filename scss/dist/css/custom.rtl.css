@@ -51,20 +51,44 @@
   font-size: 1.25rem !important;
 }
 
+.top-25 {
+  top: 25% !important;
+}
+
+.top-75 {
+  top: 75% !important;
+}
+
+.bottom-25 {
+  bottom: 25% !important;
+}
+
+.bottom-75 {
+  bottom: 75% !important;
+}
+
+.start-25 {
+  right: 25% !important;
+}
+
+.start-75 {
+  right: 75% !important;
+}
+
+.end-25 {
+  left: 25% !important;
+}
+
+.end-75 {
+  left: 75% !important;
+}
+
 .border-wide {
   border-width: 3px !important;
 }
 
 .font-circular {
   font-family: Circular, var(--bs-font-sans-serif) !important;
-}
-
-. {
-  font-family: Anton, var(--bs-font-sans-serif) !important;
-}
-
-.font-montserrat {
-  font-family: Montserrat, var(--bs-font-sans-serif) !important;
 }
 
 .font-normal {
@@ -121,6 +145,18 @@
 
 .txt-shadow-none {
   text-shadow: none !important;
+}
+
+.flip-x {
+  transform: scaleX(-1) !important;
+}
+
+.flip-y {
+  transform: scaleY(-1) !important;
+}
+
+.flip-xy {
+  transform: scale(-1) !important;
 }
 
 .o-0 {
