@@ -39,6 +39,22 @@
   background: rgba(0, 0, 0, 0.25) !important;
 }
 
+.bg-gradient-black-90 {
+  background: linear-gradient(115deg, rgba(0, 0, 0, 0.9) 45%, transparent) !important;
+}
+
+.bg-gradient-black-75 {
+  background: linear-gradient(115deg, rgba(0, 0, 0, 0.75) 45%, transparent) !important;
+}
+
+.bg-gradient-black-50 {
+  background: linear-gradient(115deg, rgba(0, 0, 0, 0.5) 45%, transparent) !important;
+}
+
+.bg-gradient-black-25 {
+  background: linear-gradient(115deg, rgba(0, 0, 0, 0.25) 45%, transparent) !important;
+}
+
 .is-sm {
   font-size: 0.875rem !important;
 }

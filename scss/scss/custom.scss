@@ -25,6 +25,10 @@ $utilities: (
       black-75: rgba($black, 0.75),
       black-50: rgba($black, 0.5),
       black-25: rgba($black, 0.25),
+      gradient-black-90: linear-gradient(115deg, rgba($black, 0.9) 45%, transparent),
+      gradient-black-75: linear-gradient(115deg, rgba($black, 0.75) 45%, transparent),
+      gradient-black-50: linear-gradient(115deg, rgba($black, 0.5) 45%, transparent),
+      gradient-black-25: linear-gradient(115deg, rgba($black, 0.25) 45%, transparent),
     ),
   ),
   "font-size": (
