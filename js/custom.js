@@ -86,3 +86,49 @@ if (mansory.length) {
     new Macy({ container: e, waitForImages: true, margin: 16, columns: 3, breakAt: { 1200: 5, 940: 3, 520: 2, 400: 1 } });
   });
 }
+
+//
+// light box
+//
+
+if (typeof $ !== "undefined") {
+  const option = {
+    // Should display navigation arrows at the screen edges
+    arrows: true,
+
+    // Should display counter at the top left corner
+    infobar: true,
+
+    // What buttons should appear in the top right corner.
+    // Buttons will be created using templates from `btnTpl` option
+    // and they will be placed into toolbar (class="fancybox-toolbar"` element)
+    buttons: ["zoom", "share", "slideShow", "fullScreen", "close"],
+
+    image: { preload: true },
+
+    // Open/close animation type
+    //
+    // Possible values:
+    //   false            - disable
+    //   "zoom"           - zoom images from/to thumbnail
+    //   "fade"
+    //   "zoom-in-out"
+    //
+    animationEffect: "zoom",
+
+    // Transition effect between slides
+    //
+    // Possible values:
+    //   false            - disable
+    //   "fade'
+    //   "slide'
+    //   "circular'
+    //   "tube'
+    //   "zoom-in-out'
+    //   "rotate'
+    //
+    transitionEffect: "zoom-in-out"
+  };
+
+  $('[data-fancybox="gallery"]').fancybox(option);
+}
