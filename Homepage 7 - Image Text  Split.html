@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./scss/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="./scss/dist/css/custom.css" />
+    <link href="./scss/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="./scss/dist/css/custom.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
   </head>
   <body class="font-circular">
     <header class="row pt-2 align-middle bg-white g-0 sticky z-top w-100">
       <div class="row px-4 py-2 align-middle">
-        <a href="./" class="col-5 logo-container">
+        <a class="col-5 logo-container" href="./">
           <img class="img" src="./img/logo.jpg" />
         </a>
         <div class="col txt-end">
@@ -33,7 +33,7 @@
       </nav>
       <div class="px-4 flex justify-center txt-upper">
         <div class="dropdown">
-          <button type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-transparent"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Plan your visit</button>
+          <button class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-transparent" id="dropdownMenuButton" data-bs-toggle="dropdown" type="button" aria-expanded="false"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Plan your visit</button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -41,7 +41,7 @@
           </ul>
         </div>
         <div class="dropdown">
-          <button type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-transparent"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Animals</button>
+          <button class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-transparent" id="dropdownMenuButton" data-bs-toggle="dropdown" type="button" aria-expanded="false"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Animals</button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -49,7 +49,7 @@
           </ul>
         </div>
         <div class="dropdown">
-          <button type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-transparent"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Explore</button>
+          <button class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-transparent" id="dropdownMenuButton" data-bs-toggle="dropdown" type="button" aria-expanded="false"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Explore</button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -57,7 +57,7 @@
           </ul>
         </div>
         <div class="dropdown">
-          <button type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-transparent"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> What's Happening</button>
+          <button class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-transparent" id="dropdownMenuButton" data-bs-toggle="dropdown" type="button" aria-expanded="false"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> What's Happening</button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -68,7 +68,7 @@
     </header>
 
     <main>
-      <section id="hero" class="relative bg-primary row g-0">
+      <section class="relative bg-primary row g-0" id="hero">
         <div class="col-10">
           <div class="absolute bottom-0 start-0 top-0 z-0 col-15 img-bg" style="background-image: url(./img/snowleopard.jpg)"></div>
         </div>
@@ -89,37 +89,37 @@
     </main>
     <footer class="p-5 txt-center">
       <div class="mb-4 flex align-middle justify-center">
-        <a href="https://www.facebook.com/thecatsurvivaltrust/" class="mx-1"><i class="p-2 rounded-circle clr-white bg-facebook ri-lg ri-facebook-circle-fill"></i></a>
-        <a href="https://twitter.com/catsurvival?lang=en" class="mx-1"><i class="p-2 rounded-circle clr-white bg-twitter ri-lg ri-twitter-fill"></i></a>
-        <a href="https://www.youtube.com/watch?v=wRLd31M6yu8" class="mx-1"><i class="p-2 rounded-circle clr-white bg-youtube ri-lg ri-youtube-fill"></i></a>
-        <a href="https://www.instagram.com/catsurvivaltrust/" class="mx-1"><i class="p-2 rounded-circle clr-white bg-instagram ri-lg ri-instagram-fill"></i></a>
-        <a href="https://www.linkedin.com/company/cat-survival-trust" class="mx-1"><i class="p-2 rounded-circle clr-white bg-linkedin ri-lg ri-linkedin-fill"></i></a>
+        <a class="mx-1" href="https://www.facebook.com/thecatsurvivaltrust/"><i class="p-2 rounded-circle clr-white bg-facebook ri-lg ri-facebook-circle-fill"></i></a>
+        <a class="mx-1" href="https://twitter.com/catsurvival?lang=en"><i class="p-2 rounded-circle clr-white bg-twitter ri-lg ri-twitter-fill"></i></a>
+        <a class="mx-1" href="https://www.youtube.com/watch?v=wRLd31M6yu8"><i class="p-2 rounded-circle clr-white bg-youtube ri-lg ri-youtube-fill"></i></a>
+        <a class="mx-1" href="https://www.instagram.com/catsurvivaltrust/"><i class="p-2 rounded-circle clr-white bg-instagram ri-lg ri-instagram-fill"></i></a>
+        <a class="mx-1" href="https://www.linkedin.com/company/cat-survival-trust"><i class="p-2 rounded-circle clr-white bg-linkedin ri-lg ri-linkedin-fill"></i></a>
       </div>
       <div class="mb-3 flex align-middle justify-center txt-cap">
-        <a href="#" class="mx-2">Contact Us</a>
+        <a class="mx-2" href="#">Contact Us</a>
         <div class="divider is-y flex-column align-self-stretch"></div>
-        <a href="#" class="mx-2">Partners</a>
+        <a class="mx-2" href="#">Partners</a>
         <div class="divider is-y flex-column align-self-stretch"></div>
-        <a href="#" class="mx-2">Careers</a>
+        <a class="mx-2" href="#">Careers</a>
         <div class="divider is-y flex-column align-self-stretch"></div>
-        <a href="#" class="mx-2">Legal</a>
+        <a class="mx-2" href="#">Legal</a>
         <div class="divider is-y flex-column align-self-stretch"></div>
-        <a href="#" class="mx-2">Press Area</a>
+        <a class="mx-2" href="#">Press Area</a>
         <div class="divider is-y flex-column align-self-stretch"></div>
-        <a href="#" class="mx-2">Reporting Concers</a>
+        <a class="mx-2" href="#">Reporting Concers</a>
         <div class="divider is-y flex-column align-self-stretch"></div>
-        <a href="#" class="mx-2">How we contact you </a>
+        <a class="mx-2" href="#">How we contact you </a>
         <div class="divider is-y flex-column align-self-stretch"></div>
-        <a href="#" class="mx-2">Privacy</a>
+        <a class="mx-2" href="#">Privacy</a>
         <div class="divider is-y flex-column align-self-stretch"></div>
-        <a href="#" class="mx-2">Cookies</a>
+        <a class="mx-2" href="#">Cookies</a>
         <div class="divider is-y flex-column align-self-stretch"></div>
-        <a href="#" class="mx-2">FAQ's</a>
+        <a class="mx-2" href="#">FAQ's</a>
       </div>
       <div class="col-12 mx-auto mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus rerum unde sed, natus, modi magnam facilis saepe ab odio quos autem beatae pariatur</div>
-      <div class="col-4 mx-auto"><img src="./img/logo.jpg" class="img" /></div>
+      <div class="col-4 mx-auto"><img class="img" src="./img/logo.jpg" /></div>
     </footer>
-    <button id="scolltop" class="btn btn-light icon fixed bottom-0 end-0 me-5 mb-5 bg-white p-4 shadow rounded-circle"><i class="h4 mb-0 ri-arrow-up-fill"></i></button>
+    <button class="btn btn-light icon fixed bottom-0 end-0 me-5 mb-5 bg-white p-4 shadow rounded-circle" id="scolltop"><i class="h4 mb-0 ri-arrow-up-fill"></i></button>
   </body>
   <script src="./scss/dist/js/bootstrap.bundle.js"></script>
   <script src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
