@@ -341,3 +341,7 @@ p:last-child {
   @include border-radius(50%);
   animation: scrolldown 2s ease 1s infinite;
 }
+
+#hero{
+  min-height: 50vh;
+}

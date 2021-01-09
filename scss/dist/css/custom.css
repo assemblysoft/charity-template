@@ -408,4 +408,8 @@ p:last-child {
   animation: scrolldown 2s ease 1s infinite;
 }
 
+#hero {
+  min-height: 50vh;
+}
+
 /*# sourceMappingURL=custom.css.map */
