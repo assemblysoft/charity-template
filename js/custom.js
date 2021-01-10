@@ -12,6 +12,16 @@ const scolltop = document.querySelector("#scolltop");
 if (scolltop) scolltop.onclick = () => window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
 
 //
+// scroll to top button
+//
+
+const scrolldown = document.querySelector("#scrolldown");
+if (scrolldown) {
+  const next = scrolldown.parentElement.nextElementSibling;
+  scrolldown.onclick = () => window.scrollTo({ top: next.offsetTop - header.clientHeight + 86, behavior: "smooth" });
+}
+
+//
 // impliment headroom to add scroll events
 //
 
