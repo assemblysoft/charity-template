@@ -36,9 +36,9 @@ $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
 $red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #198754 !default;
+$orange:  #e36802 !default;
+$yellow:  #F5A800 !default;
+$green:   #789904 !default;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
 
@@ -60,7 +60,7 @@ $colors: (
 ) !default;
 // scss-docs-end colors-map
 
-$primary:       $blue !default;
+$primary:       $orange !default;
 $secondary:     $yellow !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -78,6 +78,7 @@ $theme-colors: (
   "warn":       $warning,
   "error":      $danger,
   "orange":     $orange,
+  "blue":       $blue,
   "light":      $light,
   "dark":       $dark
 ) !default;
@@ -85,7 +86,7 @@ $theme-colors: (
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
-$min-contrast-ratio:   4.5 !default;
+$min-contrast-ratio:   3 !default;
 
 // Customize the light and dark text colors for use in our color contrast function.
 $color-contrast-dark:      $black !default;

@@ -346,7 +346,7 @@ footer {
 }
 
 .img-bg {
-  background-color: #0d6efd;
+  background-color: #e36802;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -408,7 +408,7 @@ p:last-child {
   width: 100%;
   height: 100%;
   content: "";
-  border: 2px solid #0d6efd;
+  border: 2px solid #e36802;
   opacity: 0;
   transform: scale(3);
   border-radius: 50%;
