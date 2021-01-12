@@ -418,6 +418,13 @@ p:last-child {
 .mega-dropdown {
   position: static !important;
 }
+.mega-dropdown .dropdown-item {
+  margin: 0 -1px;
+}
+.mega-dropdown .dropdown-item:hover {
+  color: #fff;
+  background: #e36802;
+}
 .mega-dropdown .dropdown-menu {
   width: 100%;
 }

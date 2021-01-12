@@ -357,6 +357,13 @@ p:last-child {
 
 .mega-dropdown {
   position: static !important;
+  .dropdown-item {
+    margin: 0 -1px;
+    &:hover {
+      color: $white;
+      background: $primary;
+    }
+  }
 
   .dropdown-menu {
     width: 100%;
