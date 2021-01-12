@@ -319,11 +319,6 @@ header .logo-container {
   width: 280px;
 }
 
-nav > a:not(:last-child)::after {
-  padding-left: 0.5rem;
-  content: "/";
-}
-
 #scolltop {
   visibility: hidden;
   opacity: 0;
