@@ -415,4 +415,11 @@ p:last-child {
   min-height: 50vh;
 }
 
+.mega-dropdown {
+  position: static !important;
+}
+.mega-dropdown .dropdown-menu {
+  width: 100%;
+}
+
 /*# sourceMappingURL=custom.css.map */

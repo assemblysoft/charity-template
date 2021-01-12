@@ -254,11 +254,6 @@ header {
   }
 }
 
-nav > a:not(:last-child)::after {
-  padding-left: $spacer / 2;
-  content: "/";
-}
-
 //
 // scolltop
 //
@@ -354,4 +349,16 @@ p:last-child {
 
 #hero {
   min-height: 50vh;
+}
+
+//
+// mega menu
+//
+
+.mega-dropdown {
+  position: static !important;
+
+  .dropdown-menu {
+    width: 100%;
+  }
 }
