@@ -101,7 +101,7 @@ if (mansory.length) {
 // light box
 //
 
-if (typeof $ !== "undefined") {
+if (typeof $ !== "undefined" && document.querySelector('[data-fancybox="gallery"]')) {
   const option = {
     // Should display navigation arrows at the screen edges
     arrows: true,
