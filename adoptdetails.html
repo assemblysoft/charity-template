@@ -24,7 +24,7 @@
       </div>
       <nav class="px-4 txt-center bg-primary flex justify-center">
         <div class="dropdown mega-dropdown">
-          <button class="btn btn-primary rounded-0 border-top-0 border-bottom-0 px-4 border-end dropdown-toggle" id="dropdownMenuButton" aria-expanded="false" data-bs-toggle="dropdown">Plan your visit</button>
+          <button class="btn btn-primary rounded-0 border-top-0 border-bottom-0 px-4 border-end dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">Plan your visit</button>
           <div class="dropdown-menu rounded-0 border-end-0 border-start-0" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item w-50 inline-block" href="#">Zoo Updates</a>
             <a class="dropdown-item w-50 inline-block" href="#">Staying safe at the Zoo - Covid-19 measures</a>
@@ -42,7 +42,7 @@
           </div>
         </div>
         <div class="dropdown mega-dropdown">
-          <button class="btn btn-primary rounded-0 border-top-0 border-bottom-0 px-4 border-end dropdown-toggle" id="dropdownMenuButton" aria-expanded="false" data-bs-toggle="dropdown">Animals</button>
+          <button class="btn btn-primary rounded-0 border-top-0 border-bottom-0 px-4 border-end dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">Animals</button>
           <div class="dropdown-menu rounded-0 border-end-0 border-start-0" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item w-50 inline-block" href="#">Animal A to Z Guide</a>
             <a class="dropdown-item w-50 inline-block" href="#">Animal news</a>
@@ -50,7 +50,7 @@
           </div>
         </div>
         <div class="dropdown mega-dropdown">
-          <button class="btn btn-primary rounded-0 border-top-0 border-bottom-0 px-4 border-end dropdown-toggle" id="dropdownMenuButton" aria-expanded="false" data-bs-toggle="dropdown">Explore</button>
+          <button class="btn btn-primary rounded-0 border-top-0 border-bottom-0 px-4 border-end dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">Explore</button>
           <div class="dropdown-menu rounded-0 border-end-0 border-start-0" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item w-50 inline-block" href="#">Explore</a>
             <a class="dropdown-item w-50 inline-block" href="#">Latest news</a>
@@ -67,7 +67,7 @@
           </div>
         </div>
         <div class="dropdown mega-dropdown">
-          <button class="btn btn-primary rounded-0 border-top-0 border-bottom-0 px-4 border-end dropdown-toggle" id="dropdownMenuButton" aria-expanded="false" data-bs-toggle="dropdown">Education</button>
+          <button class="btn btn-primary rounded-0 border-top-0 border-bottom-0 px-4 border-end dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">Education</button>
           <div class="dropdown-menu rounded-0 border-end-0 border-start-0" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item w-50 inline-block" href="#">Wild at Home</a>
             <a class="dropdown-item w-50 inline-block" href="#">Education</a>
@@ -115,15 +115,15 @@
     </header>
 
     <main>
-      <section class="container py-5">
-        <img class="img w-100" src="./img/adopt/1.jpeg" />
+      <section class="relative img-bg flex align-middle" id="hero" style="background-image: url('./img/tiger.jpg')">
+        <button class="btn p-2 rounded-circle bg-white clr-primary absolute bottom-0 start-50 icon ri-3x" id="scrolldown"><i class="ri-arrow-down-circle-fill"></i></button>
       </section>
 
       <section class="py-5 bg-white">
         <div class="container">
-          <div class="row">
+          <div class="row align-middle">
             <div class="col-12">
-              <h5 class="fs-1">ADOPT A LION</h5>
+              <h5 class="fs-1 font-bold">ADOPT A LION</h5>
               <p>For Born Free, the lion, holds a special place in our hearts as the inspiration behind the charity we know today.</p>
               <p>Lions live in family groups, known as prides, and can contain up to 12 females, three males and several youngsters at a time. Female offspring will stay with their family group for life, whilst males strike out on their own in small groups looking to establish a pride of their own. With powerful muscular bodies, they are effective hunters working together to bring down their prey. A lion’s roar can be heard up to five miles away.</p>
               <p class="font-bold">Sadly, wild lion populations face the risk of extinction from numerous threats including habitat loss due to encroachment by humans - farmers resort to poison, guns and snares to drive lions from their land.</p>
@@ -136,7 +136,7 @@
 
       <section class="py-5 bg-white">
         <div class="container">
-          <h5 class="fs-1">WHAT'S INCLUDED IN YOUR LION ADOPTION</h5>
+          <h5 class="fs-1 font-bold">WHAT'S INCLUDED IN YOUR LION ADOPTION</h5>
           <p>Help care for lions with an animal adoption and you’ll receive an exclusive adoption pack containing all of these items…</p>
           <div class="row txt-center my-5">
             <div class="col-8">
@@ -163,21 +163,19 @@
         </div>
       </section>
 
-      <section class="py-5 bg-light">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h5 class="fs-1">TAKE A LOOK AT OUR ADOPT MAGAZINE</h5>
-              <p>As part of the adoption pack you will receive a copy of our beautiful Adopt magazine. Each copy brings you the latest news on your adopted animal including how the money is being spent. These exclusive insights show how your ongoing support makes an impact on these animals’ lives. Your adoption really is life-changing.</p>
-              <p>Our magazine is published twice a year so you’ll receive your first edition in the adoption pack followed by a further update later in the year of your adoption. Take a peek inside to see some of our work in action…</p>
-            </div>
-            <div class="col-12"><img class="img" src="https://www.bornfree.org.uk/storage/media/content/images/Adoptions/adopt-magazine.jpg" /></div>
+      <section class="bg-light relative">
+        <div class="row g-0">
+          <div class="p-5 col-12">
+            <h5 class="fs-1 font-bold">TAKE A LOOK AT OUR ADOPT MAGAZINE</h5>
+            <p>As part of the adoption pack you will receive a copy of our beautiful Adopt magazine. Each copy brings you the latest news on your adopted animal including how the money is being spent. These exclusive insights show how your ongoing support makes an impact on these animals’ lives. Your adoption really is life-changing.</p>
+            <p>Our magazine is published twice a year so you’ll receive your first edition in the adoption pack followed by a further update later in the year of your adoption. Take a peek inside to see some of our work in action…</p>
           </div>
+          <div class="col-12 absolute end-0 top-0 bottom-0"><img class="img h-100 w-100 flip-x object-fit-cover" src="./img/snowleopard.jpg" /></div>
         </div>
       </section>
 
       <section class="container py-5">
-        <h5 class="fs-1">ISSUES AFFECTING LIONS TODAY</h5>
+        <h5 class="fs-1 font-bold">ISSUES AFFECTING LIONS TODAY</h5>
         <p>The IUCN suggests lion populations have experienced a 43% drop in numbers over the last 21 years. The real picture varies by country – in West Africa the lion is Critically Endangered and teetering on the very edge of extinction.</p>
         <p>Habitat loss and human encroachment have led to indiscriminate killings to protect livestock and human inhabitants. Loss of range has also led to a decline in lions’ prey which can have a devastating impact.</p>
         <p>Sadly, this isn’t the only issue lion populations face. In some countries it is still legal to shoot lions for sport, leading to a growing wave of canned hunting facilities in South Africa where lions are reared for release into confined areas to be shot by trophy hunters.</p>
@@ -189,7 +187,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h5 class="fs-1">ADOPTING A LION WILL HAVE A MASSIVE IMPACT</h5>
+              <h5 class="fs-1 font-bold">ADOPTING A LION WILL HAVE A MASSIVE IMPACT</h5>
               <p class="font-bold">Funds from your adoption will help care for rescued lions that have been saved from appalling captive conditions at our big cat sanctuary in South Africa. Your money will also support a series of conservation projects to reduce conflict with humans, monitor populations and protect lions in the wild in Kenya.</p>
               <p>You can make a difference to a wild animal by adopting a lion.</p>
             </div>
@@ -224,7 +222,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12 txt-center clr-white">
-              <h5 class="fs-1">ADOPT ELSA'S PRIDE</h5>
+              <h5 class="fs-1 font-bold">ADOPT ELSA'S PRIDE</h5>
               <p>Where it all began for Born Free. This pride still resides in Meru National Park today. With your support we can protect them for future generations.</p>
               <p>Your adoption will help us monitor and protect wild lions in Meru National Park.</p>
             </div>
