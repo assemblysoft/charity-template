@@ -400,7 +400,11 @@ p:last-child {
 
 .slick-dotted.slick-slider {
   margin-bottom: 0;
-  .slick-list{
+  .slick-list {
     margin-left: 15px;
   }
+}
+
+.slick-slide {
+  outline: 0 !important;
 }

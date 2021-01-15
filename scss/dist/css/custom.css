@@ -462,4 +462,8 @@ p:last-child {
   margin-left: 15px;
 }
 
+.slick-slide {
+  outline: 0 !important;
+}
+
 /*# sourceMappingURL=custom.css.map */

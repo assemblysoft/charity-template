@@ -146,9 +146,10 @@ if (HeroSlider) {
   $(HeroSlider).slick({
     arrows: false,
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 1,
+    autoplay: true,
     vertical: true
   });
 }
