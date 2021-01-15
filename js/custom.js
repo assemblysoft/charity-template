@@ -57,8 +57,8 @@ new Headroom(document.body, {
 // Tabs implimentation
 //
 
-if (typeof $ !== "undefined" && document.querySelectorAll(".tab_content").length && document.querySelectorAll(".tabs").length) {
-  document.querySelectorAll(".tab_content").forEach((e) => $(e).hide()); // Hide all content
+if (typeof $ !== "undefined" && document.querySelectorAll(".tabs").length) {
+  document.querySelectorAll(".tabs .tab_content").forEach((e) => $(e).hide()); // Hide all content
   document.querySelectorAll(".tab_button a.active").forEach((e) => e.classList.remove("active")); // Hide all content
   const queryString = window.location.hash;
 
@@ -67,15 +67,13 @@ if (typeof $ !== "undefined" && document.querySelectorAll(".tab_content").length
     const activeTabhref = activeTab.getAttribute("href").replace("#", "");
     activeTab.classList.add("active");
     e.setAttribute("active", activeTabhref);
-    e.querySelectorAll(`[data-tab='${activeTabhref}']`).forEach((e) => {
-      $(e).show();
-    });
+    e.querySelectorAll(`[data-tab='${activeTabhref}']`).forEach((e) => $(e).show());
   });
 
   // On Click Event
   document.querySelectorAll(".tabs .tab_button a").forEach((e) => {
     e.onclick = (event) => {
-      document.querySelectorAll(".tab_content").forEach((e) => $(e).hide()); // Hide all content
+      document.querySelectorAll(".tabs .tab_content").forEach((e) => $(e).hide()); // Hide all content
       document.querySelectorAll(".tab_button a.active").forEach((e) => e.classList.remove("active")); // Hide all content
       let activeTab = event.target;
       let tabs = activeTab.closest(".tabs");
@@ -83,18 +81,14 @@ if (typeof $ !== "undefined" && document.querySelectorAll(".tab_content").length
 
       activeTab.classList.add("active");
       tabs.setAttribute("active", activeTabhref);
-      document.querySelectorAll(`[data-tab='${activeTabhref}']`).forEach(
-        (e) => $(e).fadeIn() // Fade in the active content
-      );
+      document.querySelectorAll(`[data-tab='${activeTabhref}']`).forEach((e) => $(e).fadeIn());
     };
   });
 }
 
 const mansory = document.querySelectorAll(".masonry");
 if (mansory.length) {
-  mansory.forEach((e) => {
-    new Macy({ container: e, waitForImages: true, margin: 16, columns: 3, breakAt: { 1200: 5, 940: 3, 520: 2, 400: 1 } });
-  });
+  mansory.forEach((e) => new Macy({ container: e, waitForImages: true, margin: 16, columns: 3, breakAt: { 1200: 5, 940: 3, 520: 2, 400: 1 } }));
 }
 
 //

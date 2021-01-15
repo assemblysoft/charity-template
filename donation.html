@@ -115,7 +115,7 @@
     </header>
 
     <main>
-      <section class="row g-0 tabs">
+      <form class="row g-0 tabs" onsubmit="done()">
         <div class="col">
           <div class="tab_content img-bg h-min-100vh" data-tab="single" style="background-image: url('./img/donation-1.jpg')"></div>
           <div class="tab_content img-bg h-min-100vh" data-tab="monthly" style="background-image: url('./img/donation-2.jpg')"></div>
@@ -125,23 +125,23 @@
           <h2>Comic Relief supports projects around the world.</h2>
 
           <div class="btn-group w-100 tab_button mb-5" role="group">
-            <a class="btn btn-primary font-bold" type="button" href="#single">Single Donation</a>
-            <a class="btn btn-primary font-bold" type="button" href="#monthly">Monthly Donation</a>
-            <a class="btn btn-primary font-bold" type="button" href="#fundraising">Pay in Fundraising</a>
+            <a class="btn btn-primary font-bold" onmousedown="changeAmount(null, true)" href="#single">Single Donation</a>
+            <a class="btn btn-primary font-bold" onmousedown="changeAmount(null, false)" href="#monthly">Monthly Donation</a>
+            <a class="btn btn-primary font-bold" onmousedown="changeAmount(null, false)" href="#fundraising">Pay in Fundraising</a>
           </div>
 
           <div class="tab_content" data-tab="single">
             <div class="h4 txt-center">Your donation could pay for:</div>
 
-            <button class="btn btn-primary btn-lg p-3 w-100 row g-0 flex align-middle mb-3 lh-sm">
+            <button type="button" data-onetime="true" data-amount="35" class="btn btn-primary btn-lg p-3 w-100 row g-0 flex align-middle mb-3 lh-sm">
               <span class="col-6 h1 mb-0">£35</span>
               <span class="col-18 txt-start is-md">a teacher to educate 4-6 year olds in Kenya and support their health and well-being.</span>
             </button>
-            <button class="btn btn-primary btn-lg p-3 w-100 row g-0 flex align-middle mb-3 lh-sm">
+            <button type="button" data-onetime="true" data-amount="60" class="btn btn-primary btn-lg p-3 w-100 row g-0 flex align-middle mb-3 lh-sm">
               <span class="col-6 h1 mb-0">£60</span>
               <span class="col-18 txt-start is-md">three choir sessions, bringing local schoolchildren and older adults in sheltered accommodation together, to uplift mood and improve well-being of residents.</span>
             </button>
-            <button class="btn btn-primary btn-lg p-3 w-100 row g-0 flex align-middle mb-3 lh-sm">
+            <button type="button" data-onetime="true" data-amount="100" class="btn btn-primary btn-lg p-3 w-100 row g-0 flex align-middle mb-3 lh-sm">
               <span class="col-6 h1 mb-0">£100</span>
               <span class="col-18 txt-start is-md">basic furniture and equipment for a young homeless person in the UK to set up a new home.</span>
             </button>
@@ -149,15 +149,15 @@
           <div class="tab_content" data-tab="monthly">
             <div class="h4 txt-center">Your regular donation could pay for:</div>
 
-            <button class="btn btn-primary btn-lg p-3 w-100 row g-0 flex align-middle mb-3 lh-sm">
+            <button type="button" data-onetime="false" data-amount="5" class="btn btn-primary btn-lg p-3 w-100 row g-0 flex align-middle mb-3 lh-sm">
               <span class="col-6 h1 mb-0">£5</span>
               <span class="col-18 txt-start is-md">a regular supply of toiletries for someone living in a refugee camp in Serbia.</span>
             </button>
-            <button class="btn btn-primary btn-lg p-3 w-100 row g-0 flex align-middle mb-3 lh-sm">
+            <button type="button" data-onetime="false" data-amount="10" class="btn btn-primary btn-lg p-3 w-100 row g-0 flex align-middle mb-3 lh-sm">
               <span class="col-6 h1 mb-0">£10</span>
               <span class="col-18 txt-start is-md">a potentially lifesaving call, for a young man at risk of suicide in the UK.</span>
             </button>
-            <button class="btn btn-primary btn-lg p-3 w-100 row g-0 flex align-middle mb-3 lh-sm">
+            <button type="button" data-onetime="false" data-amount="20" class="btn btn-primary btn-lg p-3 w-100 row g-0 flex align-middle mb-3 lh-sm">
               <span class="col-6 h1 mb-0">£20</span>
               <span class="col-18 txt-start is-md">nutritious meals and a counselling session for two children living on the streets of Malawi.</span>
             </button>
@@ -183,20 +183,22 @@
           </div>
 
           <div class="input-group mb-3">
-            <div class="input-group-prepend col-6">
-              <button class="btn btn-primary w-100 dropdown-toggle shadow-lg" data-toggle="dropdown" type="button" aria-expanded="false" aria-haspopup="true">£Pound </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">£Pound </a>
-              </div>
+            <div class="input-group-prepend col-6 dropdown11111111111111">
+              <button class="btn btn-primary w-100 dropdown-toggle shadow-lg" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">£Pound</button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
             </div>
-            <input class="form-control" type="text" aria-label="Text input with dropdown button" />
+            <input id="amount_input" oninput="changeAmount(this.amount)" class="form-control" type="number" aria-label="Text input with dropdown button" />
           </div>
 
           <div class="flex align-middle justify-center">
-            <button class="btn btn-error rounded-pill px-4">Yes, pay in £5 now</button>
+            <button class="btn btn-error rounded-pill px-4">Yes, pay in £<span id="amount">5</span> now</button>
           </div>
         </div>
-      </section>
+      </form>
     </main>
 
     <footer class="p-5 txt-center">
@@ -237,4 +239,24 @@
   <script src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
   <script src="./scss/dist/js/bootstrap.bundle.js"></script>
   <script src="./js/custom.js"></script>
+  <script>
+    let amount = 5;
+    let onetime = true;
+
+    this.changeAmount(amount, onetime);
+    document.querySelectorAll("[data-amount]").forEach((e) => (e.onclick = () => this.changeAmount(e.getAttribute("data-amount"), e.getAttribute("data-onetime"))));
+
+    function changeAmount(number, onetime) {
+      if (onetime) this.onetime = typeof onetime != "string" ?? onetime == "true";
+      if (number) {
+        this.amount = number;
+        document.getElementById("amount").innerHTML = this.amount;
+        document.getElementById("amount_input").value = this.amount;
+      }
+    }
+
+    function done() {
+      console.log("paying : ", this.amount, this.onetime);
+    }
+  </script>
 </html>
