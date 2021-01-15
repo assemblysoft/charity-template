@@ -142,3 +142,19 @@ if (typeof $ !== "undefined" && document.querySelector('[data-fancybox="gallery"
 
   $('[data-fancybox="gallery"]').fancybox(option);
 }
+
+//
+// light box
+//
+
+const HeroSlider = document.querySelector(".HeroSlider");
+if (HeroSlider) {
+  $(HeroSlider).slick({
+    arrows: false,
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    vertical: true
+  });
+}
