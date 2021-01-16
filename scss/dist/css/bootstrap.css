@@ -7302,7 +7302,7 @@ a.clr-dark:hover, a.clr-dark:focus {
   display: inline-flex !important;
 }
 
-.none {
+.hidden {
   display: none !important;
 }
 
@@ -8733,7 +8733,7 @@ a.clr-dark:hover, a.clr-dark:focus {
     display: inline-flex !important;
   }
 
-  .sm-none {
+  .sm-hidden {
     display: none !important;
   }
 
@@ -9538,7 +9538,7 @@ a.clr-dark:hover, a.clr-dark:focus {
     display: inline-flex !important;
   }
 
-  .md-none {
+  .md-hidden {
     display: none !important;
   }
 
@@ -10343,7 +10343,7 @@ a.clr-dark:hover, a.clr-dark:focus {
     display: inline-flex !important;
   }
 
-  .lg-none {
+  .lg-hidden {
     display: none !important;
   }
 
@@ -11148,7 +11148,7 @@ a.clr-dark:hover, a.clr-dark:focus {
     display: inline-flex !important;
   }
 
-  .xl-none {
+  .xl-hidden {
     display: none !important;
   }
 
@@ -11953,7 +11953,7 @@ a.clr-dark:hover, a.clr-dark:focus {
     display: inline-flex !important;
   }
 
-  .xxl-none {
+  .xxl-hidden {
     display: none !important;
   }
 
@@ -12811,7 +12811,7 @@ a.clr-dark:hover, a.clr-dark:focus {
     display: inline-flex !important;
   }
 
-  .print-none {
+  .print-hidden {
     display: none !important;
   }
 }

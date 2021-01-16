@@ -191,11 +191,13 @@
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </div>
-            <input id="amount_input" oninput="changeAmount(this.value)" class="form-control" type="number" aria-label="Text input with dropdown button" />
+            <input min="1" max="25000" id="amount_input" oninput="changeAmount(this.value)" class="form-control" type="number" aria-label="Text input with dropdown button" />
           </div>
 
+          <div id="error" class="p-2 bg-error my-2 rounded-1">asd</div>
+
           <div class="flex align-middle justify-center">
-            <button class="btn btn-error rounded-pill px-4">Yes, pay in £<span id="amount">5</span> now</button>
+            <button type="submit" class="btn btn-primary rounded-pill px-4">Yes, pay in £<span id="amount">5</span> now</button>
           </div>
         </div>
       </form>
@@ -246,12 +248,20 @@
     this.changeAmount(amount, onetime);
     document.querySelectorAll("[data-amount]").forEach((e) => (e.onclick = () => this.changeAmount(e.getAttribute("data-amount"), e.getAttribute("data-onetime"))));
 
-    function changeAmount(number, onetime) {
+    function changeAmount(amount, onetime) {
       if (onetime) this.onetime = typeof onetime != "string" ?? onetime == "true";
-      if (number) {
-        this.amount = number;
-        document.getElementById("amount").innerHTML = this.amount;
-        document.getElementById("amount_input").value = this.amount;
+      if (amount) {
+        if (amount > 0 && amount < 25000 + 1) {
+          this.amount = amount;
+          document.querySelector("button[type='submit']").removeAttribute("disabled");
+          document.querySelector("#error").classList.add("hidden");
+          document.getElementById("amount").innerHTML = this.amount;
+          document.getElementById("amount_input").value = this.amount;
+        } else {
+          document.querySelector("button[type='submit']").setAttribute("disabled", true);
+          document.querySelector("#error").classList.remove("hidden");
+          document.querySelector("#error").innerHTML = "Please enter a number between 1 and 25000";
+        }
       }
     }
 
