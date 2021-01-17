@@ -133,6 +133,14 @@ $utilities: (
       100: 1,
     ),
   ),
+  "margin": (
+    responsive: true,
+    property: margin-right,
+    class: me,
+    values: (
+      n20rem: -20rem,
+    ),
+  ),
   "object-fit": (
     property: object-fit,
     class: object-fit,
