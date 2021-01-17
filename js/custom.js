@@ -70,9 +70,9 @@ if (typeof $ !== "undefined" && document.querySelectorAll(".tabs").length) {
     root.setAttribute("active", href);
     root.querySelectorAll(".tabs-switcher").forEach((e) => e.classList.remove("active")); // Hide all content
     root.querySelectorAll(`.tab_content`).forEach((e) => {
-      if (e.parentElement.closest(".tabs") === root) $(e).hide();
+      if (e.parentElement.closest(".tabs") === root) $(e).slideUp(400);
     });
-    root.querySelectorAll(`[data-tab='${href}']`).forEach((e) => $(e).show());
+    root.querySelectorAll(`[data-tab='${href}']`).forEach((e) => $(e).slideDown(400));
     root.querySelectorAll(`[data-tab='${href}']`).forEach((e) => e.classList.add("active"));
   }
 
