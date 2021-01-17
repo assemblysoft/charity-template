@@ -58,30 +58,33 @@ new Headroom(document.body, {
 //
 
 if (typeof $ !== "undefined" && document.querySelectorAll(".tabs").length) {
-  document.querySelectorAll(".tabs .tab_content").forEach((e) => $(e).hide()); // Hide all content
-  document.querySelectorAll(".tab_button a.active").forEach((e) => e.classList.remove("active")); // Hide all content
-  const queryString = window.location.hash;
+  // const queryString = window.location.hash;
+  // const activeTab = e.querySelector(queryString ? `a[href='${queryString}']` : "a.tabs-switcher");
 
-  document.querySelectorAll(".tabs").forEach((e) => {
-    const activeTab = e.querySelector(queryString ? `a[href='${queryString}']` : "a:first-child");
-    const activeTabhref = activeTab.getAttribute("href").replace("#", "");
-    activeTab.classList.add("active");
-    e.setAttribute("active", activeTabhref);
-    e.querySelectorAll(`[data-tab='${activeTabhref}']`).forEach((e) => $(e).show());
+  document.querySelectorAll(".tabs").forEach((tabs) => {
+    const firsttab = tabs.querySelector(".tab_content:first-child").getAttribute("data-tab");
+    changetab(firsttab, tabs);
   });
 
-  // On Click Event
-  document.querySelectorAll(".tabs .tab_button a").forEach((e) => {
-    e.onclick = (event) => {
-      document.querySelectorAll(".tabs .tab_content").forEach((e) => $(e).hide()); // Hide all content
-      document.querySelectorAll(".tab_button a.active").forEach((e) => e.classList.remove("active")); // Hide all content
-      let activeTab = event.target;
-      let tabs = activeTab.closest(".tabs");
-      var activeTabhref = activeTab.getAttribute("href").replace("#", ""); // Find the rel attribute value to identify the active tab + content
+  function changetab(href, root) {
+    root.setAttribute("active", href);
+    root.querySelectorAll(".tabs-switcher").forEach((e) => e.classList.remove("active")); // Hide all content
+    root.querySelectorAll(`.tab_content`).forEach((e) => {
+      if (e.parentElement.closest(".tabs") === root) $(e).hide();
+    });
+    root.querySelectorAll(`[data-tab='${href}']`).forEach((e) => $(e).show());
+    root.querySelectorAll(`[data-tab='${href}']`).forEach((e) => e.classList.add("active"));
+  }
 
-      activeTab.classList.add("active");
-      tabs.setAttribute("active", activeTabhref);
-      document.querySelectorAll(`[data-tab='${activeTabhref}']`).forEach((e) => $(e).fadeIn());
+  // On Click Event
+  document.querySelectorAll("a.tabs-switcher").forEach((e) => {
+    e.onclick = (event) => {
+      const switcher = event.target;
+      switcher.classList.add("active");
+      const href = switcher.getAttribute("href").replace("#", "");
+      const parent = switcher.getAttribute("data-parent");
+      const root = switcher.closest(parent ?? ".tabs");
+      changetab(href, root);
     };
   });
 }
