@@ -8737,6 +8737,27 @@ a.clr-dark:hover, a.clr-dark:focus {
     display: none !important;
   }
 
+  .sm-static {
+    position: static !important;
+  }
+
+  .sm-relative {
+    position: relative !important;
+  }
+
+  .sm-absolute {
+    position: absolute !important;
+  }
+
+  .sm-fixed {
+    position: fixed !important;
+  }
+
+  .sm-sticky {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+  }
+
   .flex-sm-fill {
     flex: 1 1 auto !important;
   }
@@ -9540,6 +9561,27 @@ a.clr-dark:hover, a.clr-dark:focus {
 
   .md-hidden {
     display: none !important;
+  }
+
+  .md-static {
+    position: static !important;
+  }
+
+  .md-relative {
+    position: relative !important;
+  }
+
+  .md-absolute {
+    position: absolute !important;
+  }
+
+  .md-fixed {
+    position: fixed !important;
+  }
+
+  .md-sticky {
+    position: -webkit-sticky !important;
+    position: sticky !important;
   }
 
   .flex-md-fill {
@@ -10347,6 +10389,27 @@ a.clr-dark:hover, a.clr-dark:focus {
     display: none !important;
   }
 
+  .lg-static {
+    position: static !important;
+  }
+
+  .lg-relative {
+    position: relative !important;
+  }
+
+  .lg-absolute {
+    position: absolute !important;
+  }
+
+  .lg-fixed {
+    position: fixed !important;
+  }
+
+  .lg-sticky {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+  }
+
   .flex-lg-fill {
     flex: 1 1 auto !important;
   }
@@ -11152,6 +11215,27 @@ a.clr-dark:hover, a.clr-dark:focus {
     display: none !important;
   }
 
+  .xl-static {
+    position: static !important;
+  }
+
+  .xl-relative {
+    position: relative !important;
+  }
+
+  .xl-absolute {
+    position: absolute !important;
+  }
+
+  .xl-fixed {
+    position: fixed !important;
+  }
+
+  .xl-sticky {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+  }
+
   .flex-xl-fill {
     flex: 1 1 auto !important;
   }
@@ -11955,6 +12039,27 @@ a.clr-dark:hover, a.clr-dark:focus {
 
   .xxl-hidden {
     display: none !important;
+  }
+
+  .xxl-static {
+    position: static !important;
+  }
+
+  .xxl-relative {
+    position: relative !important;
+  }
+
+  .xxl-absolute {
+    position: absolute !important;
+  }
+
+  .xxl-fixed {
+    position: fixed !important;
+  }
+
+  .xxl-sticky {
+    position: -webkit-sticky !important;
+    position: sticky !important;
   }
 
   .flex-xxl-fill {

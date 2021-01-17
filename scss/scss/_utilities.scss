@@ -51,6 +51,7 @@ $utilities: map-merge(
       )
     ),
     "position": (
+      responsive: true,
       property: position,
       class: "",
       values: static relative absolute fixed sticky
