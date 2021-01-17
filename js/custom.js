@@ -62,8 +62,10 @@ if (typeof $ !== "undefined" && document.querySelectorAll(".tabs").length) {
   // const activeTab = e.querySelector(queryString ? `a[href='${queryString}']` : "a.tabs-switcher");
 
   document.querySelectorAll(".tabs").forEach((tabs) => {
+    $.fx.off = true;
     const firsttab = tabs.querySelector(".tab_content:first-child").getAttribute("data-tab");
     changetab(firsttab, tabs);
+    $.fx.off = false;
   });
 
   function changetab(href, root) {
