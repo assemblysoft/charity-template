@@ -202,6 +202,7 @@ $utilities: (
 
 header {
   top: 0;
+  z-index: 15;
   @include transition(top 0.5s ease-in-out);
 
   .headroom--unpinned & {
