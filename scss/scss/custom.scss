@@ -248,11 +248,6 @@ header {
   .headroom--unpinned & {
     top: -86px;
   }
-
-  .logo-container {
-    min-width: 180px;
-    max-width: 280px;
-  }
 }
 
 .lyt-header,
@@ -351,6 +346,11 @@ header {
   padding: 48px 24px;
   color: #fff;
   background-color: #0f0f0f;
+}
+
+.logo-container {
+  min-width: 180px;
+  max-width: 280px;
 }
 
 //
