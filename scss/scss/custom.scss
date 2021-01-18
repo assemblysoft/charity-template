@@ -133,7 +133,15 @@ $utilities: (
       100: 1,
     ),
   ),
-  "margin": (
+  "margin-left": (
+    responsive: true,
+    property: margin-left,
+    class: ms,
+    values: (
+      n20rem: -20rem,
+    ),
+  ),
+  "margin-right": (
     responsive: true,
     property: margin-right,
     class: me,
