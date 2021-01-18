@@ -9,12 +9,15 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
   </head>
   <body class="font-circular">
-    <header class="row align-middle bg-white g-0 sticky z-top w-100">
-      <div class="row px-4 py-2 align-middle g-0">
+    <header class="bg-white sticky w-100">
+      <div class="lyt-header row px-4 py-2 align-middle g-0">
         <a class="col-5 logo-container" href="./">
           <img class="img" src="./img/logo.jpg" />
         </a>
-        <div class="col txt-end">
+        <div class="block txt-end lg-hidden col justify-end">
+          <button onclick="document.querySelector('aside').classList.add('active')" class="btn icon ri-2x"><i class="ri-menu-3-line"></i></button>
+        </div>
+        <div class="col txt-end hidden lg-block">
           <a class="btn btn-primary me-1 align-stetch border-transparent" href="#"><img class="icon fs-5 w-auto" src="./img/paw.png" /> Donate</a>
           <a class="btn btn-blue me-1 align-stetch border-transparent" href="#"><img class="icon fs-5 w-auto" src="./img/leopard.png" /> Adopt</a>
           <a class="btn btn-valid me-1 align-stetch border-transparent" href="#"><img class="icon fs-5 w-auto" src="./img/leaf.png" /> Save Rainforest</a>
@@ -22,7 +25,7 @@
           <a class="btn btn-outline-primary me-1 align-middle border-transparent inline-flex" href="#"><i class="h4 mb-0 ri-shopping-cart-2-line"></i></a>
         </div>
       </div>
-      <nav class="px-4 txt-center bg-primary flex justify-center">
+      <nav class="lyt-header h-min-auto px-4 hidden lg-flex txt-center bg-primary flex justify-center">
         <div class="dropdown mega-dropdown">
           <button class="btn btn-primary rounded-0 border-top-0 border-bottom-0 px-4 border-end dropdown-toggle" id="dropdownMenuButton" aria-expanded="false" data-bs-toggle="dropdown">Plan your visit</button>
           <div class="dropdown-menu rounded-0 border-end-0 border-start-0" aria-labelledby="dropdownMenuButton">
@@ -78,9 +81,9 @@
         <button class="btn btn-primary rounded-0 border-top-0 border-bottom-0 px-4 border-end">Support Us</button>
         <button class="btn btn-primary rounded-0 border-top-0 border-bottom-0 px-4 border-end">What's Happening</button>
       </nav>
-      <div class="px-4 flex justify-center txt-upper">
+      <div class="lyt-header h-min-auto px-4 hidden lg-flex justify-center txt-upper">
         <div class="dropdown">
-          <button class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-transparent" id="dropdownMenuButton" data-bs-toggle="dropdown" type="button" aria-expanded="false"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Plan your visit</button>
+          <button class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-bottom-0" id="dropdownMenuButton" data-bs-toggle="dropdown" type="button" aria-expanded="false"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Plan your visit</button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item w-50 inline-block" href="#">Action</a>
             <a class="dropdown-item w-50 inline-block" href="#">Another action</a>
@@ -88,7 +91,7 @@
           </ul>
         </div>
         <div class="dropdown">
-          <button class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-transparent" id="dropdownMenuButton" data-bs-toggle="dropdown" type="button" aria-expanded="false"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Animals</button>
+          <button class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-bottom-0" id="dropdownMenuButton" data-bs-toggle="dropdown" type="button" aria-expanded="false"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Animals</button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item w-50 inline-block" href="#">Action</a>
             <a class="dropdown-item w-50 inline-block" href="#">Another action</a>
@@ -96,7 +99,7 @@
           </ul>
         </div>
         <div class="dropdown">
-          <button class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-transparent" id="dropdownMenuButton" data-bs-toggle="dropdown" type="button" aria-expanded="false"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Explore</button>
+          <button class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-bottom-0" id="dropdownMenuButton" data-bs-toggle="dropdown" type="button" aria-expanded="false"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> Explore</button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item w-50 inline-block" href="#">Action</a>
             <a class="dropdown-item w-50 inline-block" href="#">Another action</a>
@@ -104,7 +107,7 @@
           </ul>
         </div>
         <div class="dropdown">
-          <button class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-transparent" id="dropdownMenuButton" data-bs-toggle="dropdown" type="button" aria-expanded="false"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> What's Happening</button>
+          <button class="btn btn-sm btn-min-secondary dropdown-toggle mx-1 inline-flex align-middle border-bottom-0" id="dropdownMenuButton" data-bs-toggle="dropdown" type="button" aria-expanded="false"><i class="clr-secondary h4 mb-0 me-2 ri-time-line"></i> What's Happening</button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item w-50 inline-block" href="#">Action</a>
             <a class="dropdown-item w-50 inline-block" href="#">Another action</a>
@@ -114,7 +117,21 @@
       </div>
     </header>
 
-    <main>
+    <aside class="lyt-sidebar fixed p-4">
+      <button onclick="document.querySelector('aside').classList.remove('active')" class="btn icon ri-2x absolute mt-3 me-3 top-0 end-0"><i class="ri-close-line"></i></button>
+      <div class="flex flex-column justify-center h-100">
+        <a href="#" class="display-4 font-bold"><span class="clr-primary">-</span> Plan your visit</a>
+        <a href="#" class="display-4 font-bold"><span class="clr-primary">-</span> Animals</a>
+        <a href="#" class="display-4 font-bold"><span class="clr-primary">-</span> Explore</a>
+        <a href="#" class="display-4 font-bold"><span class="clr-primary">-</span> Education</a>
+        <a href="#" class="display-4 font-bold"><span class="clr-primary">-</span> Conservation</a>
+        <a href="#" class="display-4 font-bold"><span class="clr-primary">-</span> Support Us</a>
+        <a href="#" class="display-4 font-bold"><span class="clr-primary">-</span> What's Happening</a>
+      </div>
+    </aside>
+    <div class="overlay" onclick="document.querySelector('aside').classList.remove('active')"></div>
+
+    <main class="lyt-main relative">
       <section class="relative img-bg flex align-middle" id="hero" style="background-image: url('./img/rainforest.jpg')">
         <div class="p-5 clr-white">
           <div>We help to groom your pet</div>
