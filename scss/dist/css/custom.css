@@ -501,7 +501,7 @@ p:last-child {
 }
 .h-min-100vh #scrolldown {
   margin-bottom: 3rem;
-  transform: translateY(-50%);
+  transform: translateX(-50%);
 }
 #scrolldown::after {
   position: absolute;
