@@ -395,7 +395,7 @@ p:last-child {
 
   .h-min-100vh & {
     margin-bottom: $spacer * 3;
-    transform: none;
+    transform: translateY(-50%);
   }
 
   &::after {
