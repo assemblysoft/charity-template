@@ -354,7 +354,6 @@
 header {
   top: 0;
   z-index: 20;
-  display: none !important;
   transition: top 0.5s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
