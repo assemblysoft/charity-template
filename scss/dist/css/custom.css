@@ -207,6 +207,10 @@
   margin-right: -20rem !important;
 }
 
+.pe-20rem {
+  padding-right: 20rem !important;
+}
+
 .object-fit-cover {
   -o-object-fit: cover !important;
   object-fit: cover !important;
@@ -260,6 +264,10 @@
   .me-sm-n20rem {
     margin-right: -20rem !important;
   }
+
+  .pe-sm-20rem {
+    padding-right: 20rem !important;
+  }
 }
 @media (min-width: 768px) {
   .ms-md-n20rem {
@@ -268,6 +276,10 @@
 
   .me-md-n20rem {
     margin-right: -20rem !important;
+  }
+
+  .pe-md-20rem {
+    padding-right: 20rem !important;
   }
 }
 @media (min-width: 992px) {
@@ -278,6 +290,10 @@
   .me-lg-n20rem {
     margin-right: -20rem !important;
   }
+
+  .pe-lg-20rem {
+    padding-right: 20rem !important;
+  }
 }
 @media (min-width: 1200px) {
   .ms-xl-n20rem {
@@ -287,6 +303,10 @@
   .me-xl-n20rem {
     margin-right: -20rem !important;
   }
+
+  .pe-xl-20rem {
+    padding-right: 20rem !important;
+  }
 }
 @media (min-width: 1400px) {
   .ms-xxl-n20rem {
@@ -295,6 +315,10 @@
 
   .me-xxl-n20rem {
     margin-right: -20rem !important;
+  }
+
+  .pe-xxl-20rem {
+    padding-right: 20rem !important;
   }
 }
 .icon {
@@ -330,6 +354,7 @@
 header {
   top: 0;
   z-index: 20;
+  display: none !important;
   transition: top 0.5s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {

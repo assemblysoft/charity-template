@@ -149,6 +149,14 @@ $utilities: (
       n20rem: -20rem,
     ),
   ),
+  "padding-right": (
+    responsive: true,
+    property: padding-right,
+    class: pe,
+    values: (
+      20rem: 20rem,
+    ),
+  ),
   "object-fit": (
     property: object-fit,
     class: object-fit,
@@ -219,6 +227,7 @@ $utilities: (
 header {
   top: 0;
   z-index: 20;
+  display: none !important;
   @include transition(top 0.5s ease-in-out);
 
   .headroom--unpinned & {
