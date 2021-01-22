@@ -8,8 +8,7 @@ const header = document.querySelector("header");
 // scroll to top button
 //
 
-const scolltop = document.querySelector("#scolltop");
-if (scolltop) {
+if ((scolltop = document.querySelector("#scolltop"))) {
   scolltop.onclick = () => window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
   new Headroom(scolltop, {
     offset: document.body.scrollHeight / 2 - document.body.clientHeight / 4,
@@ -25,8 +24,7 @@ if (scolltop) {
 // scroll to top button
 //
 
-const scrolldown = document.querySelector("#scrolldown");
-if (scrolldown) {
+if ((scrolldown = document.querySelector("#scrolldown"))) {
   const next = scrolldown.parentElement.nextElementSibling;
   scrolldown.onclick = () => window.scrollTo({ top: next.offsetTop + header.clientHeight - 67, behavior: "smooth" });
 }
@@ -101,8 +99,7 @@ if (typeof $ !== "undefined" && document.querySelectorAll(".tabs").length) {
   });
 }
 
-const mansory = document.querySelectorAll(".masonry");
-if (mansory.length) {
+if ((mansory = document.querySelectorAll(".masonry").length)) {
   mansory.forEach((e) => new Macy({ container: e, waitForImages: true, margin: 16, columns: 3, breakAt: { 1200: 5, 940: 3, 520: 2, 400: 1 } }));
 }
 
@@ -156,8 +153,7 @@ if (typeof $ !== "undefined" && document.querySelector('[data-fancybox="gallery"
 // light box
 //
 
-const HeroSlider = document.querySelector(".HeroSlider");
-if (HeroSlider) {
+if ((HeroSlider = document.querySelector(".HeroSlider"))) {
   $(HeroSlider).slick({
     arrows: false,
     dots: true,
