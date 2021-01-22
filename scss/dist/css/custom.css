@@ -362,7 +362,7 @@ header {
   }
 }
 .headroom--unpinned header {
-  top: -86px;
+  top: -67px;
 }
 
 @media (prefers-reduced-motion: reduce) {

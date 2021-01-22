@@ -18,7 +18,7 @@ if (scolltop) scolltop.onclick = () => window.scrollTo({ left: 0, top: 0, behavi
 const scrolldown = document.querySelector("#scrolldown");
 if (scrolldown) {
   const next = scrolldown.parentElement.nextElementSibling;
-  scrolldown.onclick = () => window.scrollTo({ top: next.offsetTop - header.clientHeight + 86, behavior: "smooth" });
+  scrolldown.onclick = () => window.scrollTo({ top: next.offsetTop + header.clientHeight - 67, behavior: "smooth" });
 }
 
 //
