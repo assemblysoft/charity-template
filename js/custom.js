@@ -9,7 +9,17 @@ const header = document.querySelector("header");
 //
 
 const scolltop = document.querySelector("#scolltop");
-if (scolltop) scolltop.onclick = () => window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+if (scolltop) {
+  scolltop.onclick = () => window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+  new Headroom(scolltop, {
+    offset: document.body.scrollHeight / 2 - document.body.clientHeight / 4,
+    tolerance: 5,
+    classes: {
+      top: "headroom--top",
+      notTop: "headroom--not-top"
+    }
+  }).init();
+}
 
 //
 // scroll to top button
