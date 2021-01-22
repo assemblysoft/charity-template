@@ -408,6 +408,7 @@ p:last-child {
 #scrolldown {
   z-index: 15;
   transform: translate(-50%, 50%);
+  @include transition(opacity .3s ease-in-out, visibility .3s ease-in-out);
 
   .h-min-100vh & {
     margin-bottom: $spacer * 3;
@@ -426,6 +427,11 @@ p:last-child {
     transform: scale(3);
     @include border-radius(50%);
     animation: scrolldown 2s ease 1s infinite;
+  }
+
+  .headroom--not-top & {
+    visibility: hidden;
+    opacity: 0;
   }
 }
 

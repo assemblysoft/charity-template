@@ -546,6 +546,12 @@ p:last-child {
 #scrolldown {
   z-index: 15;
   transform: translate(-50%, 50%);
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  #scrolldown {
+    transition: none;
+  }
 }
 .h-min-100vh #scrolldown {
   margin-bottom: 3rem;
@@ -564,6 +570,10 @@ p:last-child {
   border-radius: 50%;
   -webkit-animation: scrolldown 2s ease 1s infinite;
   animation: scrolldown 2s ease 1s infinite;
+}
+.headroom--not-top #scrolldown {
+  visibility: hidden;
+  opacity: 0;
 }
 
 #hero {
