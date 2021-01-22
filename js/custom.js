@@ -168,3 +168,10 @@ if (HeroSlider) {
     vertical: true
   });
 }
+
+// cookies section
+
+if ((model = document.getElementById("staticBackdrop"))) {
+  var myModal = new bootstrap.Modal(model, { backdrop: "static", keyboard: false, focus: true });
+  myModal.show();
+}
