@@ -544,6 +544,7 @@ p:last-child {
   }
 }
 #scrolldown {
+  position: absolute;
   z-index: 15;
   transform: translate(-50%, 50%);
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
@@ -554,6 +555,7 @@ p:last-child {
   }
 }
 .h-min-100vh #scrolldown {
+  position: fixed;
   margin-bottom: 3rem;
   transform: translateX(-50%);
 }
