@@ -119,14 +119,21 @@
 
     <aside class="lyt-sidebar fixed p-4">
       <button onclick="document.querySelector('aside').classList.remove('active')" class="btn icon ri-2x absolute mt-3 me-3 top-0 end-0"><i class="ri-close-line"></i></button>
-      <div class="flex flex-column justify-center h-100">
-        <a href="#" class="display-4 font-bold"><span class="clr-primary">-</span> Plan your visit</a>
-        <a href="#" class="display-4 font-bold"><span class="clr-primary">-</span> Animals</a>
-        <a href="#" class="display-4 font-bold"><span class="clr-primary">-</span> Explore</a>
-        <a href="#" class="display-4 font-bold"><span class="clr-primary">-</span> Education</a>
-        <a href="#" class="display-4 font-bold"><span class="clr-primary">-</span> Conservation</a>
-        <a href="#" class="display-4 font-bold"><span class="clr-primary">-</span> Support Us</a>
-        <a href="#" class="display-4 font-bold"><span class="clr-primary">-</span> What's Happening</a>
+      <div class="flex flex-column justify-around h-100">
+        <div>
+          <a href="#" class="block display-4 font-bold"><span class="clr-primary">-</span> Plan your visit</a>
+          <a href="#" class="block display-4 font-bold"><span class="clr-primary">-</span> Animals</a>
+          <a href="#" class="block display-4 font-bold"><span class="clr-primary">-</span> Explore</a>
+          <a href="#" class="block display-4 font-bold"><span class="clr-primary">-</span> Education</a>
+          <a href="#" class="block display-4 font-bold"><span class="clr-primary">-</span> Conservation</a>
+          <a href="#" class="block display-4 font-bold"><span class="clr-primary">-</span> Support Us</a>
+          <a href="#" class="block display-4 font-bold"><span class="clr-primary">-</span> What's Happening</a>
+        </div>
+        <div class="block sm-hidden">
+          <a class="btn font-bold is-lg btn-primary me-1 align-stetch border-transparent" href="#"><img class="icon fs-5 w-auto" src="./img/paw.png" /> Donate</a>
+          <a class="btn font-bold is-lg btn-blue me-1 align-stetch border-transparent" href="#"><img class="icon fs-5 w-auto" src="./img/leopard.png" /> Adopt</a>
+          <a class="btn font-bold is-lg btn-valid me-1 align-stetch border-transparent" href="#"><img class="icon fs-5 w-auto" src="./img/leaf.png" /> Save Rainforest</a>
+        </div>
       </div>
     </aside>
     <div class="overlay" onclick="document.querySelector('aside').classList.remove('active')"></div>
