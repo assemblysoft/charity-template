@@ -132,7 +132,7 @@
     <div class="overlay" onclick="document.querySelector('aside').classList.remove('active')"></div>
 
     <main class="lyt-main relative">
-      <section class="relative img-bg flex align-middle" id="hero" style="background-image: linear-gradient(45deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('./img/tiger.jpg')">
+      <section class="relative img-bg flex align-middle" id="hero" style="background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/tiger.jpg')">
         <div class="p-4 p-md-5 clr-white">
           <div>We help to groom your pet</div>
           <h1 class="txt-upper font-bold display-2 mt-3 mb-3">About <span class="clr-primary">US</span></h1>
@@ -282,6 +282,28 @@
     </footer>
 
     <button class="btn p-2 rounded-circle bg-white clr-primary fixed bottom-0 mb-5 me-5 end-0 icon translate ri-3x after-clear z-10" id="scolltop"><i class="ri-arrow-up-circle-fill"></i></button>
+
+    <div id="sidemenu" class="flex flex-column align-bottom fixed end-0 top-50 z-10 me-3">
+      <a class="flex align-middle my-1" href="#">
+        <div class="shadow text btn is-lg rounded-pill btn-primary font-bold me-2">Donate</div>
+        <div class="shadow p-1 bg-white rounded-circle">
+          <button class="btn is-lg rounded-circle btn-primary inline-flex align-middle justify-center p-3"><img class="icon after-clear" src="./img/paw.png" /></button>
+        </div>
+      </a>
+      <a class="flex align-middle my-1" href="#">
+        <div class="shadow text btn is-lg rounded-pill btn-blue font-bold me-2">Adopt</div>
+        <div class="shadow p-1 bg-white rounded-circle">
+          <button class="btn is-lg rounded-circle btn-blue inline-flex align-middle justify-center p-3"><img class="icon after-clear" src="./img/leopard.png" /></button>
+        </div>
+      </a>
+      <a class="flex align-middle my-1" href="#">
+        <div class="shadow text btn is-lg rounded-pill btn-valid font-bold me-2">Save Rainforest</div>
+        <div class="shadow p-1 bg-white rounded-circle">
+          <button class="btn is-lg rounded-circle btn-valid inline-flex align-middle justify-center p-3"><img class="icon after-clear" src="./img/leaf.png" /></button>
+        </div>
+      </a>
+    </div>
+
     <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">

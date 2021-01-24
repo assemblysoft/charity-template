@@ -631,4 +631,25 @@ p:last-child {
   outline: 0 !important;
 }
 
+#sidemenu {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.35s ease-in-out, visibility 0.35s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  #sidemenu {
+    transition: none;
+  }
+}
+.headroom--not-top #sidemenu {
+  visibility: visible;
+  opacity: 1;
+}
+#sidemenu a .text {
+  display: none;
+}
+#sidemenu a:hover .text {
+  display: block;
+}
+
 /*# sourceMappingURL=custom.css.map */
