@@ -1,0 +1,30 @@
+.menu-container {
+  position: relative;
+}
+
+.menu {
+  > .menu-item {
+    top: 125%;
+    z-index: 20;
+    visibility: hidden;
+    opacity: 0;
+    @include transition(top .5s ease-in-out, opacity .5s ease-in-out);
+  }
+
+  &:hover {
+    > .menu-item {
+      top: 100%;
+      visibility: visible;
+      opacity: 1;
+    }
+
+    > .btn {
+      color: $primary;
+
+      &::before {
+        right: 0;
+        left: 0;
+      }
+    }
+  }
+}

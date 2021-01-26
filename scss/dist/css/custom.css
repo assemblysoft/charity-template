@@ -1,4 +1,33 @@
 @charset "UTF-8";
+.menu-container {
+  position: relative;
+}
+
+.menu > .menu-item {
+  top: 125%;
+  z-index: 20;
+  visibility: hidden;
+  opacity: 0;
+  transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .menu > .menu-item {
+    transition: none;
+  }
+}
+.menu:hover > .menu-item {
+  top: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+.menu:hover > .btn {
+  color: #e36802;
+}
+.menu:hover > .btn::before {
+  right: 0;
+  left: 0;
+}
+
 .bg-linkedin {
   background: #0e72a3 !important;
 }
