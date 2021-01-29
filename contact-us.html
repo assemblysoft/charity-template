@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
   </head>
   <body class="font-circular">
-    <header class="bg-white sticky w-100">
+    <header class="bg-white sticky w-100 shadow">
       <div class="lyt-header row px-4 py-2 align-middle g-0">
         <a class="col-5 logo-container" href="./">
           <img class="img" src="./img/logo.jpg" />
@@ -25,61 +25,272 @@
           <a class="btn btn-outline-primary me-1 align-middle border-transparent inline-flex" href="#"><i class="h4 mb-0 ri-shopping-cart-2-line"></i></a>
         </div>
       </div>
-      <nav class="lyt-header h-min-auto px-4 hidden lg-flex txt-center bg-primary flex justify-center">
-        <div class="dropdown mega-dropdown">
-          <button class="btn btn-primary rounded-0 border-top-0 border-bottom-0 px-4 border-end dropdown-toggle" id="dropdownMenuButton" aria-expanded="false" data-bs-toggle="dropdown">Plan your visit</button>
-          <div class="dropdown-menu rounded-0 border-end-0 border-start-0" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item w-50 inline-block" href="#">Zoo Updates</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Staying safe at the Zoo - Covid-19 measures</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Tickets & prices</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Opening times</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Group visits</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Find us</a>
-            <a class="dropdown-item w-50 inline-block" href="#">What's on</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Events</a>
-            <a class="dropdown-item w-50 inline-block" href="#">My day planner</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Food & drink</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Gifts & souvenirs</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Accessibility</a>
-            <a class="dropdown-item w-50 inline-block" href="#">FAQs</a>
+      <nav class="px-4 hidden lg-flex justify-center menu-container mx-auto col-20">
+        <div class="menu">
+          <button class="menu-button btn btn-min-primary rounded-0 border-transparent">About Us</button>
+          <div class="menu-item absolute bg-white start-0 end-0 border-top border-wide border-primary shadow">
+            <div class="row g-0 p-4">
+              <div class="col row">
+                <div class="col col-auto"><i class="icon ri-3x clr-primary ri-landscape-line"></i></div>
+                <div class="col">
+                  <h6 class="border-bottom border-wide border-secondary pb-2 mb-3 font-bold fs-5">Gallary</h6>
+                  <div class="mb-2">Drupal</div>
+                  <div class="mb-2">Umbraco</div>
+                  <div class="mb-2">Wordpress 6</div>
+                  <div class="mb-2">Joomla</div>
+                  <div class="mb-2">Joomla</div>
+                  <div class="mb-2">Drupal</div>
+                </div>
+              </div>
+              <div class="col row">
+                <div class="col col-auto"><i class="icon ri-3x clr-primary ri-heart-2-line"></i></div>
+                <div class="col">
+                  <h6 class="border-bottom border-wide border-secondary pb-2 mb-3 font-bold fs-5">Health</h6>
+                  <div class="mb-2">Wordpress</div>
+                  <div class="mb-2">Drupal</div>
+                  <div class="mb-2">Joomla</div>
+                  <div class="mb-2">Umbraco</div>
+                </div>
+              </div>
+              <div class="col row">
+                <div class="col col-auto"><i class="icon ri-3x clr-primary ri-first-aid-kit-line"></i></div>
+                <div class="col">
+                  <h6 class="border-bottom border-wide border-secondary pb-2 mb-3 font-bold fs-5">Aid</h6>
+                  <div class="mb-2">Drupal</div>
+                  <div class="mb-2">Umbraco</div>
+                  <div class="mb-2">Joomla</div>
+                  <div class="mb-2">Wordpress</div>
+                  <div class="mb-2">Umbraco</div>
+                  <div class="mb-2">Drupal</div>
+                </div>
+              </div>
+              <div class="col row">
+                <div class="col col-auto"><i class="icon ri-3x clr-primary ri-treasure-map-line"></i></div>
+                <div class="col">
+                  <h6 class="border-bottom border-wide border-secondary pb-2 mb-3 font-bold fs-5">Travel</h6>
+                  <div class="mb-2">Company Overview</div>
+                  <div class="mb-2">Testimonial</div>
+                  <div class="mb-2">Career</div>
+                  <div class="mb-2">Case Studies</div>
+                  <div class="mb-2">Blog</div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-light row p-4 g-0">
+              <div class="col col-17 flex flex-column justify-between">
+                <h6 class="fs-4 font-bold">Trending</h6>
+                <div class="flex">
+                  <div class="txt-center me-5">
+                    <div><i class="icon ri-app-store-fill display-4 clr-primary"></i></div>
+                    <div>App Store</div>
+                  </div>
+                  <div class="txt-center me-5">
+                    <div><i class="icon ri-angularjs-fill display-4 clr-primary"></i></div>
+                    <div>Angularjs</div>
+                  </div>
+                  <div class="txt-center me-5">
+                    <div><i class="icon ri-behance-fill display-4 clr-primary"></i></div>
+                    <div>Behance</div>
+                  </div>
+                  <div class="txt-center me-5">
+                    <div><i class="icon ri-firefox-fill display-4 clr-primary"></i></div>
+                    <div>Firefox</div>
+                  </div>
+                  <div class="txt-center me-5">
+                    <div><i class="icon ri-flutter-fill display-4 clr-primary"></i></div>
+                    <div>Flutter</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col flex flex-column justify-between">
+                <h6 class="fs-4 font-bold">Accolades Earned By Us</h6>
+                <div class="flex">
+                  <div class="ms-2"><img class="img" src="https://www.zobiwebsolutions.com/wp-content/uploads/2020/05/good-firms-logo.png" alt="" /></div>
+                  <div class="ms-2"><img class="img" src="https://www.zobiwebsolutions.com/wp-content/uploads/2020/05/clutch-logo.png" alt="" /></div>
+                  <div class="ms-2"><img class="img" src="https://www.zobiwebsolutions.com/wp-content/uploads/2020/05/upwork-logo.png" alt="" /></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="dropdown mega-dropdown">
-          <button class="btn btn-primary rounded-0 border-top-0 border-bottom-0 px-4 border-end dropdown-toggle" id="dropdownMenuButton" aria-expanded="false" data-bs-toggle="dropdown">Animals</button>
-          <div class="dropdown-menu rounded-0 border-end-0 border-start-0" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item w-50 inline-block" href="#">Animal A to Z Guide</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Animal news</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Animal enrichment</a>
+        <div class="menu">
+          <button class="menu-button btn btn-min-primary rounded-0 border-transparent">Volunteer</button>
+          <div class="menu-item absolute bg-white start-0 end-0 border-top border-wide border-primary shadow">
+            <div class="row g-0 p-4">
+              <div class="col row">
+                <div class="col col-auto"><i class="icon ri-3x clr-primary ri-landscape-line"></i></div>
+                <div class="col">
+                  <h6 class="border-bottom border-wide border-secondary pb-2 mb-3 font-bold fs-5">Cooporate</h6>
+                  <div class="mb-2">Drupal</div>
+                  <div class="mb-2">Umbraco</div>
+                  <div class="mb-2">Wordpress 6</div>
+                  <div class="mb-2">Joomla</div>
+                  <div class="mb-2">Joomla</div>
+                  <div class="mb-2">Drupal</div>
+                </div>
+              </div>
+              <div class="col-12 row">
+                <div class="col col-auto"><i class="icon ri-3x clr-primary ri-first-aid-kit-line"></i></div>
+                <div class="col">
+                  <h6 class="border-bottom border-wide border-secondary pb-2 mb-3 font-bold fs-5">Read Our Blog</h6>
+                  <div>
+                    <div class="mb-2 row relative">
+                      <button class="btn btn-outline-primary col col-auto stretched-link flex align-middle flex-column" style="min-width: 5rem">
+                        <i class="icon ri-2x ri-safari-fill after-clear"></i>
+                        <div>Safari</div>
+                      </button>
+                      <div class="col align-self-middle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim .</div>
+                    </div>
+                    <div class="mb-2 row relative">
+                      <button class="btn btn-outline-primary col col-auto stretched-link flex align-middle flex-column" style="min-width: 5rem">
+                        <i class="icon ri-2x ri-skype-fill after-clear"></i>
+                        <div>Skype</div>
+                      </button>
+                      <div class="col align-self-middle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim .</div>
+                    </div>
+                    <div class="mb-2 row relative">
+                      <button class="btn btn-outline-primary col col-auto stretched-link flex align-middle flex-column" style="min-width: 5rem">
+                        <i class="icon ri-2x ri-slack-fill after-clear"></i>
+                        <div>Slack</div>
+                      </button>
+                      <div class="col align-self-middle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim .</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col row">
+                <div class="col col-auto"><i class="icon ri-3x clr-primary ri-treasure-map-line"></i></div>
+                <div class="col">
+                  <h6 class="border-bottom border-wide border-secondary pb-2 mb-3 font-bold fs-5">Travel</h6>
+                  <div class="mb-2">Company Overview</div>
+                  <div class="mb-2">Testimonial</div>
+                  <div class="mb-2">Career</div>
+                  <div class="mb-2">Case Studies</div>
+                  <div class="mb-2">Blog</div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-light row p-4 g-0 txt-center">
+              <div class="col">
+                <img src="https://www.zobiwebsolutions.com/wp-content/themes/ZobiWebSolution/assets/images/rewards-icon.png" alt="" class="img" />
+              </div>
+              <div class="col">
+                <div class="fs-3 font-bold flex align-middle justify-center"><i class="icon clr-primary ri-dribbble-line me-1"></i> 15,000+</div>
+                <div class="fs-5">Hours of working experience on Cat Survival Trust</div>
+              </div>
+              <div class="col">
+                <div class="fs-3 font-bold flex align-middle justify-center"><i class="icon clr-primary ri-group-line me-1"></i> 80+</div>
+                <div class="fs-5">Satisfied Customers & Companies</div>
+              </div>
+              <div class="col">
+                <div class="fs-3 font-bold flex align-middle justify-center"><i class="icon clr-primary ri-earth-line me-1"></i> 150+</div>
+                <div class="fs-5">Projects done successfully across 25+ Countries</div>
+              </div>
+              <div class="col">
+                <div class="fs-3 font-bold flex align-middle justify-center"><i class="icon clr-primary ri-lightbulb-flash-line me-1"></i> 30+</div>
+                <div class="fs-5">Employee Strength</div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="dropdown mega-dropdown">
-          <button class="btn btn-primary rounded-0 border-top-0 border-bottom-0 px-4 border-end dropdown-toggle" id="dropdownMenuButton" aria-expanded="false" data-bs-toggle="dropdown">Explore</button>
-          <div class="dropdown-menu rounded-0 border-end-0 border-start-0" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item w-50 inline-block" href="#">Explore</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Latest news</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Blogs</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Zoo map</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Attractions</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Webcams</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Keeper talk videos</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Competitions</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Videos</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Virtual tour</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Zoo app</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Gardens</a>
+        <div class="menu relative txt-nowrap">
+          <button class="menu-button btn btn-min-primary rounded-0 border-transparent">Contact</button>
+          <div class="menu-item absolute bg-white start-0 p-3 border-top border-wide border-primary shadow">
+            <h6 class="border-bottom border-wide border-secondary pb-2 mb-3 font-bold fs-5">Travel</h6>
+            <div class="mb-2">Company Overview</div>
+            <div class="mb-2">Testimonial</div>
+            <div class="mb-2">Career</div>
+            <div class="mb-2">Case Studies</div>
+            <div class="mb-2">Blog</div>
           </div>
         </div>
-        <div class="dropdown mega-dropdown">
-          <button class="btn btn-primary rounded-0 border-top-0 border-bottom-0 px-4 border-end dropdown-toggle" id="dropdownMenuButton" aria-expanded="false" data-bs-toggle="dropdown">Education</button>
-          <div class="dropdown-menu rounded-0 border-end-0 border-start-0" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item w-50 inline-block" href="#">Wild at Home</a>
-            <a class="dropdown-item w-50 inline-block" href="#">Education</a>
-            <a class="dropdown-item w-50 inline-block" href="#">School from the Zoo</a>
+        <div class="menu">
+          <button class="menu-button btn btn-min-primary rounded-0 border-transparent">Art</button>
+          <div class="menu-item absolute bg-white start-0 end-0 border-top border-wide border-primary shadow">
+            <div class="row g-0 p-4">
+              <div class="col row">
+                <div class="col col-auto"><i class="icon ri-3x clr-primary ri-landscape-line"></i></div>
+                <div class="col">
+                  <h6 class="border-bottom border-wide border-secondary pb-2 mb-3 font-bold fs-5">Gallary</h6>
+                  <div class="mb-2">Drupal</div>
+                  <div class="mb-2">Umbraco</div>
+                  <div class="mb-2">Wordpress 6</div>
+                  <div class="mb-2">Joomla</div>
+                  <div class="mb-2">Joomla</div>
+                  <div class="mb-2">Drupal</div>
+                </div>
+              </div>
+              <div class="col row">
+                <div class="col col-auto"><i class="icon ri-3x clr-primary ri-heart-2-line"></i></div>
+                <div class="col">
+                  <h6 class="border-bottom border-wide border-secondary pb-2 mb-3 font-bold fs-5">Health</h6>
+                  <div class="mb-2">Wordpress</div>
+                  <div class="mb-2">Drupal</div>
+                  <div class="mb-2">Joomla</div>
+                  <div class="mb-2">Umbraco</div>
+                </div>
+              </div>
+              <div class="col row">
+                <div class="col col-auto"><i class="icon ri-3x clr-primary ri-first-aid-kit-line"></i></div>
+                <div class="col">
+                  <h6 class="border-bottom border-wide border-secondary pb-2 mb-3 font-bold fs-5">Aid</h6>
+                  <div class="mb-2">Drupal</div>
+                  <div class="mb-2">Umbraco</div>
+                  <div class="mb-2">Joomla</div>
+                  <div class="mb-2">Wordpress</div>
+                  <div class="mb-2">Umbraco</div>
+                  <div class="mb-2">Drupal</div>
+                </div>
+              </div>
+              <div class="col row">
+                <div class="col col-auto"><i class="icon ri-3x clr-primary ri-treasure-map-line"></i></div>
+                <div class="col">
+                  <h6 class="border-bottom border-wide border-secondary pb-2 mb-3 font-bold fs-5">Travel</h6>
+                  <div class="mb-2">Umbraco</div>
+                  <div class="mb-2">Wordpress</div>
+                  <div class="mb-2">Joomla</div>
+                  <div class="mb-2">Umbraco</div>
+                  <div class="mb-2">Drupal</div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-light row p-4 g-0">
+              <div class="col col-17 flex flex-column justify-between">
+                <h6 class="fs-4 font-bold">Trending</h6>
+                <div class="flex">
+                  <div class="txt-center me-5">
+                    <div><i class="icon ri-app-store-fill display-4 clr-primary"></i></div>
+                    <div>App Store</div>
+                  </div>
+                  <div class="txt-center me-5">
+                    <div><i class="icon ri-angularjs-fill display-4 clr-primary"></i></div>
+                    <div>Angularjs</div>
+                  </div>
+                  <div class="txt-center me-5">
+                    <div><i class="icon ri-behance-fill display-4 clr-primary"></i></div>
+                    <div>Behance</div>
+                  </div>
+                  <div class="txt-center me-5">
+                    <div><i class="icon ri-firefox-fill display-4 clr-primary"></i></div>
+                    <div>Firefox</div>
+                  </div>
+                  <div class="txt-center me-5">
+                    <div><i class="icon ri-flutter-fill display-4 clr-primary"></i></div>
+                    <div>Flutter</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col flex flex-column justify-between">
+                <h6 class="fs-4 font-bold">Accolades Earned By Us</h6>
+                <div class="flex">
+                  <div class="ms-2"><img class="img" src="https://www.zobiwebsolutions.com/wp-content/uploads/2020/05/good-firms-logo.png" alt="" /></div>
+                  <div class="ms-2"><img class="img" src="https://www.zobiwebsolutions.com/wp-content/uploads/2020/05/clutch-logo.png" alt="" /></div>
+                  <div class="ms-2"><img class="img" src="https://www.zobiwebsolutions.com/wp-content/uploads/2020/05/upwork-logo.png" alt="" /></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <button class="btn btn-primary rounded-0 border-top-0 border-bottom-0 px-4 border-end">Conservation</button>
-        <button class="btn btn-primary rounded-0 border-top-0 border-bottom-0 px-4 border-end">Support Us</button>
-        <button class="btn btn-primary rounded-0 border-top-0 border-bottom-0 px-4 border-end">What's Happening</button>
       </nav>
       <div class="lyt-header h-min-auto px-4 hidden lg-flex justify-center txt-upper">
         <div class="dropdown">
