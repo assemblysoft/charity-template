@@ -48,13 +48,9 @@ new Headroom(document.body, {
     pinned: "headroom--pinned"
   },
   // callback when pinned, `this` is headroom objectF
-  onPin: () => {
-    header.style.top = 0;
-  },
+  onPin: () => {},
   // callback when unpinned, `this` is headroom object
-  onUnpin: () => {
-    header.style.top = header.children[0].clientHeight;
-  },
+  onUnpin: () => {},
   // callback when above offset, `this` is headroom object
   onTop: () => {},
   // callback when below offset, `this` is headroom object
