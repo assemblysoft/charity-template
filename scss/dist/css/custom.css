@@ -408,7 +408,6 @@
 }
 
 header {
-  top: 0;
   z-index: 20;
   transition: top 0.5s ease-in-out;
 }
@@ -416,9 +415,6 @@ header {
   header {
     transition: none;
   }
-}
-.headroom--unpinned header {
-  top: -67px;
 }
 
 @media (prefers-reduced-motion: reduce) {
