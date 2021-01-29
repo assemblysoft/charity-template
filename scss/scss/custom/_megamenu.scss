@@ -19,7 +19,11 @@
     }
 
     > .btn {
-      color: $primary;
+      @each $color, $value in $theme-colors {
+        &.btn-min-#{$color} {
+          color: $value;
+        }
+      }
 
       &::before {
         right: 0;

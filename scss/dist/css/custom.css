@@ -20,8 +20,35 @@
   visibility: visible;
   opacity: 1;
 }
-.menu:hover > .btn {
+.menu:hover > .btn.btn-min-primary {
   color: #e36802;
+}
+.menu:hover > .btn.btn-min-secondary {
+  color: #ffc107;
+}
+.menu:hover > .btn.btn-min-valid {
+  color: #789904;
+}
+.menu:hover > .btn.btn-min-info {
+  color: #0dcaf0;
+}
+.menu:hover > .btn.btn-min-warn {
+  color: #ffc107;
+}
+.menu:hover > .btn.btn-min-error {
+  color: #dc3545;
+}
+.menu:hover > .btn.btn-min-orange {
+  color: #e36802;
+}
+.menu:hover > .btn.btn-min-blue {
+  color: #0d6efd;
+}
+.menu:hover > .btn.btn-min-light {
+  color: #e9ecef;
+}
+.menu:hover > .btn.btn-min-dark {
+  color: #212529;
 }
 .menu:hover > .btn::before {
   right: 0;
