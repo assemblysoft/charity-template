@@ -55,24 +55,154 @@
   left: 0;
 }
 
-.bg-linkedin {
-  background: #0e72a3 !important;
+.btn-linkedin {
+  color: #fff;
+  background-color: #0e72a3;
+  border-color: #0e72a3;
+}
+.btn-linkedin:hover {
+  color: #fff;
+  background-color: #0b567a;
+  border-color: #0a5072;
+}
+.btn-check:focus + .btn-linkedin, .btn-linkedin:focus {
+  color: #fff;
+  background-color: #0b567a;
+  border-color: #0a5072;
+  box-shadow: 0 0 0 0.25rem rgba(50, 135, 177, 0.5);
+}
+.btn-check:checked + .btn-linkedin, .btn-check:active + .btn-linkedin, .btn-linkedin:active, .btn-linkedin.active, .show > .btn-linkedin.dropdown-toggle {
+  color: #fff;
+  background-color: #084462;
+  border-color: #083f5a;
+}
+.btn-check:checked + .btn-linkedin:focus, .btn-check:active + .btn-linkedin:focus, .btn-linkedin:active:focus, .btn-linkedin.active:focus, .show > .btn-linkedin.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(50, 135, 177, 0.5);
+}
+.btn-linkedin:disabled, .btn-linkedin.disabled {
+  color: #fff;
+  background-color: #0e72a3;
+  border-color: #0e72a3;
 }
 
-.bg-facebook {
-  background: #37589d !important;
+.btn-facebook {
+  color: #fff;
+  background-color: #37589d;
+  border-color: #37589d;
+}
+.btn-facebook:hover {
+  color: #fff;
+  background-color: #294276;
+  border-color: #273e6e;
+}
+.btn-check:focus + .btn-facebook, .btn-facebook:focus {
+  color: #fff;
+  background-color: #294276;
+  border-color: #273e6e;
+  box-shadow: 0 0 0 0.25rem rgba(85, 113, 172, 0.5);
+}
+.btn-check:checked + .btn-facebook, .btn-check:active + .btn-facebook, .btn-facebook:active, .btn-facebook.active, .show > .btn-facebook.dropdown-toggle {
+  color: #fff;
+  background-color: #21355e;
+  border-color: #1e3056;
+}
+.btn-check:checked + .btn-facebook:focus, .btn-check:active + .btn-facebook:focus, .btn-facebook:active:focus, .btn-facebook.active:focus, .show > .btn-facebook.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(85, 113, 172, 0.5);
+}
+.btn-facebook:disabled, .btn-facebook.disabled {
+  color: #fff;
+  background-color: #37589d;
+  border-color: #37589d;
 }
 
-.bg-twitter {
-  background: #02b8e8 !important;
+.btn-twitter {
+  color: #000;
+  background-color: #02b8e8;
+  border-color: #02b8e8;
+}
+.btn-twitter:hover {
+  color: #000;
+  background-color: #41caee;
+  border-color: #35c6ed;
+}
+.btn-check:focus + .btn-twitter, .btn-twitter:focus {
+  color: #000;
+  background-color: #41caee;
+  border-color: #35c6ed;
+  box-shadow: 0 0 0 0.25rem rgba(2, 156, 197, 0.5);
+}
+.btn-check:checked + .btn-twitter, .btn-check:active + .btn-twitter, .btn-twitter:active, .btn-twitter.active, .show > .btn-twitter.dropdown-toggle {
+  color: #000;
+  background-color: #67d4f1;
+  border-color: #4ecdef;
+}
+.btn-check:checked + .btn-twitter:focus, .btn-check:active + .btn-twitter:focus, .btn-twitter:active:focus, .btn-twitter.active:focus, .show > .btn-twitter.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(2, 156, 197, 0.5);
+}
+.btn-twitter:disabled, .btn-twitter.disabled {
+  color: #000;
+  background-color: #02b8e8;
+  border-color: #02b8e8;
 }
 
-.bg-youtube {
-  background: #ce322f !important;
+.btn-youtube {
+  color: #fff;
+  background-color: #ce322f;
+  border-color: #ce322f;
+}
+.btn-youtube:hover {
+  color: #fff;
+  background-color: #9b2623;
+  border-color: #902321;
+}
+.btn-check:focus + .btn-youtube, .btn-youtube:focus {
+  color: #fff;
+  background-color: #9b2623;
+  border-color: #902321;
+  box-shadow: 0 0 0 0.25rem rgba(213, 81, 78, 0.5);
+}
+.btn-check:checked + .btn-youtube, .btn-check:active + .btn-youtube, .btn-youtube:active, .btn-youtube.active, .show > .btn-youtube.dropdown-toggle {
+  color: #fff;
+  background-color: #7c1e1c;
+  border-color: #711c1a;
+}
+.btn-check:checked + .btn-youtube:focus, .btn-check:active + .btn-youtube:focus, .btn-youtube:active:focus, .btn-youtube.active:focus, .show > .btn-youtube.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(213, 81, 78, 0.5);
+}
+.btn-youtube:disabled, .btn-youtube.disabled {
+  color: #fff;
+  background-color: #ce322f;
+  border-color: #ce322f;
 }
 
-.bg-instagram {
-  background: #aa4087 !important;
+.btn-instagram {
+  color: #fff;
+  background-color: #aa4087;
+  border-color: #aa4087;
+}
+.btn-instagram:hover {
+  color: #fff;
+  background-color: #803065;
+  border-color: #772d5f;
+}
+.btn-check:focus + .btn-instagram, .btn-instagram:focus {
+  color: #fff;
+  background-color: #803065;
+  border-color: #772d5f;
+  box-shadow: 0 0 0 0.25rem rgba(183, 93, 153, 0.5);
+}
+.btn-check:checked + .btn-instagram, .btn-check:active + .btn-instagram, .btn-instagram:active, .btn-instagram.active, .show > .btn-instagram.dropdown-toggle {
+  color: #fff;
+  background-color: #662651;
+  border-color: #5e234a;
+}
+.btn-check:checked + .btn-instagram:focus, .btn-check:active + .btn-instagram:focus, .btn-instagram:active:focus, .btn-instagram.active:focus, .show > .btn-instagram.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(183, 93, 153, 0.5);
+}
+.btn-instagram:disabled, .btn-instagram.disabled {
+  color: #fff;
+  background-color: #aa4087;
+  border-color: #aa4087;
 }
 
 .bg-black {

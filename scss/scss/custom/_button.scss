@@ -1,0 +1,13 @@
+$buttons: (
+  linkedin: #0e72a3,
+  facebook: #37589d,
+  twitter: #02b8e8,
+  youtube: #ce322f,
+  instagram: #aa4087,
+) !default;
+
+@each $color, $value in $buttons {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+}

@@ -10,17 +10,13 @@
 @import "vendor/rfs";
 @import "utilities";
 @import "./custom/megamenu";
+@import "./custom/button";
 
 $utilities: (
   "background": (
     property: background,
     class: bg,
     values: (
-      linkedin: #0e72a3,
-      facebook: #37589d,
-      twitter: #02b8e8,
-      youtube: #ce322f,
-      instagram: #aa4087,
       black: $black,
       black-90: rgba($black, 0.9),
       black-75: rgba($black, 0.75),
