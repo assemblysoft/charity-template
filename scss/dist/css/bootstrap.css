@@ -6978,7 +6978,7 @@ a.clr-primary {
   }
 }
 a.clr-primary:hover, a.clr-primary:focus {
-  color: #723401 !important;
+  color: #f7d2b3 !important;
 }
 
 a.clr-secondary {
@@ -6990,7 +6990,7 @@ a.clr-secondary {
   }
 }
 a.clr-secondary:hover, a.clr-secondary:focus {
-  color: #ffe083 !important;
+  color: #4d3a02 !important;
 }
 
 a.clr-valid {
@@ -7002,7 +7002,7 @@ a.clr-valid {
   }
 }
 a.clr-valid:hover, a.clr-valid:focus {
-  color: #3c4d02 !important;
+  color: #d7e0b4 !important;
 }
 
 a.clr-info {
@@ -7014,7 +7014,7 @@ a.clr-info {
   }
 }
 a.clr-info:hover, a.clr-info:focus {
-  color: #86e5f8 !important;
+  color: #043d48 !important;
 }
 
 a.clr-warn {
@@ -7026,7 +7026,7 @@ a.clr-warn {
   }
 }
 a.clr-warn:hover, a.clr-warn:focus {
-  color: #ffe083 !important;
+  color: #4d3a02 !important;
 }
 
 a.clr-error {
@@ -7038,7 +7038,7 @@ a.clr-error {
   }
 }
 a.clr-error:hover, a.clr-error:focus {
-  color: #6e1b23 !important;
+  color: #f5c2c7 !important;
 }
 
 a.clr-orange {
@@ -7050,7 +7050,7 @@ a.clr-orange {
   }
 }
 a.clr-orange:hover, a.clr-orange:focus {
-  color: #723401 !important;
+  color: #f7d2b3 !important;
 }
 
 a.clr-blue {
@@ -7062,7 +7062,7 @@ a.clr-blue {
   }
 }
 a.clr-blue:hover, a.clr-blue:focus {
-  color: #07377f !important;
+  color: #b6d4fe !important;
 }
 
 a.clr-light {
@@ -7074,7 +7074,7 @@ a.clr-light {
   }
 }
 a.clr-light:hover, a.clr-light:focus {
-  color: #f4f6f7 !important;
+  color: #464748 !important;
 }
 
 a.clr-dark {
@@ -7086,7 +7086,7 @@ a.clr-dark {
   }
 }
 a.clr-dark:hover, a.clr-dark:focus {
-  color: #111315 !important;
+  color: #bcbebf !important;
 }
 
 .ratio {

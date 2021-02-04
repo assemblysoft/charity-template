@@ -276,7 +276,7 @@ $body-text-align:           null !default;
 
 $link-color:                              inherit !default;
 $link-decoration:                         none !default;
-$link-shade-percentage:                   50% !default;
+$link-shade-percentage:                   70% !default;
 $link-hover-color:                        if(($link-color != null and $link-color != inherit), shift-color($link-color, $link-shade-percentage), null) !default;
 $link-hover-decoration:                   null !default;
 
