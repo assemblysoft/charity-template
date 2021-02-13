@@ -154,7 +154,7 @@ if (typeof $ !== "undefined" && document.querySelector('[data-fancybox="gallery"
 }
 
 //
-// light box
+// Slider
 //
 
 if ((HeroSlider = document.querySelector(".HeroSlider"))) {
@@ -169,6 +169,21 @@ if ((HeroSlider = document.querySelector(".HeroSlider"))) {
     const nextslide = slider.Components.Elements.getSlide(next).slide;
     slider.options = { height: nextslide.clientHeight };
   });
+}
+
+if ((footerSlider = document.querySelector(".footerSlider"))) {
+  const slider = new Splide(".footerSlider", {
+    type: "loop",
+    perPage: 3,
+    arrows: false,
+    autoplay: true,
+    gap: "1em",
+    pagination: false,
+    pauseOnHover: true,
+    interval: 3000,
+    breakpoints: { 576: { perPage: 1 }, 992: { perPage: 2 } }
+  }).mount();
+  console.log(slider);
 }
 
 // cookies section
