@@ -132,10 +132,6 @@
 
   &:hover {
     color: $color;
-    &::before {
-      right: 0%;
-      left: 0%;
-    }
   }
 
   .btn-check:focus + &,
