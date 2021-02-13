@@ -503,3 +503,8 @@ p:last-child {
     }
   }
 }
+
+.w-min-150px {
+  flex: none;
+  min-width: 150px;
+}
