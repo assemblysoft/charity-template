@@ -478,25 +478,108 @@
               <p>Where it all began for Born Free. This pride still resides in Meru National Park today. With your support we can protect them for future generations.</p>
               <p>Your adoption will help us monitor and protect wild lions in Meru National Park.</p>
             </div>
-            <div class="col-24 col-lg-12" style="max-width: 420px">
-              <form class="txt-center bg-white shadow rounded-3 overflow-hidden">
-                <h5 class="bg-primary p-3 font-bold">WHO WOULD YOU LIKE TO ADOPT?</h5>
-                <div class="p-3">
-                  <div class="mb-2">
-                    <button class="my-1 btn btn-dark w-100">ELSA'S PRIDE</button>
-                    <button class="my-1 btn btn-dark w-100">KING THE LION</button>
+            <div class="col-24 col-lg-12" style="max-width: 768px">
+              <form class="bg-white shadow rounded-3 overflow-hidden bg-white rounded-lg shadow-sm p-5">
+                <h2 class="font-bold mb-4 txt-center">Comic Relief supports projects around the world.</h2>
+
+                <ul class="nav nav-pills nav-fill rounded-pill bg-light p-2 mb-3" id="donation-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="btn nav-link w-100 rounded-pill active" id="donation-home-tab" data-bs-toggle="pill" data-bs-target="#donation-home" type="button" role="tab" aria-controls="donation-home" aria-selected="true" data-frequency="once">Single Donation</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="btn nav-link w-100 rounded-pill" id="donation-profile-tab" data-bs-toggle="pill" data-bs-target="#donation-profile" type="button" role="tab" aria-controls="donation-profile" aria-selected="false" data-frequency="monthly">Monthly Donation</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="btn nav-link w-100 rounded-pill" id="donation-contact-tab" data-bs-toggle="pill" data-bs-target="#donation-contact" type="button" role="tab" aria-controls="donation-contact" aria-selected="false" data-frequency="fundraising">Pay in Fundraising</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="donation-tabContent">
+                  <div class="tab-pane fade show active" id="donation-home" role="tabpanel" aria-labelledby="donation-home-tab">
+                    <div class="h4 txt-center">Your donation could pay for:</div>
+
+                    <label data-amount="35" data-frequency="once" class="form-check py-3 border-start-0 border-end-0 border-top-0 border-dashed border-bottom m-0">
+                      <input class="form-check-input mt-4" type="radio" name="exampleRadios" />
+                      <span class="form-check-label">
+                        <span class="block h1 mb-0"><span class="is-lg txt-super">£</span>35</span>
+                        <span class="block txt-start">a teacher to educate 4-6 year olds in Kenya and support their health and well-being.</span>
+                      </span>
+                    </label>
+                    <label data-amount="60" data-frequency="once" class="form-check py-3 border-start-0 border-end-0 border-dashed border-top border-bottom m-0">
+                      <input class="form-check-input mt-4" type="radio" name="exampleRadios" />
+                      <span class="form-check-label">
+                        <span class="block h1 mb-0"><span class="is-lg txt-super">£</span>60</span>
+                        <span class="block txt-start">three choir sessions, bringing local schoolchildren and older adults in sheltered accommodation together, to uplift mood and improve well-being of residents.</span>
+                      </span>
+                    </label>
+                    <label data-amount="100" data-frequency="once" class="form-check py-3 border-start-0 border-end-0 border-bottom-0 border-dashed border-top m-0">
+                      <input class="form-check-input mt-4" type="radio" name="exampleRadios" />
+                      <span class="form-check-label">
+                        <span class="block h1 mb-0"><span class="is-lg txt-super">£</span>100</span>
+                        <span class="block txt-start">basic furniture and equipment for a young homeless person in the UK to set up a new home.</span>
+                      </span>
+                    </label>
                   </div>
-                  <div>
-                    <h5 class="mb-2">Choose a monthly payment</h5>
-                    <button class="my-1 btn btn-dark w-100">£3.00</button>
-                    <button class="my-1 btn btn-dark w-100">£5.00</button>
-                    <button class="my-1 btn btn-dark w-100">£10.00</button>
-                    <button class="my-1 btn btn-dark w-100">Other amount</button>
+                  <div class="tab-pane fade" id="donation-profile" role="tabpanel" aria-labelledby="donation-profile-tab">
+                    <div class="h4 txt-center">Your regular donation could pay for:</div>
+
+                    <label data-amount="5" data-frequency="monthly" class="form-check py-3 border-start-0 border-end-0 border-top-0 border-dashed border-bottom m-0">
+                      <input class="form-check-input mt-4" type="radio" name="exampleRadios" />
+                      <span class="form-check-label">
+                        <span class="block h1 mb-0"><span class="is-lg txt-super">£</span>5</span>
+                        <span class="block txt-start">a regular supply of toiletries for someone living in a refugee camp in Serbia.</span>
+                      </span>
+                    </label>
+                    <label data-amount="10" data-frequency="monthly" class="form-check py-3 border-start-0 border-end-0 border-dashed border-top border-bottom m-0">
+                      <input class="form-check-input mt-4" type="radio" name="exampleRadios" />
+                      <span class="form-check-label">
+                        <span class="block h1 mb-0"><span class="is-lg txt-super">£</span>10</span>
+                        <span class="block txt-start">a potentially lifesaving call, for a young man at risk of suicide in the UK.</span>
+                      </span>
+                    </label>
+                    <label data-amount="20" data-frequency="monthly" class="form-check py-3 border-start-0 border-end-0 border-bottom-0 border-dashed border-top m-0">
+                      <input class="form-check-input mt-4" type="radio" name="exampleRadios" />
+                      <span class="form-check-label">
+                        <span class="block h1 mb-0"><span class="is-lg txt-super">£</span>20</span>
+                        <span class="block txt-start">nutritious meals and a counselling session for two children living on the streets of Malawi.</span>
+                      </span>
+                    </label>
                   </div>
-                  <p>To change to your preferred currency please use the currency option at the top of the page. Please note this is for display purposes only and your bank may offer a different exchange rate.</p>
-                  <button class="btn font-bold fs-5">Prefer a <span class="clr-orange">Monthly payment?</span></button>
+                  <div class="tab-pane fade" id="donation-contact" role="tabpanel" aria-labelledby="donation-contact-tab">
+                    <div class="h4 font-normal txt-center">Your fundraising money:</div>
+
+                    <div class="carousel slide py-4" id="carouselExampleControls" data-bs-ride="carousel">
+                      <div class="carousel-inner txt-center w-75 mx-auto font-normal">
+                        <div class="carousel-item active">could make sure that vital community services stay open to help people</div>
+                        <div class="carousel-item">could help support people in communities all over the UK</div>
+                        <div class="carousel-item">could help support the most vulnerable among us</div>
+                      </div>
+                      <a class="carousel-control-prev" data-bs-slide="prev" href="#carouselExampleControls" role="button">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" data-bs-slide="next" href="#carouselExampleControls" role="button">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <button class="btn btn-secondary font-bold fs-5 w-100 rounded-0 p-3">ADOPT NOW</button>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend col-6 dropdown">
+                    <button class="btn btn-primary w-100 dropdown-toggle shadow-lg" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">£Pound</button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <input min="1" max="25000" id="amount_input" oninput="Oninput(this)" class="form-control" type="number" aria-label="Text input with dropdown button" />
+                </div>
+
+                <div id="error" class="p-2 bg-error my-2 rounded-1">Error</div>
+                <div class="flex align-middle justify-center">
+                  <button id="next" class="btn btn-primary font-bold">Yes, pay £<span id="amount">5</span> <span id="frequency">right now</span></button>
+                </div>
               </form>
             </div>
           </div>
@@ -638,4 +721,37 @@
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
   <script src="./js/custom.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" rel="stylesheet" />
+  <script>
+    let amount = 5;
+    let frequency = "once";
+
+    this.changeAmount(amount, frequency);
+    document.querySelectorAll("[data-amount]").forEach((e) => (e.onclick = () => this.changeAmount(e.getAttribute("data-amount"), e.getAttribute("data-frequency"))));
+
+    function changeAmount(amount, frequency) {
+      if (frequency) this.frequency = frequency;
+      if (amount) this.amount = amount;
+      if (this.amount > 0 && this.amount < 25000 + 1) {
+        document.querySelector("#next").removeAttribute("disabled");
+        document.querySelector("#error").classList.add("hidden");
+        document.getElementById("amount").innerHTML = this.amount;
+        document.getElementById("frequency").innerHTML = this.frequency === "once" ? "right now" : this.frequency === "monthly" ? "monthly" : "fundraising";
+        document.getElementById("amount_input").value = this.amount;
+      } else {
+        document.querySelector("#next").setAttribute("disabled", true);
+        document.querySelector("#error").classList.remove("hidden");
+        document.querySelector("#error").innerHTML = "Please enter a number between 1 and 25000";
+      }
+    }
+
+    function Oninput(input) {
+      const dataAmount = document.querySelectorAll("[data-amount]");
+      dataAmount.forEach((e) => (e.querySelector("input").checked = false));
+      changeAmount(input.value, document.querySelector(".nav-link.active").getAttribute("data-frequency").replace("#", ""));
+    }
+
+    function done() {
+      console.log("paying : ", this.amount, this.frequency);
+    }
+  </script>
 </html>

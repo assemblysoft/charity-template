@@ -369,7 +369,7 @@
 
     <main class="lyt-main relative">
       <form class="tabs" onsubmit="done()">
-        <div data-tab="funding" class="tab-content row g-0 tabs align-middle">
+        <div data-tab="funding" class="tab-content row g-0 tabs">
           <div class="col">
             <div class="tab-content img-bg h-min-100vh h-100" data-tab="once" style="background-image: url('./img/donation-1.jpg')"></div>
             <div class="tab-content img-bg h-min-100vh h-100" data-tab="monthly" style="background-image: url('./img/donation-2.jpg')"></div>
@@ -379,9 +379,9 @@
             <h2 class="font-bold mb-4">Comic Relief supports projects around the world.</h2>
 
             <div class="btn-group w-100 mb-4 bg-light p-2 rounded-pill" role="group">
-              <a class="btn btn-primary rounded-pill tab-switch font-bold active" onclick="changeAmount(this.amount,'once')" href="#once">Single Donation</a>
-              <a class="btn btn-primary rounded-pill tab-switch font-bold" onclick="changeAmount(this.amount,'monthly')" href="#monthly">Monthly Donation</a>
-              <a class="btn btn-primary rounded-pill tab-switch font-bold" onclick="changeAmount(this.amount,'fundraising')" href="#fundraising">Pay in Fundraising</a>
+              <a class="btn btn-primary rounded-pill tab-switch font-bold active" onclick="changeAmount(this.amount,'once')" data-frequency="once" href="#once">Single Donation</a>
+              <a class="btn btn-primary rounded-pill tab-switch font-bold" onclick="changeAmount(this.amount,'monthly')" data-frequency="monthly" href="#monthly">Monthly Donation</a>
+              <a class="btn btn-primary rounded-pill tab-switch font-bold" onclick="changeAmount(this.amount,'fundraising')" data-frequency="fundraising" href="#fundraising">Pay in Fundraising</a>
             </div>
 
             <div class="tab-content" data-tab="once">
@@ -466,7 +466,7 @@
               <input min="1" max="25000" id="amount_input" oninput="Oninput(this)" class="form-control" type="number" aria-label="Text input with dropdown button" />
             </div>
 
-            <div id="error" class="p-2 bg-error my-2 rounded-1">asd</div>
+            <div id="error" class="p-2 bg-error my-2 rounded-1">Error</div>
 
             <div class="flex align-middle justify-center">
               <button id="next" class="btn btn-primary font-bold">Yes, pay £<span id="amount">5</span> <span id="frequency">right now</span></button>
@@ -637,7 +637,7 @@
     function Oninput(input) {
       const dataAmount = document.querySelectorAll("[data-amount]");
       dataAmount.forEach((e) => (e.querySelector("input").checked = false));
-      changeAmount(input.value, document.querySelector(".tab-switch.active").getAttribute("href").replace("#", ""));
+      changeAmount(input.value, document.querySelector(".tab-switch.active").getAttribute("data-frequency").replace("#", ""));
     }
 
     function done() {
