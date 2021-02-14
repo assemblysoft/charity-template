@@ -841,4 +841,9 @@ p:last-child {
   pointer-events: none;
 }
 
+.px-5rem {
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
 /*# sourceMappingURL=custom.css.map */
