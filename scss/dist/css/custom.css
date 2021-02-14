@@ -831,4 +831,14 @@ p:last-child {
   min-width: 150px;
 }
 
+.btn.rounded-pill.tab-switch:not(.active) {
+  color: #212529;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.tab-switch.active {
+  pointer-events: none;
+}
+
 /*# sourceMappingURL=custom.css.map */

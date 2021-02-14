@@ -65,44 +65,6 @@ new Headroom(document.body, {
   onNotBottom: () => {}
 }).init();
 
-//
-// Tabs implimentation
-//
-
-if (typeof $ !== "undefined" && document.querySelectorAll(".tabs").length) {
-  // const queryString = window.location.hash;
-  // const activeTab = e.querySelector(queryString ? `a[href='${queryString}']` : "a.tabs-switcher");
-
-  document.querySelectorAll(".tabs").forEach((tabs) => {
-    $.fx.off = true;
-    const firsttab = tabs.querySelector(".tab_content:first-child").getAttribute("data-tab");
-    changetab(firsttab, tabs);
-    $.fx.off = false;
-  });
-
-  function changetab(href, root) {
-    root.setAttribute("active", href);
-    root.querySelectorAll(".tabs-switcher").forEach((e) => e.classList.remove("active")); // Hide all content
-    root.querySelectorAll(`.tab_content`).forEach((e) => {
-      if (e.parentElement.closest(".tabs") === root) $(e).slideUp(400);
-    });
-    root.querySelectorAll(`[data-tab='${href}']`).forEach((e) => $(e).slideDown(400));
-    root.querySelectorAll(`[data-tab='${href}']`).forEach((e) => e.classList.add("active"));
-  }
-
-  // On Click Event
-  document.querySelectorAll("a.tabs-switcher").forEach((e) => {
-    e.onclick = (event) => {
-      const switcher = event.target;
-      switcher.classList.add("active");
-      const href = switcher.getAttribute("href").replace("#", "");
-      const parent = switcher.getAttribute("data-parent");
-      const root = switcher.closest(parent ?? ".tabs");
-      changetab(href, root);
-    };
-  });
-}
-
 if ((mansory = document.querySelectorAll(".masonry"))) {
   mansory.forEach((e) => new Macy({ container: e, waitForImages: true, margin: 16, columns: 3, breakAt: { 1200: 5, 940: 3, 520: 2, 400: 1 } }));
 }
@@ -183,7 +145,6 @@ if ((footerSlider = document.querySelector(".footerSlider"))) {
     interval: 3000,
     breakpoints: { 576: { perPage: 1 }, 992: { perPage: 2 } }
   }).mount();
-  console.log(slider);
 }
 
 // cookies section

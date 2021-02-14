@@ -7201,6 +7201,10 @@ a.clr-dark:hover, a.clr-dark:focus {
   vertical-align: text-top !important;
 }
 
+.txt-super {
+  vertical-align: super !important;
+}
+
 .float-start {
   float: left !important;
 }
@@ -7476,6 +7480,38 @@ a.clr-dark:hover, a.clr-dark:focus {
 
 .border-5 {
   border-width: 5px !important;
+}
+
+.border-dotted {
+  border-style: dotted !important;
+}
+
+.border-dashed {
+  border-style: dashed !important;
+}
+
+.border-solid {
+  border-style: solid !important;
+}
+
+.border-double {
+  border-style: double !important;
+}
+
+.border-groove {
+  border-style: groove !important;
+}
+
+.border-ridge {
+  border-style: ridge !important;
+}
+
+.border-inset {
+  border-style: inset !important;
+}
+
+.border-outset {
+  border-style: outset !important;
 }
 
 .w-25 {

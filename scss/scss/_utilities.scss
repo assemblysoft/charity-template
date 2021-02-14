@@ -7,7 +7,7 @@ $utilities: map-merge(
     "align": (
       property: vertical-align,
       class: txt,
-      values: baseline top middle bottom text-bottom text-top
+      values: baseline top middle bottom text-bottom text-top super
     ),
     "float": (
       responsive: true,
@@ -129,6 +129,11 @@ $utilities: map-merge(
       property: border-width,
       class: border,
       values: $border-widths
+    ),
+    "border-style": (
+      property: border-style,
+      class: border,
+      values: dotted dashed solid double groove ridge inset outset
     ),
     // Sizing utilities
     "width": (
