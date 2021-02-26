@@ -142,7 +142,7 @@ if ((footerSlider = document.querySelector(".footerSlider"))) {
     gap: "1em",
     pagination: false,
     pauseOnHover: true,
-    interval: 3000,
+    interval: 12000,
     breakpoints: { 576: { perPage: 1 }, 992: { perPage: 2 } }
   }).mount();
 }
