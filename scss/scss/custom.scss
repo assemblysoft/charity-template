@@ -546,3 +546,7 @@ p:last-child {
     -moz-appearance: textfield;
   }
 }
+
+.rounded-end-0 {
+  @include border-end-radius(0);
+}
