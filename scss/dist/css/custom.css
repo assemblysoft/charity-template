@@ -880,4 +880,12 @@ p:last-child {
   border-color: #e36802;
 }
 
+.unstyle-inputarrow::-webkit-outer-spin-button, .unstyle-inputarrow::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+.unstyle-inputarrow[type=number] {
+  -moz-appearance: textfield;
+}
+
 /*# sourceMappingURL=custom.css.map */

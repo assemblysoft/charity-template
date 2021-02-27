@@ -1,4 +1,4 @@
-// stylelint-disable scss/dollar-variable-default, number-leading-zero, selector-max-id, declaration-no-important
+// stylelint-disable scss/dollar-variable-default, number-leading-zero, selector-max-id, declaration-no-important, property-no-vendor-prefix
 
 //
 // Bootstrap Configuration
@@ -532,5 +532,17 @@ p:last-child {
     color: #fff !important;
     background-color: #e36802;
     border-color: #e36802;
+  }
+}
+
+.unstyle-inputarrow {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+  }
+
+  &[type="number"] {
+    -moz-appearance: textfield;
   }
 }
