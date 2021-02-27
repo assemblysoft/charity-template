@@ -373,7 +373,6 @@
           <div class="col">
             <div class="tab-content img-bg h-min-100vh h-100" data-tab="once" style="background-image: url('./img/donation-1.jpg')"></div>
             <div class="tab-content img-bg h-min-100vh h-100" data-tab="monthly" style="background-image: url('./img/donation-2.jpg')"></div>
-            <div class="tab-content img-bg h-min-100vh h-100" data-tab="fundraising" style="background-image: url('./img/donation-3.jpg')"></div>
           </div>
           <div class="col px-5rem py-5">
             <h2 class="font-bold mb-4">Comic Relief supports projects around the world.</h2>
@@ -381,7 +380,6 @@
             <div class="btn-group w-100 mb-4 bg-light p-2 rounded-pill" role="group">
               <a class="btn btn-primary rounded-pill tab-switch font-bold active" onclick="changeAmount(this.amount,'once')" data-frequency="once" href="#once">Single Donation</a>
               <a class="btn btn-primary rounded-pill tab-switch font-bold" onclick="changeAmount(this.amount,'monthly')" data-frequency="monthly" href="#monthly">Monthly Donation</a>
-              <a class="btn btn-primary rounded-pill tab-switch font-bold" onclick="changeAmount(this.amount,'fundraising')" data-frequency="fundraising" href="#fundraising">Pay in Fundraising</a>
             </div>
 
             <div class="tab-content" data-tab="once">
@@ -433,25 +431,6 @@
                   <span class="block txt-start">nutritious meals and a counselling session for two children living on the streets of Malawi.</span>
                 </span>
               </label>
-            </div>
-            <div class="tab-content" data-tab="fundraising">
-              <div class="h4 font-normal txt-center">Your fundraising money:</div>
-
-              <div class="carousel slide py-4" id="carouselExampleControls" data-bs-ride="carousel">
-                <div class="carousel-inner txt-center w-75 mx-auto font-normal">
-                  <div class="carousel-item active">could make sure that vital community services stay open to help people</div>
-                  <div class="carousel-item">could help support people in communities all over the UK</div>
-                  <div class="carousel-item">could help support the most vulnerable among us</div>
-                </div>
-                <a class="carousel-control-prev" data-bs-slide="prev" href="#carouselExampleControls" role="button">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" data-bs-slide="next" href="#carouselExampleControls" role="button">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </a>
-              </div>
             </div>
 
             <div class="input-group mb-3">
@@ -625,7 +604,7 @@
         document.querySelector("#next").removeAttribute("disabled");
         document.querySelector("#error").classList.add("hidden");
         document.getElementById("amount").innerHTML = this.amount;
-        document.getElementById("frequency").innerHTML = this.frequency === "once" ? "right now" : this.frequency === "monthly" ? "monthly" : "fundraising";
+        document.getElementById("frequency").innerHTML = this.frequency === "once" ? "right now" : "monthly";
         document.getElementById("amount_input").value = this.amount;
       } else {
         document.querySelector("#next").setAttribute("disabled", true);
