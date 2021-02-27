@@ -846,4 +846,10 @@ p:last-child {
   padding-left: 5rem;
 }
 
+.form-check-input.hidden:checked ~ .fill-in {
+  color: #fff !important;
+  background-color: #e36802;
+  border-color: #e36802;
+}
+
 /*# sourceMappingURL=custom.css.map */

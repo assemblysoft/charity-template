@@ -455,7 +455,7 @@ p:last-child {
 
 // stylelint-disable-next-line selector-class-pattern
 .splide__track {
-  @include transition(.5s height ease-out);
+  @include transition(0.5s height ease-out);
 }
 
 // stylelint-disable-next-line selector-class-pattern
@@ -517,11 +517,19 @@ p:last-child {
   }
 }
 
-.tab-switch.active{
+.tab-switch.active {
   pointer-events: none;
 }
 
 .px-5rem {
   padding-right: 5rem;
   padding-left: 5rem;
+}
+
+.form-check-input.hidden {
+  &:checked ~ .fill-in {
+    color: #fff !important;
+    background-color: #e36802;
+    border-color: #e36802;
+  }
 }
