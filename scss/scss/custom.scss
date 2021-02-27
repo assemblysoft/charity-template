@@ -18,6 +18,7 @@ $utilities: (
     class: bg,
     values: (
       black: $black,
+      hide: transparent,
       black-90: rgba($black, 0.9),
       black-75: rgba($black, 0.75),
       black-50: rgba($black, 0.5),
@@ -79,8 +80,7 @@ $utilities: (
     property: font-family,
     class: "font",
     values: (
-      circular: #{"Circular",
-      var(--#{$variable-prefix}font-sans-serif)},
+      circular: #{"Circular", var(--#{$variable-prefix}font-sans-serif)},
       normal: var(--#{$variable-prefix}font-sans-serif),
       code: var(--#{$variable-prefix}font-monospace),
     ),
@@ -143,6 +143,7 @@ $utilities: (
     property: margin-right,
     class: me,
     values: (
+      20rem: 20rem,
       n20rem: -20rem,
     ),
   ),
