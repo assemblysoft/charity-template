@@ -926,4 +926,8 @@ p:last-child {
   color: #ff4d4f;
 }
 
+header .btn:focus {
+  box-shadow: none;
+}
+
 /*# sourceMappingURL=custom.css.map */

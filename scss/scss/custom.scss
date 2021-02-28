@@ -563,3 +563,7 @@ p:last-child {
     color: rgb(255, 77, 79);
   }
 }
+
+header .btn:focus {
+  box-shadow: none;
+}
