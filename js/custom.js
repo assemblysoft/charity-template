@@ -45,7 +45,6 @@ new Headroom(document.body, {
     bottom: "headroom--bottom",
     notBottom: "headroom--not-bottom",
     frozen: "headroom--frozen",
-    pinned: "headroom--pinned"
   },
   // callback when pinned, `this` is headroom objectF
   onPin: () => {

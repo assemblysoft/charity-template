@@ -604,6 +604,24 @@ header {
     transition: none;
   }
 }
+header .btn:focus {
+  box-shadow: none;
+}
+header .logo-container > .absolute {
+  width: 125px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  header .logo-container > .absolute {
+    transition: none;
+  }
+}
+@media (min-width: 992px) {
+  .headroom--unpinned header .logo-container > .absolute {
+    opacity: 1;
+  }
+}
 
 @media (prefers-reduced-motion: reduce) {
   .lyt-header,
@@ -924,10 +942,6 @@ p:last-child {
 }
 .ant-alert-error .ant-alert-icon {
   color: #ff4d4f;
-}
-
-header .btn:focus {
-  box-shadow: none;
 }
 
 /*# sourceMappingURL=custom.css.map */
