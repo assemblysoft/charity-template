@@ -44,7 +44,7 @@ new Headroom(document.body, {
     notTop: "headroom--not-top",
     bottom: "headroom--bottom",
     notBottom: "headroom--not-bottom",
-    frozen: "headroom--frozen",
+    frozen: "headroom--frozen"
   },
   // callback when pinned, `this` is headroom objectF
   onPin: () => {
@@ -148,7 +148,11 @@ if ((footerSlider = document.querySelector(".footerSlider"))) {
 
 // cookies section
 
-// if ((model = document.getElementById("staticBackdrop"))) {
-//   var myModal = new bootstrap.Modal(model, { backdrop: "static", keyboard: false, focus: true });
-//   myModal.show();
-// }
+if ((model = document.getElementById("staticBackdrop"))) {
+  var myModal = new bootstrap.Modal(model, { backdrop: "static", keyboard: false, focus: true });
+  myModal.show();
+}
+
+if ((elements = document.querySelectorAll("[on-click-active]"))) {
+  elements.forEach((e) => (e.onclick = () => e.classList.toggle("active")));
+}

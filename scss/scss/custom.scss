@@ -520,15 +520,13 @@ p:last-child {
     opacity: 1;
   }
 
-  a {
-    .text {
-      display: none;
-    }
+  .text {
+    display: none;
+  }
 
-    &:hover {
-      .text {
-        display: block;
-      }
+  [on-click-active] {
+    &.active ~ .text {
+      display: block;
     }
   }
 }

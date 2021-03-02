@@ -895,10 +895,10 @@ p:last-child {
   visibility: visible;
   opacity: 1;
 }
-#sidemenu a .text {
+#sidemenu .text {
   display: none;
 }
-#sidemenu a:hover .text {
+#sidemenu [on-click-active].active ~ .text {
   display: block;
 }
 
