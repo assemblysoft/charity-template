@@ -944,4 +944,8 @@ p:last-child {
   color: #ff4d4f;
 }
 
+.rounded-pill {
+  border-radius: 2rem !important;
+}
+
 /*# sourceMappingURL=custom.css.map */

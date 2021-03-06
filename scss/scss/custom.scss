@@ -580,3 +580,8 @@ p:last-child {
     color: rgb(255, 77, 79);
   }
 }
+
+.rounded-pill {
+  // stylelint-disable-next-line property-disallowed-list
+  border-radius: 2rem !important;
+}
