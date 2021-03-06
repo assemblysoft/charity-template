@@ -884,6 +884,7 @@ p:last-child {
 #sidemenu {
   visibility: hidden;
   opacity: 0;
+  transform: translateY(-60%);
   transition: opacity 0.35s ease-in-out, visibility 0.35s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
