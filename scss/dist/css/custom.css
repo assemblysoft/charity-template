@@ -732,7 +732,7 @@ header .logo-container > .absolute {
 .lyt-sidebar.fixed:target, .lyt-sidebar.fixed.active {
   right: 0;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .lyt-sidebar.fixed {
     width: inherit;
     min-width: 250px;

@@ -361,7 +361,7 @@ header {
     }
   }
 
-  @media (min-width: 576px) {
+  @include media-breakpoint-up(md) {
     &.fixed {
       width: inherit;
       min-width: 250px;
