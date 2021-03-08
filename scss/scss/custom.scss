@@ -211,6 +211,10 @@ $utilities: (
   }
 }
 
+.show-xl-onhover,
+.show-lg-onhover,
+.show-md-onhover,
+.show-sm-onhover,
 .show-onhover {
   .show {
     visibility: hidden;
@@ -224,6 +228,42 @@ $utilities: (
   &:hover .show {
     visibility: visible;
     opacity: 1;
+  }
+}
+
+.show-sm-onhover {
+  @include media-breakpoint-down(sm) {
+    .show {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.show-md-onhover {
+  @include media-breakpoint-down(md) {
+    .show {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.show-lg-onhover {
+  @include media-breakpoint-down(lg) {
+    .show {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.show-xl-onhover {
+  @include media-breakpoint-down(xl) {
+    .show {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 }
 
