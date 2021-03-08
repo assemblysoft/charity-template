@@ -65,7 +65,7 @@ new Headroom(document.body, {
 }).init();
 
 if ((mansory = document.querySelectorAll(".masonry"))) {
-  mansory.forEach((e) => new Macy({ container: e, waitForImages: true, margin: 16, columns: 3, breakAt: { 1200: 5, 940: 3, 520: 2, 400: 1 } }));
+  mansory.forEach((e) => new Macy({ container: e, waitForImages: true, margin: 16, columns: 3, breakAt: { 1200: 5, 940: 3, 786: 2, 520: 1 } }));
 }
 
 //
