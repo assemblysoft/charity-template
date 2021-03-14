@@ -817,7 +817,7 @@ p:last-child {
     opacity: 1;
     transform: scale(1);
   }
-  50% {
+  15% {
     opacity: 0;
     transform: scale(3);
   }
@@ -832,7 +832,7 @@ p:last-child {
     opacity: 1;
     transform: scale(1);
   }
-  50% {
+  15% {
     opacity: 0;
     transform: scale(3);
   }
@@ -868,8 +868,8 @@ p:last-child {
   opacity: 0;
   transform: scale(3);
   border-radius: 50%;
-  -webkit-animation: scrolldown 2s ease 1s infinite;
-  animation: scrolldown 2s ease 1s infinite;
+  -webkit-animation: scrolldown 5s ease 1s infinite;
+  animation: scrolldown 5s ease 1s infinite;
 }
 .headroom--not-top #scrolldown {
   visibility: hidden;
