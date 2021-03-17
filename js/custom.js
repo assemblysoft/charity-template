@@ -122,7 +122,10 @@ if ((HeroSlider = document.querySelector(".HeroSlider"))) {
   const slider = new Splide(".HeroSlider", {
     direction: "ltr",
     type: "loop",
-    autoHeight: true
+    autoplay: true,
+    interval: 5000,
+    autoHeight: true,
+    arrows: false
   });
 
   slider.on("mounted", function () {
