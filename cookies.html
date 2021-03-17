@@ -529,7 +529,8 @@
       <div class="m-5 p-3 bg-white shadow is-rounded col-md-18 mx-auto">
         <p>We use cookies on our website to enable us to collect information about your visit and provide you with a more personalised service when you browse our website and engage with us.</p>
         <p>A cookie is a small piece of data (text file) that a website, when visited by a user, asks your browser to store on your device in order to remember information about you (such as your language preference or login information). Those cookies are set by us and called first party cookies. We also use third party cookies, which are cookies from a domain different than the domain of the website you are visiting (including for our advertising and marketing activities).</p>
-
+        <p>By clicking "Accept", you agree to our use of the above cookies</p>
+        <button onclick="document.cookie.add('cookies','ALL')" type="button" class="btn btn-primary" data-bs-dismiss="modal">Accept Cookies</button>
       </div>
     </main>
 
@@ -636,22 +637,6 @@
       <div class="flex align-middle my-1 justify-start" style="flex-direction: row-reverse">
         <button on-click-active style="border: 4px solid white" class="shadow btn is-lg rounded-circle btn-valid inline-flex align-middle justify-center p-3"><img class="icon after-clear" src="./img/leaf.png" /></button>
         <a href="#" class="shadow text btn is-lg rounded-pill btn-valid font-bold me-2">Save Rainforest</a>
-      </div>
-    </div>
-
-    <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-body p-4">
-            <div class="fs-3 mb-3 font-bold">Manage cookie preferences</div>
-            <p>Hello! Comic Relief uses cookies to better understand your use of our websites and its content. This allows us to provide you with an improved browsing experience. We work with digital partners to show you advertising, social media features and content tailored to your interests. Click here for more information.</p>
-            <p>By clicking "Accept", you agree to our use of the above cookies. You can manage cookies by clicking on "Cookie Settings."</p>
-          </div>
-          <div class="modal-footer">
-            <a href="./cookies.html" class="me-2" style="text-decoration: underline">What do we store</a>
-            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Accept Cookies</button>
-          </div>
-        </div>
       </div>
     </div>
   </body>

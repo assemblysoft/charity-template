@@ -147,8 +147,7 @@ if ((footerSlider = document.querySelector(".footerSlider"))) {
 }
 
 // cookies section
-
-if ((model = document.getElementById("staticBackdrop"))) {
+if ((model = document.getElementById("staticBackdrop")) && !localStorage.cookies) {
   var myModal = new bootstrap.Modal(model, { backdrop: "static", keyboard: false, focus: true });
   myModal.show();
 }
