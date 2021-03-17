@@ -393,8 +393,16 @@
   margin-left: -20rem !important;
 }
 
+.me-15rem {
+  margin-right: 15rem !important;
+}
+
 .me-20rem {
   margin-right: 20rem !important;
+}
+
+.me-n15rem {
+  margin-right: -15rem !important;
 }
 
 .me-n20rem {
@@ -460,8 +468,16 @@
     margin-left: -20rem !important;
   }
 
+  .me-sm-15rem {
+    margin-right: 15rem !important;
+  }
+
   .me-sm-20rem {
     margin-right: 20rem !important;
+  }
+
+  .me-sm-n15rem {
+    margin-right: -15rem !important;
   }
 
   .me-sm-n20rem {
@@ -482,8 +498,16 @@
     margin-left: -20rem !important;
   }
 
+  .me-md-15rem {
+    margin-right: 15rem !important;
+  }
+
   .me-md-20rem {
     margin-right: 20rem !important;
+  }
+
+  .me-md-n15rem {
+    margin-right: -15rem !important;
   }
 
   .me-md-n20rem {
@@ -504,8 +528,16 @@
     margin-left: -20rem !important;
   }
 
+  .me-lg-15rem {
+    margin-right: 15rem !important;
+  }
+
   .me-lg-20rem {
     margin-right: 20rem !important;
+  }
+
+  .me-lg-n15rem {
+    margin-right: -15rem !important;
   }
 
   .me-lg-n20rem {
@@ -526,8 +558,16 @@
     margin-left: -20rem !important;
   }
 
+  .me-xl-15rem {
+    margin-right: 15rem !important;
+  }
+
   .me-xl-20rem {
     margin-right: 20rem !important;
+  }
+
+  .me-xl-n15rem {
+    margin-right: -15rem !important;
   }
 
   .me-xl-n20rem {
@@ -548,8 +588,16 @@
     margin-left: -20rem !important;
   }
 
+  .me-xxl-15rem {
+    margin-right: 15rem !important;
+  }
+
   .me-xxl-20rem {
     margin-right: 20rem !important;
+  }
+
+  .me-xxl-n15rem {
+    margin-right: -15rem !important;
   }
 
   .me-xxl-n20rem {
@@ -904,15 +952,10 @@ p:last-child {
   }
 }
 
-.splide__pagination {
-  right: auto !important;
-  left: 0.5em !important;
-  margin-left: 1% !important;
-}
 .splide__pagination .splide__pagination__page {
-  width: 4px !important;
-  height: 30px !important;
-  margin: 5px 0;
+  width: 30px !important;
+  height: 4px !important;
+  margin: 0 5px;
   border-radius: 1rem !important;
   opacity: 0.5 !important;
   transform: none !important;
@@ -987,6 +1030,10 @@ p:last-child {
 
 .rounded-pill {
   border-radius: 2rem !important;
+}
+
+.HeroSlider .splide__list {
+  align-items: flex-start;
 }
 
 /*# sourceMappingURL=custom.css.map */

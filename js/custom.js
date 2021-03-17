@@ -120,16 +120,22 @@ if (typeof $ !== "undefined" && document.querySelector('[data-fancybox="gallery"
 
 if ((HeroSlider = document.querySelector(".HeroSlider"))) {
   const slider = new Splide(".HeroSlider", {
-    direction: "ttb",
-    height: HeroSlider.querySelector(".splide__slide").clientHeight + "px",
+    direction: "ltr",
     type: "loop",
     autoHeight: true
-  }).mount();
-
-  slider.on("moved", function (next, old, direction) {
-    const nextslide = slider.Components.Elements.getSlide(next).slide;
-    slider.options = { height: nextslide.clientHeight };
   });
+
+  slider.on("mounted", function () {
+    const firstSlide = slider.Components.Elements.slides.find((e) => e.classList.contains("is-active"));
+    slider.root.style.height = firstSlide.clientHeight + "px";
+  });
+
+  slider.on("move", function (next, old, direction) {
+    const nextslide = slider.Components.Elements.getSlide(next).slide;
+    slider.root.style.height = nextslide.clientHeight + "px";
+  });
+
+  slider.mount();
 }
 
 if ((footerSlider = document.querySelector(".footerSlider"))) {
